@@ -1,0 +1,33 @@
+%flex-loyout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    padding: 0.8rem;
+    background-color: $secondary;
+    border-radius: 40px;
+
+    .container {
+        @extend %flex-loyout;
+    }
+
+    nav ul {
+        @extend %flex-loyout;
+
+        li + li {
+            margin: 1rem;
+        }
+    }
+
+    .burger span {
+        background-color: $primary;
+        display: block;
+        padding: 0.1rem 1rem;
+        width: 5px;
+        margin: 0.1rem;
+    }
+
+    
+}

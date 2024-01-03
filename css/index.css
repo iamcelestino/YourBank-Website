@@ -6,12 +6,12 @@
 
 body {
   background-color: rgb(27, 25, 25);
+  padding: 1rem;
 }
 
 .container {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 1rem;
 }
 
 li {
@@ -24,4 +24,33 @@ a {
 
 img {
   max-width: 100%;
+}
+
+button {
+  padding: 0.4rem 1rem;
+  border: none;
+  border-radius: 15px;
+  background-color: #CAFF33;
+}
+
+header nav ul, header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  padding: 0.8rem;
+  background-color: #CAFF33;
+  border-radius: 40px;
+}
+header nav ul li + li {
+  margin: 1rem;
+}
+header .burger span {
+  background-color: #1A1A1A;
+  display: block;
+  padding: 0.1rem 1rem;
+  width: 5px;
+  margin: 0.1rem;
 }

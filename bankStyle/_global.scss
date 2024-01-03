@@ -7,13 +7,13 @@
 
 body {
     background-color: rgb(27, 25, 25);
+    padding: 1rem;
 }
 
 
 .container {
     max-width: 1400px;
     margin: 0 auto;
-    padding: 1rem;
 }
 
 li {
@@ -24,9 +24,15 @@ a {
     text-decoration: none;
 }
 
-
 img {
     max-width: 100%;
+}
+
+button {
+    padding: 0.4rem 1rem;
+    border: none;
+    border-radius: 15px;
+    background-color: $secondary;
 }
 
 
