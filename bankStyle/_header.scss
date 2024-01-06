@@ -14,6 +14,16 @@ header {
 
     .container {
         @extend %flex-loyout;
+
+       .navigation,  .nav__btns{
+        display: none;
+
+        @include mediun {
+            display: flex;
+        }
+
+       }
+
     }
 
     nav ul {
@@ -39,15 +49,18 @@ header {
     .burger {
         background-color: $secondary;
         padding: 0.5rem 0.3rem;
-        border-radius: 10px;
-        display: none;
+        border-radius: 12px;
+
+        @include mediun {
+            display: none;
+        }
 
         & span {
             background-color: $primary;
             display: block;
-            padding: 0.1rem 1rem;
-            width: 2px;
+            padding: 0.1rem 0.7rem;
             margin: 0.1rem;
+            border-radius: 3px;
         }
     } 
 

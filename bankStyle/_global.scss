@@ -15,25 +15,39 @@ body {
 .container {
     max-width: 1400px;
     margin: 0 auto;
+
+    h1 {
+        color: $gray;
+    }
+
+    p {
+        color: $dark-gray;
+    }
+    
+    li {
+        list-style-type: none;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    img {
+        max-width: 100%;
+    }
+    
+    span {
+        color: $secondary;
+    }
+    
+    .button {
+        padding: 0.4rem 1rem;
+        border: none;
+        border-radius: 15px;
+    }
 }
 
-li {
-    list-style-type: none;
-}
 
-a {
-    text-decoration: none;
-}
-
-img {
-    max-width: 100%;
-}
-
-.button {
-    padding: 0.4rem 1rem;
-    border: none;
-    border-radius: 15px;
-}
 
 
 
