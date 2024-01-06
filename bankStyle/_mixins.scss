@@ -1,0 +1,25 @@
+
+
+$breakpoints: (
+    "md": 720px,
+    "lg": 960px,
+    "xl": 1200px,
+);
+
+@mixin mediun {
+    @media (min-width: map-get($breakpoints, "md")){
+        @content;
+    }
+}
+
+@mixin large {
+    @media (min-width: map-get($breakpoints, "lg")){
+        @content;
+    }
+}
+
+@mixin extra_Large {
+    @media (min-width: map-get($breakpoints, "xl")){
+        @content;
+    }
+}
