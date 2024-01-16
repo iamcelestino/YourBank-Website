@@ -16,11 +16,11 @@ body {
   max-width: 1400px;
   margin: 0 auto;
 }
-.container h1 {
+.container h1, .container h2, .container h3, .container h4, .container h5, .container h6 {
   color: #E4E4E7;
 }
 .container p {
-  color: #4C4C4D;
+  color: #E4E4E7;
 }
 .container li {
   list-style-type: none;
@@ -40,7 +40,7 @@ body {
   border-radius: 15px;
 }
 
-header .nav__btns, header nav ul, header .container {
+.container .transaction__container .transactions .transaction__detail > div, .container .transaction__container .transactions .transaction__detail, header .nav__btns, header nav ul, header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -87,4 +87,51 @@ header .burger span {
   padding: 0.1rem 0.7rem;
   margin: 0.1rem;
   border-radius: 3px;
+}
+
+.container .hero__description div {
+  display: flex;
+  align-items: center;
+  background-color: #242424;
+  padding: 0.4rem;
+  border-radius: 20px;
+}
+.container .hero__description div ion-icon {
+  background-color: #CAFF33;
+  padding: 0.2rem;
+  border-radius: 1rem;
+}
+.container .transaction__container {
+  background: url(../images/Abstract\ Design.svg) no-repeat 100% 10%;
+}
+.container .transaction__container .transactions .transaction__detail {
+  border: 1px solid #E4E4E7;
+  border-radius: 15px;
+  padding: 1rem;
+}
+.container .transaction__container .transactions .transaction__detail ion-icon {
+  background-color: #CAFF33;
+  padding: 0.5rem;
+  margin-right: 0.4rem;
+  border-radius: 50px;
+}
+.container .transaction__container .exchange__table {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.container .transaction__container .exchange__table > div {
+  border: 1px solid #E4E4E7;
+  padding: 1rem;
+}
+.container .transaction__container .exchange__table > div:nth-child(2) {
+  border-top-right-radius: 15px;
+}
+.container .transaction__container .exchange__btn {
+  background-color: #CAFF33;
+  display: inline-block;
+  text-align: center;
+  border-radius: 20px;
+  width: 100%;
+  padding: 0.4rem;
+  margin-top: 1rem;
 }

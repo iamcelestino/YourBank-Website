@@ -16,12 +16,12 @@ body {
     max-width: 1400px;
     margin: 0 auto;
 
-    h1 {
+    h1, h2, h3, h4, h5, h6 {
         color: $gray;
     }
 
     p {
-        color: $dark-gray;
+        color: $gray
     }
     
     li {

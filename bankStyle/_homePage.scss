@@ -1,0 +1,66 @@
+
+.container {
+
+    .hero__description div {
+        display: flex;
+        align-items: center;
+        background-color: $neutral;
+        padding: 0.4rem;
+        border-radius: 20px;
+
+        ion-icon {
+            background-color: $secondary;
+            padding: 0.2rem;
+            border-radius: 1rem;
+        }
+    }
+
+    .transaction__container {
+        background: url(../images/Abstract\ Design.svg) no-repeat 100% 10%;
+
+        .transactions  {
+            .transaction__detail{
+                border: 1px solid $gray;
+                border-radius: 15px;
+                padding: 1rem;
+                @extend %flex-loyout;
+
+                & > div {
+                    @extend %flex-loyout;
+                }
+
+                ion-icon {
+                    background-color: $secondary;
+                    padding: 0.5rem;
+                    margin-right: 0.4rem;
+                    border-radius: 50px;
+                }
+            }
+        }
+
+        .exchange__table {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+            & > div {
+                border: 1px solid $gray;
+                padding: 1rem;
+            }
+
+            & > div:nth-child(2){
+                border-top-right-radius: 15px;
+            }
+        }
+    .exchange__btn {
+            background-color: $secondary;
+            display: inline-block;
+            text-align: center;
+            border-radius: 20px;
+            width: 100%;
+            padding: 0.4rem;
+            margin-top: 1rem;
+    }
+    }
+
+
+}
