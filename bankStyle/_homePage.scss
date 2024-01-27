@@ -1,46 +1,95 @@
 
-.container {
+.hero__section {
+    border: 4px solid red;
 
-    .hero__description div {
-        display: flex;
-        align-items: center;
-        background-color: $neutral;
-        padding: 0.4rem;
-        border-radius: 20px;
+    h1 {
+        font-size: 1.7em;
+        margin: 1rem 0;
+    }
 
-        ion-icon {
+    ion-icon {
+        background-color: $secondary;
+        margin-right: 0.4rem;
+        border-radius: 50px;
+    }
+
+    .hero__description {
+        text-align: center;
+        @include mediun {
+            text-align: left;
+        }
+
+        a {
             background-color: $secondary;
-            padding: 0.2rem;
-            border-radius: 1rem;
+            margin-top: 1rem;
+        }
+
+        & div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background-color: $neutral;
+            padding: 0.4rem;
+            border-radius: 20px;
+            @include mediun {
+                justify-content: left;
+                max-width: 60%;
+            }
+    
+            ion-icon {
+                padding: 0.2rem;
+            }
+
         }
     }
 
-    .transaction__container {
+    .hero__transaction__container {
         background: url(../images/Abstract\ Design.svg) no-repeat 100% 10%;
+     
+        .transaction__box {
+            border: 1px solid $secondary;
+            padding: 1.8rem;
+            margin: 1rem 0;
+            border-radius: 6px;
+        }
+
+        ion-icon {
+            padding: 0.4rem;
+        }
+
+        .monthly__income__box{
+            background-color: #262626;
+            padding: 0.5rem;
+            max-width: 50%;
+            display: flex;
+            align-items: center;
+            border-radius: 5px;
+            transform: translate(-25px, 30px);
+           
+        }
 
         .transactions  {
+            margin: 1rem 0;
+
             .transaction__detail{
                 border: 1px solid $gray;
                 border-radius: 15px;
                 padding: 1rem;
                 @extend %flex-loyout;
+                justify-content: space-between;
 
                 & > div {
                     @extend %flex-loyout;
                 }
-
-                ion-icon {
-                    background-color: $secondary;
-                    padding: 0.5rem;
-                    margin-right: 0.4rem;
-                    border-radius: 50px;
-                }
             }
+
         }
 
         .exchange__table {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat($grid-columns_hero, 1fr);
+            margin-top: 1rem;
 
             & > div {
                 border: 1px solid $gray;
@@ -51,9 +100,9 @@
                 border-top-right-radius: 15px;
             }
         }
+
     .exchange__btn {
             background-color: $secondary;
-            display: inline-block;
             text-align: center;
             border-radius: 20px;
             width: 100%;
@@ -61,6 +110,5 @@
             margin-top: 1rem;
     }
     }
-
 
 }

@@ -1,0 +1,14 @@
+.grid {
+  @include mediun {
+    display: grid;
+    grid-template-columns: repeat($grid-columns-hero, 1fr);
+    gap: 50px;
+  }
+
+  & .grid__item {
+    @include mediun {
+      align-self: center;
+    }
+  }
+    
+}
