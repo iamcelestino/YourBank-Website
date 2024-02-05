@@ -1,10 +1,12 @@
 
 .hero__section {
-    border: 4px solid red;
 
     h1 {
         font-size: 1.7em;
         margin: 1rem 0;
+        @include mediun {
+            font-size: 3rem;
+        }
     }
 
     ion-icon {
@@ -45,11 +47,14 @@
     }
 
     .hero__transaction__container {
-        background: url(../images/Abstract\ Design.svg) no-repeat 100% 10%;
+        background: url(../images/Abstract\ Design.svg) no-repeat 100% 15%;
+       @include mediun {
+        padding: 4.5rem;
+       }
      
         .transaction__box {
             border: 1px solid $secondary;
-            padding: 1.8rem;
+            padding: 1.2rem;
             margin: 1rem 0;
             border-radius: 6px;
         }
@@ -61,7 +66,7 @@
         .monthly__income__box{
             background-color: #262626;
             padding: 0.5rem;
-            max-width: 50%;
+            max-width: 60%;
             display: flex;
             align-items: center;
             border-radius: 5px;
@@ -96,9 +101,9 @@
                 padding: 1rem;
             }
 
-            & > div:nth-child(2){
-                border-top-right-radius: 15px;
-            }
+            // & > div:nth-child(2){
+                
+            // }
         }
 
     .exchange__btn {
