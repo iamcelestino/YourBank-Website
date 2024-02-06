@@ -189,6 +189,7 @@ header .burger span {
 }
 
 #start__section {
+  background: url(../images/Abstract\ Design-back2.svg) no-repeat;
   background-color: #262626;
   padding: 2rem;
   border-radius: 10px;
