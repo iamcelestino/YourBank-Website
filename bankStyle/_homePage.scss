@@ -1,5 +1,5 @@
 
-.hero__section {
+#hero__section {
 
     h1 {
         font-size: 1.7em;
@@ -116,4 +116,36 @@
     }
     }
 
+}
+
+
+#start__section {
+    background-color: #262626;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    @include mediun {
+        text-align: left;
+    }
+
+    .start__description {
+        @include mediun {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            div {
+                max-width: 75%;
+            }
+        }
+
+        p {
+            margin: 1rem 0;
+        }
+    
+        a {
+            background-color: $secondary;
+        }
+
+    }
 }

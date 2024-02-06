@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-.hero__section .hero__transaction__container .transactions .transaction__detail > div, .hero__section .hero__transaction__container .transactions .transaction__detail, header .nav__btns, header nav ul, header .container {
+#hero__section .hero__transaction__container .transactions .transaction__detail > div, #hero__section .hero__transaction__container .transactions .transaction__detail, header .nav__btns, header nav ul, header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -19,7 +19,7 @@ body {
 }
 
 .container {
-  max-width: 1300px;
+  max-width: 1400px;
   margin: 0 auto;
   line-height: 1.4;
 }
@@ -91,33 +91,33 @@ header .burger span {
   border-radius: 3px;
 }
 
-.hero__section h1 {
+#hero__section h1 {
   font-size: 1.7em;
   margin: 1rem 0;
 }
 @media (min-width: 820px) {
-  .hero__section h1 {
+  #hero__section h1 {
     font-size: 3rem;
   }
 }
-.hero__section ion-icon {
+#hero__section ion-icon {
   background-color: #CAFF33;
   margin-right: 0.4rem;
   border-radius: 50px;
 }
-.hero__section .hero__description {
+#hero__section .hero__description {
   text-align: center;
 }
 @media (min-width: 820px) {
-  .hero__section .hero__description {
+  #hero__section .hero__description {
     text-align: left;
   }
 }
-.hero__section .hero__description a {
+#hero__section .hero__description a {
   background-color: #CAFF33;
   margin-top: 1rem;
 }
-.hero__section .hero__description div {
+#hero__section .hero__description div {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -127,32 +127,32 @@ header .burger span {
   border-radius: 20px;
 }
 @media (min-width: 820px) {
-  .hero__section .hero__description div {
+  #hero__section .hero__description div {
     justify-content: left;
     max-width: 60%;
   }
 }
-.hero__section .hero__description div ion-icon {
+#hero__section .hero__description div ion-icon {
   padding: 0.2rem;
 }
-.hero__section .hero__transaction__container {
+#hero__section .hero__transaction__container {
   background: url(../images/Abstract\ Design.svg) no-repeat 100% 15%;
 }
 @media (min-width: 820px) {
-  .hero__section .hero__transaction__container {
+  #hero__section .hero__transaction__container {
     padding: 4.5rem;
   }
 }
-.hero__section .hero__transaction__container .transaction__box {
+#hero__section .hero__transaction__container .transaction__box {
   border: 1px solid #CAFF33;
   padding: 1.2rem;
   margin: 1rem 0;
   border-radius: 6px;
 }
-.hero__section .hero__transaction__container ion-icon {
+#hero__section .hero__transaction__container ion-icon {
   padding: 0.4rem;
 }
-.hero__section .hero__transaction__container .monthly__income__box {
+#hero__section .hero__transaction__container .monthly__income__box {
   background-color: #262626;
   padding: 0.5rem;
   max-width: 60%;
@@ -161,31 +161,59 @@ header .burger span {
   border-radius: 5px;
   transform: translate(-25px, 30px);
 }
-.hero__section .hero__transaction__container .transactions {
+#hero__section .hero__transaction__container .transactions {
   margin: 1rem 0;
 }
-.hero__section .hero__transaction__container .transactions .transaction__detail {
+#hero__section .hero__transaction__container .transactions .transaction__detail {
   border: 1px solid #E4E4E7;
   border-radius: 15px;
   padding: 1rem;
   justify-content: space-between;
 }
-.hero__section .hero__transaction__container .exchange__table {
+#hero__section .hero__transaction__container .exchange__table {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin-top: 1rem;
 }
-.hero__section .hero__transaction__container .exchange__table > div {
+#hero__section .hero__transaction__container .exchange__table > div {
   border: 1px solid #E4E4E7;
   padding: 1rem;
 }
-.hero__section .hero__transaction__container .exchange__btn {
+#hero__section .hero__transaction__container .exchange__btn {
   background-color: #CAFF33;
   text-align: center;
   border-radius: 20px;
   width: 100%;
   padding: 0.4rem;
   margin-top: 1rem;
+}
+
+#start__section {
+  background-color: #262626;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+}
+@media (min-width: 820px) {
+  #start__section {
+    text-align: left;
+  }
+}
+@media (min-width: 820px) {
+  #start__section .start__description {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #start__section .start__description div {
+    max-width: 75%;
+  }
+}
+#start__section .start__description p {
+  margin: 1rem 0;
+}
+#start__section .start__description a {
+  background-color: #CAFF33;
 }
 
 @media (min-width: 820px) {
