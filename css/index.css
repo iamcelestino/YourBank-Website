@@ -189,21 +189,75 @@ header .burger span {
 }
 
 #products__section {
-  border: 1px solid red;
   text-align: center;
+  margin-top: 2rem;
 }
 #products__section .products__description {
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
+}
+#products__section .products__description p {
+  margin: 1rem 0;
+}
+#products__section .products__description .product__tab {
+  background-color: rgb(59, 58, 58);
+  display: inline-block;
+  padding: 0.5rem;
+  border-radius: 50px;
+}
+#products__section .products__description .product__tab a:first-child {
+  background-color: #CAFF33;
+  border-radius: 50px;
 }
 #products__section ion-icon {
   padding: 0.3rem;
   font-size: 1.5rem;
   border-radius: 50px;
 }
+#products__section .product {
+  padding: 1rem;
+}
+#products__section .product .icon__container {
+  background-color: #CAFF33;
+  display: inline-block;
+  padding: 0.6rem;
+  border-radius: 50px;
+}
+#products__section .product .icon__background {
+  background-color: rgb(57, 56, 56);
+  display: inline-block;
+  padding: 0.6rem;
+  border-radius: 50px;
+}
+#products__section .product:nth-of-type(even) {
+  border-top: 2px solid rgb(62, 62, 20);
+  border-bottom: 2px solid rgb(62, 62, 20);
+}
+@media (min-width: 820px) {
+  #products__section .products__description {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+  }
+  #products__section .products__description div:first-child {
+    max-width: 70%;
+  }
+  #products__section .products__box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #products__section .product:nth-of-type(even) {
+    border-top: none;
+    border-bottom: none;
+    border-right: 1px solid rgb(62, 62, 20);
+    border-left: 1px solid rgb(62, 62, 20);
+  }
+}
 
 #use__cases {
   border: 1px solid #CAFF33;
   padding: 0.8rem;
+  margin-top: 1.5rem;
   text-align: center;
 }
 #use__cases .box__container {
@@ -222,6 +276,11 @@ header .burger span {
 }
 #use__cases h1 {
   color: #CAFF33;
+}
+@media (min-width: 820px) {
+  #use__cases .use__case_description {
+    text-align: left;
+  }
 }
 
 #start__section {
