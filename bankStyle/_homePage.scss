@@ -233,8 +233,48 @@
         .use__case_description {
             text-align: left;
         }
+
+        .cases__box {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 60px;
+        }
+
+        .percentages {
+            display: flex;
+        }
     }
 
+}
+
+#features__section {
+    
+   ul {
+    background-color: #262626;
+    color: white;
+    padding: 1.5rem;
+    display: flex;
+
+    li {
+        background-color: black;
+        margin: 1rem;
+        padding: 0.3rem;
+    }
+   }
+
+   .banking__feature {
+    background-color: #262626;
+    margin-top: 2rem;
+    padding: 2rem;
+    border: 2px solid #414040;
+    border-radius: 10px;
+
+    div {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+    }
+   }
 }
 
 
