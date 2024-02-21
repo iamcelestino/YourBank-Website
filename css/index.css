@@ -5,16 +5,10 @@
   box-sizing: border-box;
 }
 
-#hero__section .hero__transaction__container .transactions .transaction__detail > div, #hero__section .hero__transaction__container .transactions .transaction__detail, header .nav__btns, header nav ul, header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 body {
   background: url(../images/Abstract\ Design-back.svg) -25px -20px no-repeat;
   background-color: rgb(27, 25, 25);
-  padding: 1rem 2rem;
+  padding: 1rem 5rem;
   font-family: "Lexend", sans-serif;
 }
 
@@ -43,17 +37,72 @@ body {
 }
 .container .button {
   display: inline-block;
-  padding: 0.4rem 1rem;
   border: none;
-  border-radius: 15px;
+  border-radius: 82px;
+}
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+@media (min-width: 480px) {
+  .col-1-sm {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 25%;
+  }
+  .col-2-sm {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 50%;
+  }
+  .col-3-sm {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 75%;
+  }
+  .col-4-sm {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 100%;
+  }
+}
+@media (min-width: 820px) {
+  .col-1-mediun {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 25%;
+  }
+  .col-2-mediun {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 50%;
+  }
+  .col-3-mediun {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 75%;
+  }
+  .col-4-mediun {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 100%;
+  }
+}
+header .nav__btns, header nav ul, header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header {
   background-color: #242424;
-  padding: 0.8rem 1rem;
-  margin: 1.5rem 0;
   border: 1px solid #4C4C4D;
-  border-radius: 40px;
+  border-radius: 100px;
+}
+header .container {
+  padding: 0.875rem 1.5rem;
 }
 header .container .navigation, header .container .nav__btns {
   display: none;
@@ -67,43 +116,39 @@ header a {
   color: #E4E4E7;
 }
 header li + li {
-  margin-left: 1rem;
+  margin-left: 1.62rem;
 }
 header .nav__btns .button {
   background-color: #CAFF33;
   color: #1A1A1A;
+  padding: 0.75rem 1.56rem;
 }
 header .burger {
   background-color: #CAFF33;
-  padding: 0.5rem 0.3rem;
-  border-radius: 12px;
+  padding: 6px 14px;
+  border-radius: 82px;
 }
 @media (min-width: 820px) {
   header .burger {
     display: none;
   }
 }
-header .burger span {
+header .burger div {
+  padding: 7px 4px;
+  margin: 10px;
+}
+header .burger div span {
   background-color: #1A1A1A;
+  padding: 7px 4px;
   display: block;
-  padding: 0.1rem 0.7rem;
-  margin: 0.1rem;
-  border-radius: 3px;
 }
 
-#hero__section h1 {
-  font-size: 1.7em;
-  margin: 1rem 0;
+#hero__section .hero__transaction__container .transactions .transaction__detail > div, #hero__section .hero__transaction__container .transactions .transaction__detail {
+  display: flex;
 }
-@media (min-width: 820px) {
-  #hero__section h1 {
-    font-size: 3rem;
-  }
-}
+
 #hero__section ion-icon {
   background-color: #CAFF33;
-  margin-right: 0.4rem;
-  border-radius: 50px;
 }
 #hero__section .hero__description {
   text-align: center;
@@ -115,7 +160,6 @@ header .burger span {
 }
 #hero__section .hero__description a {
   background-color: #CAFF33;
-  margin-top: 1rem;
 }
 #hero__section .hero__description div {
   display: flex;
@@ -123,7 +167,6 @@ header .burger span {
   justify-content: center;
   text-align: center;
   background-color: #242424;
-  padding: 0.4rem;
   border-radius: 20px;
 }
 @media (min-width: 820px) {
@@ -136,17 +179,10 @@ header .burger span {
   padding: 0.2rem;
 }
 #hero__section .hero__transaction__container {
-  background: url(../images/Abstract\ Design.svg) no-repeat 100% 15%;
-}
-@media (min-width: 820px) {
-  #hero__section .hero__transaction__container {
-    padding: 4.5rem;
-  }
+  background: url(../images/Abstract\ Design.svg) no-repeat 150% 30%;
 }
 #hero__section .hero__transaction__container .transaction__box {
   border: 1px solid #CAFF33;
-  padding: 1.2rem;
-  margin: 1rem 0;
   border-radius: 6px;
 }
 #hero__section .hero__transaction__container ion-icon {
@@ -154,54 +190,35 @@ header .burger span {
 }
 #hero__section .hero__transaction__container .monthly__income__box {
   background-color: #262626;
-  padding: 0.5rem;
   max-width: 60%;
   display: flex;
   align-items: center;
   border-radius: 5px;
   transform: translate(-25px, 30px);
 }
-#hero__section .hero__transaction__container .transactions {
-  margin: 1rem 0;
-}
 #hero__section .hero__transaction__container .transactions .transaction__detail {
   border: 1px solid #E4E4E7;
-  border-radius: 15px;
-  padding: 1rem;
   justify-content: space-between;
 }
 #hero__section .hero__transaction__container .exchange__table {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin-top: 1rem;
 }
 #hero__section .hero__transaction__container .exchange__table > div {
   border: 1px solid #E4E4E7;
-  padding: 1rem;
 }
 #hero__section .hero__transaction__container .exchange__btn {
   background-color: #CAFF33;
   text-align: center;
-  border-radius: 20px;
   width: 100%;
-  padding: 0.4rem;
-  margin-top: 1rem;
 }
 
 #products__section {
   text-align: center;
-  margin-top: 2rem;
-}
-#products__section .products__description {
-  margin-bottom: 1rem;
-}
-#products__section .products__description p {
-  margin: 1rem 0;
 }
 #products__section .products__description .product__tab {
   background-color: rgb(59, 58, 58);
   display: inline-block;
-  padding: 0.5rem;
   border-radius: 50px;
 }
 #products__section .products__description .product__tab a:first-child {
@@ -209,23 +226,17 @@ header .burger span {
   border-radius: 50px;
 }
 #products__section ion-icon {
-  padding: 0.3rem;
   font-size: 1.5rem;
   border-radius: 50px;
-}
-#products__section .product {
-  padding: 1rem;
 }
 #products__section .product .icon__container {
   background-color: #CAFF33;
   display: inline-block;
-  padding: 0.6rem;
   border-radius: 50px;
 }
 #products__section .product .icon__background {
   background-color: rgb(57, 56, 56);
   display: inline-block;
-  padding: 0.6rem;
   border-radius: 50px;
 }
 #products__section .product:nth-of-type(even) {
@@ -256,22 +267,17 @@ header .burger span {
 
 #use__cases {
   border: 1px solid #CAFF33;
-  padding: 0.8rem;
-  margin-top: 1.5rem;
   text-align: center;
 }
 #use__cases .box__container {
   background: url(../images/Abstract\ Design-back2.svg) no-repeat;
-  padding: 2rem;
   border: 1px solid red;
   border-radius: 10px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
 }
 #use__cases .box {
   border: 1px solid green;
-  padding: 3rem 0;
   border-radius: 5px;
 }
 #use__cases h1 {
@@ -294,18 +300,13 @@ header .burger span {
 #features__section ul {
   background-color: #262626;
   color: white;
-  padding: 1.5rem;
   display: flex;
 }
 #features__section ul li {
   background-color: black;
-  margin: 1rem;
-  padding: 0.3rem;
 }
 #features__section .banking__feature {
   background-color: #262626;
-  margin-top: 2rem;
-  padding: 2rem;
   border: 2px solid #414040;
   border-radius: 10px;
 }
@@ -315,10 +316,18 @@ header .burger span {
   margin-bottom: 1rem;
 }
 
+#faq__section .box {
+  background-color: #262626;
+  border: 2px solid #414040;
+  border-radius: 10px;
+}
+#faq__section .more__questions {
+  display: none;
+}
+
 #start__section {
   background: url(../images/Abstract\ Design-back2.svg) no-repeat;
   background-color: #262626;
-  padding: 2rem;
   border-radius: 10px;
   text-align: center;
 }
@@ -337,22 +346,6 @@ header .burger span {
     max-width: 75%;
   }
 }
-#start__section .start__description p {
-  margin: 1rem 0;
-}
 #start__section .start__description a {
   background-color: #CAFF33;
-}
-
-@media (min-width: 820px) {
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 50px;
-  }
-}
-@media (min-width: 820px) {
-  .grid .grid__item {
-    align-self: center;
-  }
 }

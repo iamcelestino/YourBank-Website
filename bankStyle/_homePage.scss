@@ -1,29 +1,32 @@
+@use 'variables' as v;
+@use 'mixins' as MX;
+
+%flex-loyout {
+    display: flex;
+
+}
+
+
 
 #hero__section {
 
     h1 {
-        font-size: 1.7em;
-        margin: 1rem 0;
-        @include mediun {
-            font-size: 3rem;
+        @include MX.mediun {
         }
     }
 
     ion-icon {
-        background-color: $secondary;
-        margin-right: 0.4rem;
-        border-radius: 50px;
+        background-color: v.$secondary;
     }
 
     .hero__description {
         text-align: center;
-        @include mediun {
+        @include MX.mediun {
             text-align: left;
         }
 
         a {
-            background-color: $secondary;
-            margin-top: 1rem;
+            background-color: v.$secondary;
         }
 
         & div {
@@ -31,10 +34,9 @@
             align-items: center;
             justify-content: center;
             text-align: center;
-            background-color: $neutral;
-            padding: 0.4rem;
+            background-color: v.$neutral;
             border-radius: 20px;
-            @include mediun {
+            @include MX.mediun {
                 justify-content: left;
                 max-width: 60%;
             }
@@ -47,15 +49,13 @@
     }
 
     .hero__transaction__container {
-        background: url(../images/Abstract\ Design.svg) no-repeat 100% 15%;
-       @include mediun {
-        padding: 4.5rem;
+        background: url(../images/Abstract\ Design.svg) no-repeat 150% 30%;
+       @include MX.mediun {
+        
        }
      
         .transaction__box {
-            border: 1px solid $secondary;
-            padding: 1.2rem;
-            margin: 1rem 0;
+            border: 1px solid v.$secondary;
             border-radius: 6px;
         }
 
@@ -65,7 +65,6 @@
 
         .monthly__income__box{
             background-color: #262626;
-            padding: 0.5rem;
             max-width: 60%;
             display: flex;
             align-items: center;
@@ -75,12 +74,9 @@
         }
 
         .transactions  {
-            margin: 1rem 0;
 
             .transaction__detail{
-                border: 1px solid $gray;
-                border-radius: 15px;
-                padding: 1rem;
+                border: 1px solid v.$gray;
                 @extend %flex-loyout;
                 justify-content: space-between;
 
@@ -93,12 +89,12 @@
 
         .exchange__table {
             display: grid;
-            grid-template-columns: repeat($grid-columns_hero, 1fr);
-            margin-top: 1rem;
+            grid-template-columns: repeat(v.$grid-columns_hero, 1fr);
+
 
             & > div {
-                border: 1px solid $gray;
-                padding: 1rem;
+                border: 1px solid v.$gray;
+
             }
 
             // & > div:nth-child(2){
@@ -107,12 +103,9 @@
         }
 
     .exchange__btn {
-            background-color: $secondary;
+            background-color: v.$secondary;
             text-align: center;
-            border-radius: 20px;
             width: 100%;
-            padding: 0.4rem;
-            margin-top: 1rem;
     }
     }
 
@@ -120,24 +113,20 @@
 
 #products__section {
     text-align: center;
-    margin-top: 2rem;
 
     .products__description {
-        margin-bottom: 1rem;
 
         p {
-            margin: 1rem 0;
         }
 
         .product__tab {
             background-color: rgb(59, 58, 58);
             display: inline-block;
-            padding: 0.5rem;
             border-radius: 50px;
 
 
             a:first-child {
-                background-color: $secondary;
+                background-color: v.$secondary;
                 border-radius: 50px;
             }
            
@@ -145,25 +134,21 @@
     }
 
     ion-icon {
-        padding: 0.3rem;
         font-size: 1.5rem;
         border-radius: 50px;
     }
 
     .product {
-        padding: 1rem;
 
         .icon__container {
-            background-color: $secondary;
+            background-color: v.$secondary;
             display: inline-block;
-            padding: 0.6rem;
             border-radius:50px;
         }
 
         .icon__background {
             background-color: rgb(57, 56, 56);
             display: inline-block;
-            padding: 0.6rem;
             border-radius: 50px;
         }
     }
@@ -174,7 +159,7 @@
         
     }
 
-    @include mediun {
+    @include MX.mediun {
 
         .products__description {
             display: flex;
@@ -204,32 +189,27 @@
 }
 
 #use__cases {
-    border: 1px solid $secondary;
-    padding: 0.8rem;
-    margin-top: 1.5rem;
+    border: 1px solid v.$secondary;
     text-align: center;
 
     .box__container {
         background: url(../images/Abstract\ Design-back2.svg) no-repeat;
-        padding: 2rem;
         border: 1px solid red;
         border-radius: 10px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
     }
     
     .box {
         border: 1px solid green;
-        padding: 3rem 0;
         border-radius: 5px;
     }
 
     h1 {
-        color: $secondary;
+        color: v.$secondary;
     }
 
-    @include mediun {
+    @include MX.mediun {
         .use__case_description {
             text-align: left;
         }
@@ -248,24 +228,19 @@
 }
 
 #features__section {
-    
+
    ul {
     background-color: #262626;
     color: white;
-    padding: 1.5rem;
     display: flex;
 
     li {
         background-color: black;
-        margin: 1rem;
-        padding: 0.3rem;
     }
    }
 
    .banking__feature {
     background-color: #262626;
-    margin-top: 2rem;
-    padding: 2rem;
     border: 2px solid #414040;
     border-radius: 10px;
 
@@ -277,19 +252,35 @@
    }
 }
 
+#faq__section {
+    .faq__description {
+    }
+
+    .box {
+        background-color: #262626;
+        border:2px solid #414040;
+        border-radius: 10px;
+        h4 {
+        }
+    }
+
+    .more__questions {
+        display: none;
+    }
+    
+}
 
 #start__section {
     background: url(../images/Abstract\ Design-back2.svg) no-repeat;
     background-color: #262626;
-    padding: 2rem;
     border-radius: 10px;
     text-align: center;
-    @include mediun {
+    @include MX.mediun {
         text-align: left;
     }
 
     .start__description {
-        @include mediun {
+        @include MX.mediun {
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -300,11 +291,10 @@
         }
 
         p {
-            margin: 1rem 0;
         }
     
         a {
-            background-color: $secondary;
+            background-color: v.$secondary;
         }
 
     }
