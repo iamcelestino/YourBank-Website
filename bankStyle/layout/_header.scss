@@ -1,4 +1,4 @@
-@use 'variables' as v ;
+@use '../variables' as v ;
 @use 'mixins' as MX;
 
 %flex-loyout {
@@ -23,9 +23,7 @@ header {
         @include MX.mediun {
             display: flex;
         }
-
        }
-
     }
 
     nav ul {

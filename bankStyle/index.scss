@@ -1,7 +1,9 @@
-@use 'global';
-@use 'grid';
-@use 'header';
-@use 'homePage';
+@forward '../bankStyle/layout/global';
+@forward '../bankStyle/layout/mixins';
+@forward '../bankStyle/layout/grid';
+@forward '../bankStyle/layout/header';
+@forward '../bankStyle/layout/homePage';
+
 
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;800&display=swap');
 

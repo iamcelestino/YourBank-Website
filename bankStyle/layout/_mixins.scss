@@ -25,7 +25,7 @@ $breakpoints: (
     }
 }
 
-@mixin extra_Large {
+@mixin extra_large {
     @media (min-width: map-get($breakpoints, "xl")){
         @content;
     }

@@ -1,4 +1,5 @@
 @use 'variables' as v;
+@use 'grid';
 @use 'mixins' as MX;
 
 %flex-loyout {
@@ -68,9 +69,7 @@
             max-width: 60%;
             display: flex;
             align-items: center;
-            border-radius: 5px;
-            transform: translate(-25px, 30px);
-           
+            border-radius: 5px; 
         }
 
         .transactions  {
@@ -229,27 +228,13 @@
 
 #features__section {
 
-   ul {
-    background-color: #262626;
-    color: white;
-    display: flex;
-
-    li {
-        background-color: black;
-    }
-   }
-
    .banking__feature {
     background-color: #262626;
     border: 2px solid #414040;
     border-radius: 10px;
-
-    div {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 1rem;
-    }
    }
+
+
 }
 
 #faq__section {

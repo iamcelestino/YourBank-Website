@@ -8,12 +8,11 @@
 body {
   background: url(../images/Abstract\ Design-back.svg) -25px -20px no-repeat;
   background-color: rgb(27, 25, 25);
-  padding: 1rem 5rem;
   font-family: "Lexend", sans-serif;
 }
 
 .container {
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
   line-height: 1.4;
 }
@@ -90,6 +89,50 @@ body {
     width: 100%;
   }
 }
+@media (min-width: 960px) {
+  .col-1-large {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 25%;
+  }
+  .col-2-large {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 50%;
+  }
+  .col-3-large {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 75%;
+  }
+  .col-4-large {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .col-1-extra_large {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 25%;
+  }
+  .col-2-extra_large {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 50%;
+  }
+  .col-3-extra_large {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 75%;
+  }
+  .col-4-extra_large {
+    box-sizing: border-box;
+    flex-grow: 0;
+    width: 100%;
+  }
+}
 header .nav__btns, header nav ul, header .container {
   display: flex;
   justify-content: space-between;
@@ -120,7 +163,7 @@ header li + li {
 }
 header .nav__btns .button {
   background-color: #CAFF33;
-  color: #1A1A1A;
+  color: rgb(28, 28, 28);
   padding: 0.75rem 1.56rem;
 }
 header .burger {
@@ -138,7 +181,7 @@ header .burger div {
   margin: 10px;
 }
 header .burger div span {
-  background-color: #1A1A1A;
+  background-color: rgb(28, 28, 28);
   padding: 7px 4px;
   display: block;
 }
@@ -194,7 +237,6 @@ header .burger div span {
   display: flex;
   align-items: center;
   border-radius: 5px;
-  transform: translate(-25px, 30px);
 }
 #hero__section .hero__transaction__container .transactions .transaction__detail {
   border: 1px solid #E4E4E7;
@@ -297,23 +339,10 @@ header .burger div span {
   }
 }
 
-#features__section ul {
-  background-color: #262626;
-  color: white;
-  display: flex;
-}
-#features__section ul li {
-  background-color: black;
-}
 #features__section .banking__feature {
   background-color: #262626;
   border: 2px solid #414040;
   border-radius: 10px;
-}
-#features__section .banking__feature div {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 1rem;
 }
 
 #faq__section .box {
