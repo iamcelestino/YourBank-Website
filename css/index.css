@@ -205,46 +205,22 @@ header .burger div span {
   background-color: #CAFF33;
 }
 #hero__section .hero__description div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   text-align: center;
   background-color: #242424;
-  border-radius: 20px;
 }
 @media (min-width: 820px) {
   #hero__section .hero__description div {
-    justify-content: left;
     max-width: 60%;
   }
-}
-#hero__section .hero__description div ion-icon {
-  padding: 0.2rem;
 }
 #hero__section .hero__transaction__container {
   background: url(../images/Abstract\ Design.svg) no-repeat 150% 30%;
 }
 #hero__section .hero__transaction__container .transaction__box {
   border: 1px solid #CAFF33;
-  border-radius: 6px;
-}
-#hero__section .hero__transaction__container ion-icon {
-  padding: 0.4rem;
 }
 #hero__section .hero__transaction__container .monthly__income__box {
   background-color: #262626;
-  max-width: 60%;
-  display: flex;
-  align-items: center;
-  border-radius: 5px;
-}
-#hero__section .hero__transaction__container .transactions .transaction__detail {
-  border: 1px solid #E4E4E7;
-  justify-content: space-between;
-}
-#hero__section .hero__transaction__container .exchange__table {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
 }
 #hero__section .hero__transaction__container .exchange__table > div {
   border: 1px solid #E4E4E7;
@@ -295,10 +271,6 @@ header .burger div span {
   #products__section .products__description div:first-child {
     max-width: 70%;
   }
-  #products__section .products__box {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
   #products__section .product:nth-of-type(even) {
     border-top: none;
     border-bottom: none;
@@ -308,35 +280,16 @@ header .burger div span {
 }
 
 #use__cases {
-  border: 1px solid #CAFF33;
   text-align: center;
 }
 #use__cases .box__container {
   background: url(../images/Abstract\ Design-back2.svg) no-repeat;
-  border: 1px solid red;
   border-radius: 10px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
-#use__cases .box {
-  border: 1px solid green;
-  border-radius: 5px;
-}
 #use__cases h1 {
   color: #CAFF33;
-}
-@media (min-width: 820px) {
-  #use__cases .use__case_description {
-    text-align: left;
-  }
-  #use__cases .cases__box {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 60px;
-  }
-  #use__cases .percentages {
-    display: flex;
-  }
 }
 
 #features__section .banking__feature {

@@ -4,7 +4,7 @@
 
 %flex-loyout {
     display: flex;
-
+    
 }
 
 
@@ -13,6 +13,7 @@
 
     h1 {
         @include MX.mediun {
+            
         }
     }
 
@@ -31,19 +32,15 @@
         }
 
         & div {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+
             text-align: center;
             background-color: v.$neutral;
-            border-radius: 20px;
             @include MX.mediun {
-                justify-content: left;
+
                 max-width: 60%;
             }
     
             ion-icon {
-                padding: 0.2rem;
             }
 
         }
@@ -57,27 +54,19 @@
      
         .transaction__box {
             border: 1px solid v.$secondary;
-            border-radius: 6px;
         }
 
         ion-icon {
-            padding: 0.4rem;
         }
 
         .monthly__income__box{
             background-color: #262626;
-            max-width: 60%;
-            display: flex;
-            align-items: center;
-            border-radius: 5px; 
         }
 
         .transactions  {
 
             .transaction__detail{
-                border: 1px solid v.$gray;
                 @extend %flex-loyout;
-                justify-content: space-between;
 
                 & > div {
                     @extend %flex-loyout;
@@ -87,8 +76,6 @@
         }
 
         .exchange__table {
-            display: grid;
-            grid-template-columns: repeat(v.$grid-columns_hero, 1fr);
 
 
             & > div {
@@ -172,11 +159,6 @@
 
         }
 
-        .products__box {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-        }
-
         .product:nth-of-type(even) {
             border-top: none;
             border-bottom: none;
@@ -188,42 +170,21 @@
 }
 
 #use__cases {
-    border: 1px solid v.$secondary;
     text-align: center;
 
     .box__container {
         background: url(../images/Abstract\ Design-back2.svg) no-repeat;
-        border: 1px solid red;
         border-radius: 10px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
-    
+
     .box {
-        border: 1px solid green;
-        border-radius: 5px;
     }
 
     h1 {
         color: v.$secondary;
     }
-
-    @include MX.mediun {
-        .use__case_description {
-            text-align: left;
-        }
-
-        .cases__box {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 60px;
-        }
-
-        .percentages {
-            display: flex;
-        }
-    }
-
 }
 
 #features__section {
