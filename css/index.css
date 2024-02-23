@@ -9,7 +9,7 @@ body {
   background: url(../images/Abstract\ Design-back.svg) -25px -20px no-repeat;
   background-color: rgb(27, 25, 25);
   font-family: "Lexend", sans-serif;
-  padding: 2.5rem 1.5rem;
+  padding: 2.5rem 1rem;
 }
 
 .container {
@@ -193,8 +193,8 @@ header .burger div:nth-child(3) {
   align-items: center;
 }
 
-#hero__section ion-icon {
-  background-color: #CAFF33;
+#hero__section {
+  margin: 3rem 0;
 }
 #hero__section .hero__description {
   text-align: center;
@@ -204,12 +204,20 @@ header .burger div:nth-child(3) {
     text-align: left;
   }
 }
+#hero__section .hero__description p {
+  margin-top: 0.5rem;
+  margin-bottom: 1.8rem;
+}
 #hero__section .hero__description a {
   background-color: #CAFF33;
 }
 #hero__section .hero__description div {
+  display: inline-block;
   text-align: center;
   background-color: #242424;
+  padding: 0.5rem 1rem 0.5rem 0.5rem;
+  margin-bottom: 0.75rem;
+  border-radius: 61px;
 }
 @media (min-width: 820px) {
   #hero__section .hero__description div {
@@ -218,12 +226,25 @@ header .burger div:nth-child(3) {
 }
 #hero__section .hero__transaction__container {
   background: url(../images/Abstract\ Design.svg) no-repeat 150% 30%;
-}
-#hero__section .hero__transaction__container .transaction__box {
-  border: 1px solid #CAFF33;
+  margin-top: 5rem;
 }
 #hero__section .hero__transaction__container .monthly__income__box {
   background-color: #262626;
+  display: inline-block;
+}
+#hero__section .hero__transaction__container .transaction__box {
+  border: 1px solid #CAFF33;
+  padding: 1.3rem;
+  border-radius: 6.15px;
+}
+#hero__section .hero__transaction__container .transactions {
+  margin-bottom: 0.9rem;
+}
+#hero__section .hero__transaction__container .transactions .transaction__detail {
+  justify-content: space-between;
+  padding: 0.5rem 0.7rem;
+  border: 1px solid #242424;
+  border-radius: 6.15px;
 }
 #hero__section .hero__transaction__container .exchange__table > div {
   border: 1px solid #E4E4E7;
@@ -232,6 +253,11 @@ header .burger div:nth-child(3) {
   background-color: #CAFF33;
   text-align: center;
   width: 100%;
+  margin-top: 0.5rem;
+}
+#hero__section ion-icon {
+  background-color: #CAFF33;
+  display: inline-block;
 }
 
 #products__section {

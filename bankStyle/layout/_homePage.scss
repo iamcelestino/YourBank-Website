@@ -10,10 +10,7 @@
 
 
 #hero__section {
-
-    ion-icon {
-        background-color: v.$secondary;
-    }
+    margin: 3rem 0;
 
     .hero__description {
         text-align: center;
@@ -21,14 +18,22 @@
             text-align: left;
         }
 
+        p {
+            margin-top: 0.5rem;
+            margin-bottom: 1.8rem;
+        }
+
         a {
             background-color: v.$secondary;
         }
 
         & div {
-
+            display: inline-block;
             text-align: center;
             background-color: v.$neutral;
+            padding: 0.5rem 1rem 0.5rem 0.5rem;
+            margin-bottom: 0.75rem;
+            border-radius: 61px;
             @include MX.mediun {
                 max-width: 60%;
             }
@@ -37,19 +42,28 @@
 
     .hero__transaction__container {
         background: url(../images/Abstract\ Design.svg) no-repeat 150% 30%;
-     
-        .transaction__box {
-            border: 1px solid v.$secondary;
-        }
+        margin-top: 5rem;
 
         .monthly__income__box{
             background-color: #262626;
+            display: inline-block;
+        }
+     
+        .transaction__box {
+            border: 1px solid v.$secondary;
+            padding: 1.3rem;
+            border-radius: 6.15px 
         }
 
         .transactions  {
+            margin-bottom: 0.9rem;
 
             .transaction__detail{
                 @extend %flex-loyout;
+                justify-content: space-between;
+                padding: 0.5rem 0.7rem;
+                border: 1px solid v.$neutral;
+                border-radius: 6.15px;
 
                 & > div {
                     @extend %flex-loyout;
@@ -59,13 +73,9 @@
         }
 
         .exchange__table {
-
-
             & > div {
                 border: 1px solid v.$gray;
-
             }
-
             // & > div:nth-child(2){
                 
             // }
@@ -75,7 +85,13 @@
             background-color: v.$secondary;
             text-align: center;
             width: 100%;
+            margin-top: 0.5rem;
     }
+    }
+
+    ion-icon {
+        background-color: v.$secondary;
+        display: inline-block;
     }
 
 }
