@@ -9,6 +9,7 @@ body {
   background: url(../images/Abstract\ Design-back.svg) -25px -20px no-repeat;
   background-color: rgb(27, 25, 25);
   font-family: "Lexend", sans-serif;
+  padding: 2.5rem 1.5rem;
 }
 
 .container {
@@ -142,10 +143,8 @@ header .nav__btns, header nav ul, header .container {
 header {
   background-color: #242424;
   border: 1px solid #4C4C4D;
-  border-radius: 100px;
-}
-header .container {
   padding: 0.875rem 1.5rem;
+  border-radius: 100px;
 }
 header .container .navigation, header .container .nav__btns {
   display: none;
@@ -164,30 +163,34 @@ header li + li {
 header .nav__btns .button {
   background-color: #CAFF33;
   color: rgb(28, 28, 28);
-  padding: 0.75rem 1.56rem;
 }
 header .burger {
   background-color: #CAFF33;
-  padding: 6px 14px;
+  padding: 1rem;
+  display: block;
   border-radius: 82px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+header .burger div {
+  background-color: black;
+  padding: 0.1rem;
+  margin: 0.1rem;
+  width: 30px;
+}
+header .burger div:nth-child(3) {
+  width: 15px;
 }
 @media (min-width: 820px) {
   header .burger {
     display: none;
   }
 }
-header .burger div {
-  padding: 7px 4px;
-  margin: 10px;
-}
-header .burger div span {
-  background-color: rgb(28, 28, 28);
-  padding: 7px 4px;
-  display: block;
-}
 
 #hero__section .hero__transaction__container .transactions .transaction__detail > div, #hero__section .hero__transaction__container .transactions .transaction__detail {
   display: flex;
+  align-items: center;
 }
 
 #hero__section ion-icon {
