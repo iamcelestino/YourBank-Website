@@ -163,6 +163,7 @@ header li + li {
 header .nav__btns .button {
   background-color: #CAFF33;
   color: rgb(28, 28, 28);
+  padding: 0.87rem 1.8rem;
 }
 header .burger {
   background-color: #CAFF33;
@@ -178,6 +179,7 @@ header .burger div {
   padding: 0.1rem;
   margin: 0.1rem;
   width: 30px;
+  border-radius: 10px;
 }
 header .burger div:nth-child(3) {
   width: 15px;
@@ -191,6 +193,11 @@ header .burger div:nth-child(3) {
 #hero__section .hero__transaction__container .transactions .transaction__detail > div, #hero__section .hero__transaction__container .transactions .transaction__detail {
   display: flex;
   align-items: center;
+}
+
+#hero__section .hero__description .button {
+  background-color: #CAFF33;
+  padding: 0.87rem 1.5rem;
 }
 
 #hero__section {
@@ -218,11 +225,6 @@ header .burger div:nth-child(3) {
   padding: 0.5rem 1rem 0.5rem 0.5rem;
   margin-bottom: 0.75rem;
   border-radius: 61px;
-}
-@media (min-width: 820px) {
-  #hero__section .hero__description div {
-    max-width: 60%;
-  }
 }
 #hero__section .hero__transaction__container {
   background: url(../images/Abstract\ Design.svg) no-repeat 150% 30%;

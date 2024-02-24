@@ -7,6 +7,11 @@
     align-items: center;
 }
 
+%open-account-btn {
+    background-color: v.$secondary;
+    padding: 0.87rem 1.5rem;
+}
+
 
 
 #hero__section {
@@ -34,9 +39,10 @@
             padding: 0.5rem 1rem 0.5rem 0.5rem;
             margin-bottom: 0.75rem;
             border-radius: 61px;
-            @include MX.mediun {
-                max-width: 60%;
-            }
+        }
+
+        .button {
+            @extend %open-account-btn;
         }
     }
 
