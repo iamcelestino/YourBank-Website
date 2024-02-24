@@ -43,6 +43,7 @@
 
         .button {
             @extend %open-account-btn;
+            border-radius: 82px;
         }
     }
 
@@ -53,6 +54,22 @@
         .monthly__income__box{
             background-color: #262626;
             display: inline-block;
+            padding: 0.70rem 0.86rem;
+            border-radius: 8.26px;
+
+            p {
+                font-size: 13px;
+            }
+
+            ion-icon {
+                padding: 0.43rem;
+                margin-right: 0.4rem;
+                border-radius: 36.5px;
+            }
+
+            & > div {
+                @extend %flex-loyout
+            }
         }
      
         .transaction__box {
@@ -68,7 +85,7 @@
                 @extend %flex-loyout;
                 justify-content: space-between;
                 padding: 0.5rem 0.7rem;
-                border: 1px solid v.$neutral;
+                border: 1px solid v.$gray;
                 border-radius: 6.15px;
 
                 & > div {
@@ -76,22 +93,44 @@
                 }
             }
 
+            .transaction__detail:nth-child(2) {
+                margin: 0 0.62rem;
+            }
+
+            .transaction__detail:nth-child(3) {
+                margin: 0 1.2rem;
+            }
+
+            .transaction__detail:nth-child(2),
+            .transaction__detail:nth-child(3) {
+                background-color: 	rgba(48, 45, 45, 0.7);
+            }
+
         }
 
         .exchange__table {
+            border-radius: 6.15px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
             & > div {
                 border: 1px solid v.$gray;
-            }
-            // & > div:nth-child(2){
+                padding: 0.86rem;
                 
-            // }
+            }
+
+            .coins {
+                @extend %flex-loyout;
+            }
         }
 
     .exchange__btn {
             background-color: v.$secondary;
             text-align: center;
             width: 100%;
+            padding:  0.5rem 0.9rem;
             margin-top: 0.5rem;
+            border-radius: 42.5px;
     }
     }
 
