@@ -193,14 +193,16 @@
 
     ion-icon {
         font-size: 1.5rem;
-        border-radius: 50px;
+        text-align: center;
+        color: v.$secondary;
     }
 
     .product {
+        margin-bottom: 1.8rem;
 
-        // h3 {
-        //     margin-top: 1.2rem;
-        // }
+        h3 {
+            margin-top: 1.2rem;
+        }
 
         p {
             margin-top: 0.75rem;
@@ -208,14 +210,15 @@
         }
 
         .icon__container {
-            background-color: v.$secondary;
             display: inline-block;
-            border-radius:50px;
+            padding: 0.5rem;
+            border: 1px solid #414040;
+            border-radius: 70px;
         }
 
         .icon__background {
-            background-color: rgb(57, 56, 56);
-            display: inline-block;
+            padding: 0.8rem;
+            border-radius: 50px;
         }
     }
 
@@ -243,18 +246,31 @@
 #use__cases {
     text-align: center;
 
+    h1 {
+        margin: 0.62rem;
+        color: v.$secondary;
+    }
+
+
     .box__container {
         background: url(../images/Abstract\ Design-back2.svg) no-repeat;
         border-radius: 10px;
+        padding: 1.25rem;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    
+    }
+
+    .use__case_description {
+        margin-bottom: 3.75rem;
     }
 
     .box {
-    }
-
-    h1 {
-        color: v.$secondary;
+        padding: 1.25rem 0.8rem;
+        background-color: #262626;
+        border: 1px solid  #414040;
+        border-radius: 12px;
     }
 }
 
