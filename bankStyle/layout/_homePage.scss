@@ -12,6 +12,11 @@
     padding: 0.87rem 1.5rem;
 }
 
+%ion-icon {
+    background-color: v.$secondary;
+    display: inline-block;
+}
+
 
 
 #hero__section {
@@ -47,6 +52,8 @@
         }
     }
 
+ //APPLYING STYLES TO TRANSACTION BOX   
+
     .hero__transaction__container {
         background: url(../images/Abstract\ Design.svg) no-repeat 150% 30%;
         margin-top: 5rem;
@@ -61,11 +68,6 @@
                 font-size: 13px;
             }
 
-            ion-icon {
-                padding: 0.43rem;
-                margin-right: 0.4rem;
-                border-radius: 36.5px;
-            }
 
             & > div {
                 @extend %flex-loyout
@@ -75,7 +77,11 @@
         .transaction__box {
             border: 1px solid v.$secondary;
             padding: 1.3rem;
-            border-radius: 6.15px 
+            border-radius: 6.15px;
+
+            h6 {
+                margin-bottom: 0.4rem;
+            }
         }
 
         .transactions  {
@@ -132,11 +138,26 @@
             margin-top: 0.5rem;
             border-radius: 42.5px;
     }
+
+    ion-icon {
+        padding: 0.43rem;
+        margin-right: 0.4rem;
+        border-radius: 36.5px;
+    }
+
+    }
+
+//
+    .supported__currencies {
+        background-color: #414040;
+
+        & > div {
+            @extend %flex-loyout
+        }
     }
 
     ion-icon {
-        background-color: v.$secondary;
-        display: inline-block;
+        @extend %ion-icon;
     }
 
 }
@@ -147,17 +168,24 @@
     .products__description {
 
         p {
+            margin-top: 0.62rem;
+            margin-bottom: 1.2rem;
         }
 
         .product__tab {
             background-color: rgb(59, 58, 58);
             display: inline-block;
-            border-radius: 50px;
+            border-radius: 82px;
+            padding: 1rem;
+            margin-bottom: 3.75rem;
 
+            .tab_button {
+                padding: 0.62rem 0.6rem;
+                border-radius: 140px;
+            }
 
-            a:first-child {
+            .tab_button:first-child {
                 background-color: v.$secondary;
-                border-radius: 50px;
             }
            
         }
@@ -170,6 +198,15 @@
 
     .product {
 
+        // h3 {
+        //     margin-top: 1.2rem;
+        // }
+
+        p {
+            margin-top: 0.75rem;
+            margin-bottom: 1.87rem;
+        }
+
         .icon__container {
             background-color: v.$secondary;
             display: inline-block;
@@ -179,36 +216,26 @@
         .icon__background {
             background-color: rgb(57, 56, 56);
             display: inline-block;
-            border-radius: 50px;
         }
     }
 
-    .product:nth-of-type(even) {
-        border-top: 2px solid rgb(62, 62, 20);
-        border-bottom: 2px solid  rgb(62, 62, 20);
-        
+    .product:nth-child(1),
+    .product:nth-child(2) {
+        border-bottom: 2px solid v.$secondary;
     }
 
     @include MX.mediun {
 
         .products__description {
             display: flex;
-            align-items: center;
+            align-items: end;
             justify-content: space-between;
             text-align: left;
 
             & div:first-child {
-                max-width: 70%;
+                max-width: 55%;
             }
 
-        }
-
-        .product:nth-of-type(even) {
-            border-top: none;
-            border-bottom: none;
-            border-right:  1px solid  rgb(62, 62, 20);
-            border-left:  1px solid  rgb(62, 62, 20);
-            
         }
     }
 }

@@ -9,7 +9,7 @@ body {
   background: url(../images/Abstract\ Design-back.svg) -25px -20px no-repeat;
   background-color: rgb(27, 25, 25);
   font-family: "Lexend", sans-serif;
-  padding: 2.5rem 1rem;
+  padding: 2.5rem 1.5rem;
 }
 
 .container {
@@ -35,6 +35,9 @@ body {
 }
 .container span {
   color: #CAFF33;
+}
+.container svg {
+  max-width: 15%;
 }
 .container .button {
   display: inline-block;
@@ -191,7 +194,7 @@ header .burger div:nth-child(3) {
   }
 }
 
-#hero__section .hero__transaction__container .exchange__table .coins, #hero__section .hero__transaction__container .transactions .transaction__detail > div, #hero__section .hero__transaction__container .transactions .transaction__detail, #hero__section .hero__transaction__container .monthly__income__box > div {
+#hero__section .supported__currencies > div, #hero__section .hero__transaction__container .exchange__table .coins, #hero__section .hero__transaction__container .transactions .transaction__detail > div, #hero__section .hero__transaction__container .transactions .transaction__detail, #hero__section .hero__transaction__container .monthly__income__box > div {
   display: flex;
   align-items: center;
 }
@@ -199,6 +202,11 @@ header .burger div:nth-child(3) {
 #hero__section .hero__description .button {
   background-color: #CAFF33;
   padding: 0.87rem 1.5rem;
+}
+
+#hero__section ion-icon {
+  background-color: #CAFF33;
+  display: inline-block;
 }
 
 #hero__section {
@@ -243,15 +251,13 @@ header .burger div:nth-child(3) {
 #hero__section .hero__transaction__container .monthly__income__box p {
   font-size: 13px;
 }
-#hero__section .hero__transaction__container .monthly__income__box ion-icon {
-  padding: 0.43rem;
-  margin-right: 0.4rem;
-  border-radius: 36.5px;
-}
 #hero__section .hero__transaction__container .transaction__box {
   border: 1px solid #CAFF33;
   padding: 1.3rem;
   border-radius: 6.15px;
+}
+#hero__section .hero__transaction__container .transaction__box h6 {
+  margin-bottom: 0.4rem;
 }
 #hero__section .hero__transaction__container .transactions {
   margin-bottom: 0.9rem;
@@ -289,26 +295,42 @@ header .burger div:nth-child(3) {
   margin-top: 0.5rem;
   border-radius: 42.5px;
 }
-#hero__section ion-icon {
-  background-color: #CAFF33;
-  display: inline-block;
+#hero__section .hero__transaction__container ion-icon {
+  padding: 0.43rem;
+  margin-right: 0.4rem;
+  border-radius: 36.5px;
 }
-
+#hero__section .supported__currencies {
+  background-color: #414040;
+}
 #products__section {
   text-align: center;
+}
+#products__section .products__description p {
+  margin-top: 0.62rem;
+  margin-bottom: 1.2rem;
 }
 #products__section .products__description .product__tab {
   background-color: rgb(59, 58, 58);
   display: inline-block;
-  border-radius: 50px;
+  border-radius: 82px;
+  padding: 1rem;
+  margin-bottom: 3.75rem;
 }
-#products__section .products__description .product__tab a:first-child {
+#products__section .products__description .product__tab .tab_button {
+  padding: 0.62rem 0.6rem;
+  border-radius: 140px;
+}
+#products__section .products__description .product__tab .tab_button:first-child {
   background-color: #CAFF33;
-  border-radius: 50px;
 }
 #products__section ion-icon {
   font-size: 1.5rem;
   border-radius: 50px;
+}
+#products__section .product p {
+  margin-top: 0.75rem;
+  margin-bottom: 1.87rem;
 }
 #products__section .product .icon__container {
   background-color: #CAFF33;
@@ -318,27 +340,20 @@ header .burger div:nth-child(3) {
 #products__section .product .icon__background {
   background-color: rgb(57, 56, 56);
   display: inline-block;
-  border-radius: 50px;
 }
-#products__section .product:nth-of-type(even) {
-  border-top: 2px solid rgb(62, 62, 20);
-  border-bottom: 2px solid rgb(62, 62, 20);
+#products__section .product:nth-child(1),
+#products__section .product:nth-child(2) {
+  border-bottom: 2px solid #CAFF33;
 }
 @media (min-width: 820px) {
   #products__section .products__description {
     display: flex;
-    align-items: center;
+    align-items: end;
     justify-content: space-between;
     text-align: left;
   }
   #products__section .products__description div:first-child {
-    max-width: 70%;
-  }
-  #products__section .product:nth-of-type(even) {
-    border-top: none;
-    border-bottom: none;
-    border-right: 1px solid rgb(62, 62, 20);
-    border-left: 1px solid rgb(62, 62, 20);
+    max-width: 55%;
   }
 }
 
