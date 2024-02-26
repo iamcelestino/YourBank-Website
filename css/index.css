@@ -398,6 +398,26 @@ header .burger div:nth-child(3) {
   padding: 0.8rem;
   border-radius: 50px;
 }
+#use__cases .percentages {
+  margin: 3.12rem 0;
+}
+
+#features__section .features__description {
+  margin-bottom: 3.12rem;
+}
+#features__section .features__description h2 {
+  margin-bottom: 0.62rem;
+}
+#features__section .tabs ul {
+  display: flex;
+  padding: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+#features__section .tabs ul li {
+  padding: 0.87rem 1.25rem;
+  margin: 0 1.25rem;
+  border-radius: 100px;
+}
 #features__section .banking__feature {
   background-color: #262626;
   border: 2px solid #414040;

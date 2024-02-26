@@ -271,6 +271,10 @@
         border-radius: 12px;
     }
 
+    ion-icon {
+        @extend %ion-icon;
+    }
+
     .icon__container {
         @include MX.icon-container;
     }
@@ -279,13 +283,34 @@
         @include MX.icon-background
     }
 
-    ion-icon {
-        @extend %ion-icon;
+    .percentages {
+        margin: 3.12rem 0;
     }
 }
 
 #features__section {
 
+    .features__description {
+        margin-bottom: 3.12rem;
+
+        h2 {
+            margin-bottom: 0.62rem;
+        }
+    }
+    .tabs {
+         ul {
+            display: flex;
+            padding: 1.25rem;
+            margin-bottom: 1.25rem;;
+
+            li {
+                padding: 0.87rem 1.25rem;
+                margin: 0 1.25rem;
+                border-radius: 100px;
+            }
+         }
+    }
+    
    .banking__feature {
     background-color: #262626;
     border: 2px solid #414040;
