@@ -1,5 +1,6 @@
 
 
+//Mixins for MEDIA QUERIES
 $breakpoints: (
     "sm": 480px,
     "md": 820px,
@@ -29,4 +30,17 @@ $breakpoints: (
     @media (min-width: map-get($breakpoints, "xl")){
         @content;
     }
+}
+
+
+@mixin icon-background {
+    padding: 0.8rem;
+    border-radius: 50px;
+}
+
+@mixin icon-container {
+    display: inline-block;
+    padding: 0.5rem;
+    border: 1px solid #414040;
+    border-radius: 70px;
 }

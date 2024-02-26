@@ -13,7 +13,9 @@
 }
 
 %ion-icon {
-    background-color: v.$secondary;
+    font-size: 1.5rem;
+    text-align: center;
+    color: v.$secondary;
     display: inline-block;
 }
 
@@ -140,6 +142,8 @@
     }
 
     ion-icon {
+        background-color: v.$secondary;
+        color: #262626;
         padding: 0.43rem;
         margin-right: 0.4rem;
         border-radius: 36.5px;
@@ -192,9 +196,7 @@
     }
 
     ion-icon {
-        font-size: 1.5rem;
-        text-align: center;
-        color: v.$secondary;
+        @extend %ion-icon;
     }
 
     .product {
@@ -210,15 +212,11 @@
         }
 
         .icon__container {
-            display: inline-block;
-            padding: 0.5rem;
-            border: 1px solid #414040;
-            border-radius: 70px;
+            @include MX.icon-container;
         }
 
         .icon__background {
-            padding: 0.8rem;
-            border-radius: 50px;
+            @include MX.icon-background;
         }
     }
 
@@ -251,6 +249,10 @@
         color: v.$secondary;
     }
 
+    
+    .use__case_description {
+        margin: 3.75rem 0;
+    }
 
     .box__container {
         background: url(../images/Abstract\ Design-back2.svg) no-repeat;
@@ -262,15 +264,23 @@
     
     }
 
-    .use__case_description {
-        margin-bottom: 3.75rem;
-    }
-
     .box {
         padding: 1.25rem 0.8rem;
         background-color: #262626;
         border: 1px solid  #414040;
         border-radius: 12px;
+    }
+
+    .icon__container {
+        @include MX.icon-container;
+    }
+
+    .icon__background  {
+        @include MX.icon-background
+    }
+
+    ion-icon {
+        @extend %ion-icon;
     }
 }
 
