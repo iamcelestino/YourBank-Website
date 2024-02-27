@@ -374,8 +374,12 @@ header .burger div:nth-child(3) {
 #use__cases .use__case_description {
   margin: 3.75rem 0;
 }
+#use__cases .case h2 {
+  margin: 0.62rem 0;
+}
 #use__cases .box__container {
   background: url(../images/Abstract\ Design-back2.svg) no-repeat;
+  border: 1px solid #414040;
   border-radius: 10px;
   padding: 1.25rem;
   display: grid;
@@ -400,6 +404,26 @@ header .burger div:nth-child(3) {
 }
 #use__cases .percentages {
   margin: 3.12rem 0;
+  padding: 0 3.12rem;
+  border: 1px solid #414040;
+}
+#use__cases .percentages > div {
+  margin-bottom: 3.12rem;
+}
+#use__cases .percentages .value:first-child {
+  margin-bottom: 1.87rem;
+}
+#use__cases .percentages .value:nth-child(2) {
+  margin: 1.87rem;
+}
+#use__cases .percentages .value:nth-child(3) {
+  margin-top: 1.87rem;
+}
+#use__cases .percentages a {
+  display: inline-block;
+  padding: 0.87rem 1.25rem;
+  border: 1px solid #414040;
+  border-radius: 82px;
 }
 
 #features__section .features__description {
