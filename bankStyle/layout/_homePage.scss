@@ -290,7 +290,6 @@
     .percentages {
         margin: 3.12rem 0;
         padding: 0 3.12rem;
-        border: 1px solid #414040;
 
         & > div {
             margin-bottom: 3.12rem;
@@ -313,6 +312,7 @@
             padding: 0.87rem 1.25rem;
             border:1px solid  #414040;
             border-radius: 82px;
+            color: v.$gray;
          }
     }
 }
@@ -327,26 +327,53 @@
         }
     }
     .tabs {
+
          ul {
             display: flex;
             padding: 1.25rem;
-            margin-bottom: 1.25rem;;
+            margin-bottom: 1.25rem;
+            overflow: scroll;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+            width: 100%;
+            text-align: center;
 
             li {
                 padding: 0.87rem 1.25rem;
-                margin: 0 1.25rem;
+                margin: 0 0.7rem;
                 border-radius: 100px;
+                background-color: aliceblue;
+                width: 9000px;
+                float: left;
             }
          }
+
+        ul::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    .banking {
+        margin-top: 1.25rem;
     }
     
    .banking__feature {
     background-color: #262626;
     border: 2px solid #414040;
     border-radius: 10px;
+    margin-bottom: 1.25rem;
+    padding: 1.87rem;
+
+    & div {
+        @extend %flex-loyout;
+        justify-content: space-between;
+        margin-bottom: 1.25rem;
+    }
    }
 
-
+   ion-icon {
+    @extend %ion-icon;
+   }
 }
 
 #faq__section {

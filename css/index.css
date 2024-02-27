@@ -194,7 +194,7 @@ header .burger div:nth-child(3) {
   }
 }
 
-#hero__section .supported__currencies > div, #hero__section .hero__transaction__container .exchange__table .coins, #hero__section .hero__transaction__container .transactions .transaction__detail > div, #hero__section .hero__transaction__container .transactions .transaction__detail, #hero__section .hero__transaction__container .monthly__income__box > div {
+#features__section .banking__feature div, #hero__section .supported__currencies > div, #hero__section .hero__transaction__container .exchange__table .coins, #hero__section .hero__transaction__container .transactions .transaction__detail > div, #hero__section .hero__transaction__container .transactions .transaction__detail, #hero__section .hero__transaction__container .monthly__income__box > div {
   display: flex;
   align-items: center;
 }
@@ -204,7 +204,7 @@ header .burger div:nth-child(3) {
   padding: 0.87rem 1.5rem;
 }
 
-#use__cases ion-icon, #products__section ion-icon, #hero__section ion-icon {
+#features__section ion-icon, #use__cases ion-icon, #products__section ion-icon, #hero__section ion-icon {
   font-size: 1.5rem;
   text-align: center;
   color: #CAFF33;
@@ -405,7 +405,6 @@ header .burger div:nth-child(3) {
 #use__cases .percentages {
   margin: 3.12rem 0;
   padding: 0 3.12rem;
-  border: 1px solid #414040;
 }
 #use__cases .percentages > div {
   margin-bottom: 3.12rem;
@@ -424,6 +423,7 @@ header .burger div:nth-child(3) {
   padding: 0.87rem 1.25rem;
   border: 1px solid #414040;
   border-radius: 82px;
+  color: #E4E4E7;
 }
 
 #features__section .features__description {
@@ -436,18 +436,37 @@ header .burger div:nth-child(3) {
   display: flex;
   padding: 1.25rem;
   margin-bottom: 1.25rem;
+  overflow: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  width: 100%;
+  text-align: center;
 }
 #features__section .tabs ul li {
   padding: 0.87rem 1.25rem;
-  margin: 0 1.25rem;
+  margin: 0 0.7rem;
   border-radius: 100px;
+  background-color: aliceblue;
+  width: 9000px;
+  float: left;
+}
+#features__section .tabs ul::-webkit-scrollbar {
+  display: none;
+}
+#features__section .banking {
+  margin-top: 1.25rem;
 }
 #features__section .banking__feature {
   background-color: #262626;
   border: 2px solid #414040;
   border-radius: 10px;
+  margin-bottom: 1.25rem;
+  padding: 1.87rem;
 }
-
+#features__section .banking__feature div {
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
 #faq__section .box {
   background-color: #262626;
   border: 2px solid #414040;
