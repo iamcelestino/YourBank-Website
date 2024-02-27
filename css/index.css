@@ -199,9 +199,10 @@ header .burger div:nth-child(3) {
   align-items: center;
 }
 
-#hero__section .hero__description .button {
+#start__section .start__description a, #hero__section .hero__description .button {
   background-color: #CAFF33;
   padding: 0.87rem 1.5rem;
+  border-radius: 82px;
 }
 
 #features__section ion-icon, #use__cases ion-icon, #products__section ion-icon, #hero__section ion-icon {
@@ -444,7 +445,7 @@ header .burger div:nth-child(3) {
 }
 #features__section .tabs ul li {
   padding: 0.87rem 1.25rem;
-  margin: 0 0.7rem;
+  margin: 0 1.25rem;
   border-radius: 100px;
   background-color: aliceblue;
   width: 9000px;
@@ -467,10 +468,22 @@ header .burger div:nth-child(3) {
   justify-content: space-between;
   margin-bottom: 1.25rem;
 }
+#faq__section .faq__description {
+  text-align: center;
+  margin-bottom: 3.12rem;
+}
 #faq__section .box {
   background-color: #262626;
-  border: 2px solid #414040;
+  border: 1px solid #414040;
   border-radius: 10px;
+  padding: 1.8rem;
+  margin-bottom: 1.25rem;
+}
+#faq__section .box h4 {
+  margin-bottom: 1.25rem;
+}
+#faq__section .box p {
+  margin-top: 1.25rem;
 }
 #faq__section .more__questions {
   display: none;
@@ -487,6 +500,9 @@ header .burger div:nth-child(3) {
     text-align: left;
   }
 }
+#start__section .start__description {
+  padding: 1.87rem;
+}
 @media (min-width: 820px) {
   #start__section .start__description {
     display: flex;
@@ -497,6 +513,9 @@ header .burger div:nth-child(3) {
     max-width: 75%;
   }
 }
-#start__section .start__description a {
-  background-color: #CAFF33;
+#start__section .start__description h2 {
+  margin-bottom: 0.87rem;
+}
+#start__section .start__description p {
+  margin-bottom: 1.5rem;
 }
