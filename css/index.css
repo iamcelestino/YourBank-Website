@@ -537,8 +537,14 @@ footer a {
   color: #E4E4E7;
 }
 footer .navigation__links {
-  justify-content: space-between;
+  justify-content: center;
   margin: 1.5rem;
+}
+footer .navigation__links li + li {
+  margin-left: 1.5rem;
+}
+footer .contacts {
+  margin: 1.87rem 0;
 }
 footer .contacts .email,
 footer .contacts .phone {
@@ -568,4 +574,17 @@ footer .media__container .copyright {
 }
 footer .media__container p {
   color: #4C4C4D;
+}
+@media (min-width: 820px) {
+  footer .media__container,
+  footer .contacts {
+    display: flex;
+    align-items: center;
+  }
+  footer .contacts {
+    justify-content: center;
+  }
+  footer .media__container {
+    justify-content: space-between;
+  }
 }

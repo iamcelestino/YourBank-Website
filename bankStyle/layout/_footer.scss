@@ -18,12 +18,16 @@ footer {
 
     .navigation__links {
         @extend %flex-layout;
-        justify-content: space-between;
+        justify-content: center;
         margin: 1.5rem;
+
+        li + li {
+            margin-left: 1.5rem;
+        }
     }
 
     .contacts {
-        // margin: 1.87rem 0;
+        margin: 1.87rem 0;
 
         .email,
         .phone {
@@ -61,6 +65,23 @@ footer {
             color: v.$dark-gray;
 
        }
+    }
+
+    @include MX.mediun {
+       .media__container,
+       .contacts {
+        display: flex;
+        align-items: center;
+       }
+
+       .contacts {
+        justify-content: center;
+       }
+
+       .media__container {
+        justify-content: space-between;
+       }
+
     }
 
 
