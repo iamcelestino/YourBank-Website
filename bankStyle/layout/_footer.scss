@@ -2,6 +2,12 @@
 @use 'global';
 @use 'mixins' as MX;
 
+%flex-layout {
+    display: flex;
+    align-items: center;
+}
+
+
 footer {
     padding-top: 3.12rem;
     text-align: center;
@@ -10,30 +16,52 @@ footer {
         color: v.$gray;
     }
 
+    .navigation__links {
+        @extend %flex-layout;
+        justify-content: space-between;
+        margin: 1.5rem;
+    }
+
     .contacts {
-        margin-bottom: 1.87rem;
+        // margin: 1.87rem 0;
+
+        .email,
+        .phone {
+            margin-bottom: 1.5rem;
+        }
+
+        ion-icon {
+            color: v.$secondary;
+            font-size: 1.3rem;
+        }
     }
 
     .media__container {
-            margin-bottom: 1.87rem;
+            padding: 3.12rem 1.5rem 1.87rem 0.81rem;
+            margin: 1.87rem 0;
             border: 1px solid #242424;
             border-radius: 12px;
            
-
         ion-icon {
             background-color: v.$secondary;
-            padding: 0.75rem;
+            padding: 0.55rem;
             font-size: 1.5rem;
             border-radius: 100px;
         }
 
         .social__media {
-            transform: translateY(-25px);
+            margin-bottom: 1.25rem;
         }
 
        .copyright {
             margin-bottom: 1.25rem;
        }
+
+       p {
+            color: v.$dark-gray;
+
+       }
     }
+
 
 }

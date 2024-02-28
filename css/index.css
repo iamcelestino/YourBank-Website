@@ -428,12 +428,15 @@ header .burger div:nth-child(3) {
 }
 
 #features__section .features__description {
-  margin-bottom: 3.12rem;
+  margin: 3.12rem 0;
+  text-align: center;
 }
 #features__section .features__description h2 {
   margin-bottom: 0.62rem;
 }
 #features__section .tabs ul {
+  background-color: #414040;
+  border-radius: 10px;
   display: flex;
   padding: 1.25rem;
   margin-bottom: 1.25rem;
@@ -445,11 +448,13 @@ header .burger div:nth-child(3) {
 }
 #features__section .tabs ul li {
   padding: 0.87rem 1.25rem;
-  margin: 0 1.25rem;
   border-radius: 100px;
   background-color: aliceblue;
   width: 9000px;
   float: left;
+}
+#features__section .tabs ul li + li {
+  margin-left: 1.25rem;
 }
 #features__section .tabs ul::-webkit-scrollbar {
   display: none;
@@ -519,6 +524,11 @@ header .burger div:nth-child(3) {
 #start__section .start__description p {
   margin-bottom: 1.5rem;
 }
+footer .navigation__links {
+  display: flex;
+  align-items: center;
+}
+
 footer {
   padding-top: 3.12rem;
   text-align: center;
@@ -526,23 +536,36 @@ footer {
 footer a {
   color: #E4E4E7;
 }
-footer .contacts {
-  margin-bottom: 1.87rem;
+footer .navigation__links {
+  justify-content: space-between;
+  margin: 1.5rem;
+}
+footer .contacts .email,
+footer .contacts .phone {
+  margin-bottom: 1.5rem;
+}
+footer .contacts ion-icon {
+  color: #CAFF33;
+  font-size: 1.3rem;
 }
 footer .media__container {
-  margin-bottom: 1.87rem;
+  padding: 3.12rem 1.5rem 1.87rem 0.81rem;
+  margin: 1.87rem 0;
   border: 1px solid #242424;
   border-radius: 12px;
 }
 footer .media__container ion-icon {
   background-color: #CAFF33;
-  padding: 0.75rem;
+  padding: 0.55rem;
   font-size: 1.5rem;
   border-radius: 100px;
 }
 footer .media__container .social__media {
-  transform: translateY(-25px);
+  margin-bottom: 1.25rem;
 }
 footer .media__container .copyright {
   margin-bottom: 1.25rem;
+}
+footer .media__container p {
+  color: #4C4C4D;
 }
