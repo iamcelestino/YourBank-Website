@@ -218,11 +218,6 @@ header .burger div:nth-child(3) {
 #hero__section .hero__description {
   text-align: center;
 }
-@media (min-width: 820px) {
-  #hero__section .hero__description {
-    text-align: left;
-  }
-}
 #hero__section .hero__description p {
   margin-top: 0.5rem;
   margin-bottom: 1.8rem;
@@ -308,6 +303,18 @@ header .burger div:nth-child(3) {
 #hero__section .supported__currencies {
   background-color: #414040;
 }
+@media (min-width: 820px) {
+  #hero__section .hero {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 100px;
+  }
+  #hero__section .hero__description {
+    text-align: left;
+  }
+}
+
 #products__section {
   text-align: center;
 }
@@ -356,12 +363,26 @@ header .burger div:nth-child(3) {
 @media (min-width: 820px) {
   #products__section .products__description {
     display: flex;
-    align-items: end;
     justify-content: space-between;
     text-align: left;
   }
   #products__section .products__description div:first-child {
     max-width: 55%;
+  }
+  #products__section .products__box {
+    margin-top: 5rem;
+  }
+  #products__section .product {
+    flex: 1;
+  }
+  #products__section .product:nth-child(1),
+  #products__section .product:nth-child(2) {
+    border-bottom: none;
+    border-right: 2px solid #CAFF33;
+    padding-right: 2.5rem;
+  }
+  #products__section .product + .product {
+    padding-left: 2.5rem;
   }
 }
 
