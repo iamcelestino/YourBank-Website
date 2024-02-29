@@ -53,10 +53,7 @@ footer {
             border-radius: 100px;
         }
 
-        .social__media {
-            margin-bottom: 1.25rem;
-        }
-
+        .social__media,
        .copyright {
             margin-bottom: 1.25rem;
        }
@@ -76,11 +73,32 @@ footer {
 
        .contacts {
         justify-content: center;
+        margin: 1.25rem 0;
+
+        div + div  {
+            margin-left: 1.5rem;
+        }
+
+        .email,
+        .phone {
+            margin-top: 1.5rem;
+        }
+
+
        }
 
        .media__container {
         justify-content: space-between;
+
+        .social__media,
+        .copyright {
+         margin-top: 1.25rem;
+        }
+
        }
+
+       
+     
 
     }
 

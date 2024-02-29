@@ -566,9 +566,7 @@ footer .media__container ion-icon {
   font-size: 1.5rem;
   border-radius: 100px;
 }
-footer .media__container .social__media {
-  margin-bottom: 1.25rem;
-}
+footer .media__container .social__media,
 footer .media__container .copyright {
   margin-bottom: 1.25rem;
 }
@@ -583,8 +581,20 @@ footer .media__container p {
   }
   footer .contacts {
     justify-content: center;
+    margin: 1.25rem 0;
+  }
+  footer .contacts div + div {
+    margin-left: 1.5rem;
+  }
+  footer .contacts .email,
+  footer .contacts .phone {
+    margin-top: 1.5rem;
   }
   footer .media__container {
     justify-content: space-between;
+  }
+  footer .media__container .social__media,
+  footer .media__container .copyright {
+    margin-top: 1.25rem;
   }
 }
