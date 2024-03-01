@@ -21,7 +21,6 @@
 }
 
 
-
 #hero__section {
     margin: 3rem 0;
 
@@ -273,10 +272,12 @@
 }
 
 #use__cases {
-    text-align: center;
+    .container {
+        text-align: center;
+    }
 
     h1 {
-        margin: 0.62rem;
+        margin-top: 0.62rem;
         color: v.$secondary;
     }
 
@@ -320,23 +321,18 @@
 
     .percentages {
         margin: 3.12rem 0;
-        padding: 0 3.12rem;
+
         & > div {
             margin-bottom: 3.12rem;
         }
 
-
-        .value:first-child {
-           margin-bottom: 1.87rem;
+        .value {
+            border: 2px solid v.$secondary;
         }
 
-        .value:nth-child(2) {
-            margin: 1.87rem;
-         }
-
-         .value:nth-child(3) {
-            margin-top: 1.87rem;
-         }
+        .value + .value {
+            margin-top: 1.32rem;
+        }
 
          a {
             display: inline-block;
@@ -345,6 +341,38 @@
             border-radius: 82px;
             color: v.$gray;
          }
+    }
+
+    @include MX.mediun {
+
+        .use__case_description,
+        .percentages {
+            text-align: left;
+        }
+
+        .cases__box {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 100px;
+        }
+
+        .percentages {
+
+            & > div {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .value + .value {
+                margin-top: 0;
+            }
+            
+            a {
+                text-align: left;
+            }
+
+        }
     }
 }
 
@@ -411,6 +439,12 @@
    ion-icon {
     @extend %ion-icon;
    }
+
+   @include MX.mediun {
+    .features__description {
+        text-align: left;
+    }
+   }
 }
 
 #faq__section {
@@ -437,6 +471,12 @@
 
     .more__questions {
         display: none;
+    }
+
+    @include MX.mediun {
+        .faq__description {
+            text-align: left;
+        }
     }
     
 }

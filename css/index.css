@@ -386,11 +386,11 @@ header .burger div:nth-child(3) {
   }
 }
 
-#use__cases {
+#use__cases .container {
   text-align: center;
 }
 #use__cases h1 {
-  margin: 0.62rem;
+  margin-top: 0.62rem;
   color: #CAFF33;
 }
 #use__cases .use__case_description {
@@ -426,19 +426,15 @@ header .burger div:nth-child(3) {
 }
 #use__cases .percentages {
   margin: 3.12rem 0;
-  padding: 0 3.12rem;
 }
 #use__cases .percentages > div {
   margin-bottom: 3.12rem;
 }
-#use__cases .percentages .value:first-child {
-  margin-bottom: 1.87rem;
+#use__cases .percentages .value {
+  border: 2px solid #CAFF33;
 }
-#use__cases .percentages .value:nth-child(2) {
-  margin: 1.87rem;
-}
-#use__cases .percentages .value:nth-child(3) {
-  margin-top: 1.87rem;
+#use__cases .percentages .value + .value {
+  margin-top: 1.32rem;
 }
 #use__cases .percentages a {
   display: inline-block;
@@ -446,6 +442,28 @@ header .burger div:nth-child(3) {
   border: 1px solid #414040;
   border-radius: 82px;
   color: #E4E4E7;
+}
+@media (min-width: 820px) {
+  #use__cases .use__case_description,
+  #use__cases .percentages {
+    text-align: left;
+  }
+  #use__cases .cases__box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px;
+  }
+  #use__cases .percentages > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #use__cases .percentages .value + .value {
+    margin-top: 0;
+  }
+  #use__cases .percentages a {
+    text-align: left;
+  }
 }
 
 #features__section .features__description {
@@ -494,6 +512,12 @@ header .burger div:nth-child(3) {
   justify-content: space-between;
   margin-bottom: 1.25rem;
 }
+@media (min-width: 820px) {
+  #features__section .features__description {
+    text-align: left;
+  }
+}
+
 #faq__section .faq__description {
   text-align: center;
   margin-bottom: 3.12rem;
@@ -513,6 +537,11 @@ header .burger div:nth-child(3) {
 }
 #faq__section .more__questions {
   display: none;
+}
+@media (min-width: 820px) {
+  #faq__section .faq__description {
+    text-align: left;
+  }
 }
 
 #start__section {
