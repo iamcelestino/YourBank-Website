@@ -326,10 +326,6 @@
             margin-bottom: 3.12rem;
         }
 
-        .value {
-            border: 2px solid v.$secondary;
-        }
-
         .value + .value {
             margin-top: 1.32rem;
         }
@@ -346,6 +342,7 @@
     @include MX.mediun {
 
         .use__case_description,
+        .case__description,
         .percentages {
             text-align: left;
         }
@@ -404,8 +401,8 @@
                 padding: 0.87rem 1.25rem;
                 border-radius: 100px;
                 background-color: aliceblue;
-                width: 9000px;
-                float: left;
+                // width: 9000px;
+                // float: left;
             }
 
             li + li {
@@ -416,17 +413,14 @@
         ul::-webkit-scrollbar {
             display: none;
         }
-    }
 
-    .banking {
-        margin-top: 1.25rem;
     }
     
    .banking__feature {
     background-color: #262626;
     border: 2px solid #414040;
     border-radius: 10px;
-    margin-bottom: 1.25rem;
+    // margin-bottom: 1.25rem;
     padding: 1.87rem;
 
     & div {
@@ -444,8 +438,34 @@
     .features__description {
         text-align: left;
     }
+
+    .tabs {
+        display: grid;
+        grid-template-columns: repeat(v.$secondary, 1fr);
+        gap: 10px;
+
+        ul {
+            display: inline-block;
+            align-self: self-start;
+
+
+            li + li {
+                margin-left: none;
+                margin-top: 1.25rem;
+            }
+        }
+
+        #banking {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            grid-column: 2/5;
+        }
+
+    }
    }
 }
+
 
 #faq__section {
     .faq__description {

@@ -430,9 +430,6 @@ header .burger div:nth-child(3) {
 #use__cases .percentages > div {
   margin-bottom: 3.12rem;
 }
-#use__cases .percentages .value {
-  border: 2px solid #CAFF33;
-}
 #use__cases .percentages .value + .value {
   margin-top: 1.32rem;
 }
@@ -445,6 +442,7 @@ header .burger div:nth-child(3) {
 }
 @media (min-width: 820px) {
   #use__cases .use__case_description,
+  #use__cases .case__description,
   #use__cases .percentages {
     text-align: left;
   }
@@ -489,8 +487,6 @@ header .burger div:nth-child(3) {
   padding: 0.87rem 1.25rem;
   border-radius: 100px;
   background-color: aliceblue;
-  width: 9000px;
-  float: left;
 }
 #features__section .tabs ul li + li {
   margin-left: 1.25rem;
@@ -498,14 +494,10 @@ header .burger div:nth-child(3) {
 #features__section .tabs ul::-webkit-scrollbar {
   display: none;
 }
-#features__section .banking {
-  margin-top: 1.25rem;
-}
 #features__section .banking__feature {
   background-color: #262626;
   border: 2px solid #414040;
   border-radius: 10px;
-  margin-bottom: 1.25rem;
   padding: 1.87rem;
 }
 #features__section .banking__feature div {
@@ -515,6 +507,25 @@ header .burger div:nth-child(3) {
 @media (min-width: 820px) {
   #features__section .features__description {
     text-align: left;
+  }
+  #features__section .tabs {
+    display: grid;
+    grid-template-columns: repeat(#CAFF33, 1fr);
+    gap: 10px;
+  }
+  #features__section .tabs ul {
+    display: inline-block;
+    align-self: self-start;
+  }
+  #features__section .tabs ul li + li {
+    margin-left: none;
+    margin-top: 1.25rem;
+  }
+  #features__section .tabs #banking {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    grid-column: 2/5;
   }
 }
 
