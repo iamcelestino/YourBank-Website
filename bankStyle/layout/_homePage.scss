@@ -56,9 +56,10 @@
     .hero__transaction__container {
         background: url(../images/Abstract\ Design.svg) no-repeat 150% 30%;
         margin-top: 5rem;
+        align-items: end;
 
         .monthly__income__box{
-            background-color: #262626;
+            background-color: v.$dark-secondary;
             display: inline-block;
             padding: 0.70rem 0.86rem;
             border-radius: 8.26px;
@@ -130,18 +131,19 @@
         }
 
     .exchange__btn {
-            background-color: v.$secondary;
+            background-color: v.$dark-secondary;
             text-align: center;
             width: 100%;
             padding:  0.5rem 0.9rem;
             margin-top: 0.5rem;
             border-radius: 42.5px;
+            color: v.$secondary;
     }
 
     ion-icon {
         background-color: v.$secondary;
         color: #262626;
-        padding: 0.43rem;
+        padding: 0.23rem;
         margin-right: 0.4rem;
         border-radius: 36.5px;
     }
@@ -150,10 +152,23 @@
 
 //
     .supported__currencies {
-        background-color: #414040;
+        display: inline-block;
+        background-color: v.$dark-secondary;
+        padding: 0.54rem;
+        border-radius: 69.36px;
+        text-align: right;
+        margin-top: 1rem;
 
         & > div {
             @extend %flex-loyout
+        }
+
+        .currency__container {
+            @extend %flex-loyout;
+            background-color: v.$primary;
+            padding: 0.54rem;
+            border-radius: 47.69px;
+            margin-left: 0.7rem;
         }
     }
 
@@ -232,7 +247,7 @@
 
     .product:nth-child(1),
     .product:nth-child(2) {
-        border-bottom: 2px solid v.$secondary;
+        border-bottom: 1px solid v.$dark-gray;
     }
 
     @include MX.mediun {
@@ -259,7 +274,7 @@
         .product:nth-child(1),
         .product:nth-child(2) {
             border-bottom: none;
-            border-right: 2px solid v.$secondary;
+            border-right: 1px solid v.$dark-gray;
             padding-right: 2.5rem;
         }
 
@@ -420,7 +435,6 @@
     background-color: #262626;
     border: 2px solid #414040;
     border-radius: 10px;
-    // margin-bottom: 1.25rem;
     padding: 1.87rem;
 
     & div {
@@ -456,12 +470,14 @@
         }
 
         #banking {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 10px;
             grid-column: 2/5;
         }
 
+        .features {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
     }
    }
 }
@@ -470,7 +486,7 @@
 #faq__section {
     .faq__description {
         text-align: center;
-        margin-bottom: 3.12rem;
+        margin: 3.12rem 0;
     }
 
     .box {
@@ -478,7 +494,6 @@
         border:1px solid #414040;
         border-radius: 10px;
         padding: 1.8rem;
-        margin-bottom: 1.25rem;
 
         h4 {
             margin-bottom: 1.25rem;
@@ -489,6 +504,16 @@
         }
     }
 
+    a {
+        color: v.$gray;
+        padding: 1.12rem 1.5rem;
+        display: inline-block;
+        border: 1px solid v.$gray;
+        border-radius: 100px;
+        text-align: center;
+        margin-top: 1.32rem;
+    }
+
     .more__questions {
         display: none;
     }
@@ -497,11 +522,18 @@
         .faq__description {
             text-align: left;
         }
+
+        .questions__container{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
     }
     
 }
 
 #start__section {
+    margin-top: 3.5rem;
     background: url(../images/Abstract\ Design-back2.svg) no-repeat;
     background-color: #262626;
     border-radius: 10px;

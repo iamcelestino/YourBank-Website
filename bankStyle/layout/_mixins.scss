@@ -1,4 +1,4 @@
-
+@use 'variables' as v;
 
 //Mixins for MEDIA QUERIES
 $breakpoints: (
@@ -36,6 +36,7 @@ $breakpoints: (
 @mixin icon-background {
     padding: 0.8rem;
     border-radius: 50px;
+    background-color: v.$dark-seconday-light;
 }
 
 @mixin icon-container {
