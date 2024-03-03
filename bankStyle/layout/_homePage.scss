@@ -43,6 +43,17 @@
             padding: 0.5rem 1rem 0.5rem 0.5rem;
             margin-bottom: 0.75rem;
             border-radius: 61px;
+
+            ion-icon {
+                font-size: 1rem;
+                background-color: v.$secondary;
+                border-radius: 50px;
+                color: v.$primary-light;
+            }
+
+            span {
+                color: v.$gray
+            }
         }
 
         .button {
@@ -75,7 +86,7 @@
         }
      
         .transaction__box {
-            border: 1px solid v.$secondary;
+            border: 1px solid v.$dark-gray;
             padding: 1.3rem;
             border-radius: 6.15px;
 
@@ -109,7 +120,7 @@
 
             .transaction__detail:nth-child(2),
             .transaction__detail:nth-child(3) {
-                background-color: 	rgba(48, 45, 45, 0.7);
+               
             }
 
         }
@@ -160,7 +171,7 @@
         margin-top: 1rem;
 
         & > div {
-            @extend %flex-loyout
+            @extend %flex-loyout;
         }
 
         .currency__container {
@@ -169,6 +180,10 @@
             padding: 0.54rem;
             border-radius: 47.69px;
             margin-left: 0.7rem;
+
+            ion-icon {
+                font-size: 0.7rem;
+            }
         }
     }
 
@@ -202,7 +217,8 @@
         }
 
         .product__tab {
-            background-color: rgb(59, 58, 58);
+            background-color: v.$primary-light;
+            border: 1px solid v.$dark-gray;
             display: inline-block;
             border-radius: 82px;
             padding: 1rem;
@@ -211,10 +227,12 @@
             .tab_button {
                 padding: 0.62rem 0.6rem;
                 border-radius: 140px;
+                color: v.$white;
             }
 
             .tab_button:first-child {
                 background-color: v.$secondary;
+                color: v.$primary;
             }
            
         }
@@ -293,7 +311,6 @@
 
     h1 {
         margin-top: 0.62rem;
-        color: v.$secondary;
     }
 
     
@@ -307,6 +324,7 @@
 
     .box__container {
         background: url(../images/Abstract\ Design-back2.svg) no-repeat;
+        background-color: v.$primary-light;
         border: 1px solid #414040;
         border-radius: 10px;
         padding: 1.25rem;
@@ -317,9 +335,13 @@
 
     .box {
         padding: 1.25rem 0.8rem;
-        background-color: #262626;
-        border: 1px solid  #414040;
+        background-color: v.$primary;
+        border: 1px solid  v.$dark-gray;
         border-radius: 12px;
+
+        p {
+            color: v.$white;
+        }
     }
 
     ion-icon {
@@ -337,6 +359,11 @@
     .percentages {
         margin: 3.12rem 0;
 
+        h1 {
+            color: v.$secondary;
+            font-size: 2rem;
+        }
+
         & > div {
             margin-bottom: 3.12rem;
         }
@@ -350,7 +377,7 @@
             padding: 0.87rem 1.25rem;
             border:1px solid  #414040;
             border-radius: 82px;
-            color: v.$gray;
+            color: v.$white;
          }
     }
 
@@ -401,23 +428,24 @@
     .tabs {
 
          ul {
-            background-color: #414040;
+            @extend %flex-loyout;
             border-radius: 10px;
-            display: flex;
-            padding: 1.25rem;
+            padding: 1.25rem 1rem;
             margin-bottom: 1.25rem;
             overflow: scroll;
             scrollbar-width: none;
             -ms-overflow-style: none;
-            width: 100%;
+            // width: 100%;
             text-align: center;
 
             li {
+                background-color: v.$primary-light;
+                color: v.$white;
                 padding: 0.87rem 1.25rem;
                 border-radius: 100px;
-                background-color: aliceblue;
-                // width: 9000px;
-                // float: left;
+                border: 2px solid v.$dark-gray;
+               font-size: 0.6rem;
+              
             }
 
             li + li {
@@ -430,10 +458,13 @@
         }
 
     }
+
+    ul, .banking__feature {
+        background-color: v.$primary-light;
+        border: 2px solid v.$dark-gray;
+    }
     
    .banking__feature {
-    background-color: #262626;
-    border: 2px solid #414040;
     border-radius: 10px;
     padding: 1.87rem;
 
@@ -490,7 +521,7 @@
     }
 
     .box {
-        background-color: #262626;
+        background-color: v.$primary;
         border:1px solid #414040;
         border-radius: 10px;
         padding: 1.8rem;
@@ -505,7 +536,7 @@
     }
 
     a {
-        color: v.$gray;
+        color: v.$white;
         padding: 1.12rem 1.5rem;
         display: inline-block;
         border: 1px solid v.$gray;
@@ -535,7 +566,7 @@
 #start__section {
     margin-top: 3.5rem;
     background: url(../images/Abstract\ Design-back2.svg) no-repeat;
-    background-color: #262626;
+    background-color: v.$primary-light;
     border-radius: 10px;
     text-align: center;
     @include MX.mediun {
