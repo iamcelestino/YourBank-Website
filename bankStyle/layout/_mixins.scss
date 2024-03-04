@@ -34,14 +34,22 @@ $breakpoints: (
 
 
 @mixin icon-background {
+    background-color: v.$dark-secondary;
+    background:
+    linear-gradient(
+        v.$dark-seconday-light, v.$primary 60%
+    );
     padding: 0.8rem;
     border-radius: 50px;
-    background-color: v.$dark-seconday-light;
 }
 
 @mixin icon-container {
+    background:
+    linear-gradient(
+        v.$dark-seconday-light, v.$primary 50%
+    );
+    background-color: v.$dark-secondary;
     display: inline-block;
     padding: 0.5rem;
-    border: 1px solid #414040;
     border-radius: 70px;
 }
