@@ -523,7 +523,7 @@ header .burger div:nth-child(3) {
   color: rgb(255, 255, 255);
   padding: 0.87rem 1.25rem;
   border-radius: 100px;
-  border: 2px solid rgb(76, 76, 77);
+  border: 1px solid rgb(76, 76, 77);
   font-size: 0.6rem;
 }
 #features__section .tabs ul li + li {
@@ -534,7 +534,7 @@ header .burger div:nth-child(3) {
 }
 #features__section ul, #features__section .banking__feature {
   background-color: rgb(28, 28, 28);
-  border: 2px solid rgb(76, 76, 77);
+  border: 1px solid rgb(76, 76, 77);
 }
 #features__section .banking__feature {
   border-radius: 10px;
@@ -615,6 +615,7 @@ header .burger div:nth-child(3) {
   background: url(../images/Abstract\ Design-back2.svg) no-repeat;
   background-color: rgb(28, 28, 28);
   border-radius: 10px;
+  border: 1px solid rgb(76, 76, 77);
   text-align: center;
 }
 @media (min-width: 820px) {
@@ -641,6 +642,60 @@ header .burger div:nth-child(3) {
 #start__section .start__description p {
   margin-bottom: 1.5rem;
 }
+#testimonials__section .testimonials__description .testimonial__tab {
+  background-color: rgb(28, 28, 28);
+  border: 1px solid rgb(76, 76, 77);
+  display: inline-block;
+  border-radius: 82px;
+  padding: 1rem;
+  margin-bottom: 3.75rem;
+}
+#testimonials__section .testimonials__description .testimonial__tab .tab_button {
+  padding: 0.62rem 0.6rem;
+  border-radius: 140px;
+  color: rgb(255, 255, 255);
+}
+#testimonials__section .testimonials__description .testimonial__tab .tab_button:first-child {
+  background-color: rgb(202, 255, 51);
+  color: rgb(25, 25, 25);
+}
+#testimonials__section .testimonial__box {
+  width: 2200px;
+  transform: translate3d(0, 0, 0);
+}
+#testimonials__section .testimonial__box p {
+  color: rgb(255, 255, 255);
+}
+#testimonials__section .testimonial {
+  display: left;
+  width: 430px;
+  white-space: normal;
+  text-align: center;
+  padding: 1rem;
+  border: 1px solid rgb(76, 76, 77);
+}
+#testimonials__section .testimonial .author {
+  color: rgb(202, 255, 51);
+  margin-top: 1rem;
+}
+#testimonials__section .testimonial .title {
+  font-size: 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  column-gap: 0.5rem;
+}
+#testimonials__section .testimonial .title::before, #testimonials__section .testimonial .title::after {
+  content: "";
+  height: 2px;
+  background-color: #262626;
+  display: block;
+}
+#testimonials__section .business__testimonial {
+  width: 430px;
+  overflow: hidden;
+}
+
 footer .navigation__links {
   display: flex;
   align-items: center;
