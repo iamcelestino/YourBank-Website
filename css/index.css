@@ -213,7 +213,7 @@ header .burger div:nth-child(3) {
 }
 
 #hero__section {
-  margin: 3rem 0;
+  margin: 3.12rem 0;
 }
 #hero__section .hero__description {
   text-align: center;
@@ -694,6 +694,109 @@ header .burger div:nth-child(3) {
 #testimonials__section .business__testimonial {
   width: 430px;
   overflow: hidden;
+}
+
+#values__section .value__description {
+  text-align: center;
+  margin-bottom: 3.12rem;
+}
+#values__section .value {
+  border-left: 1px solid rgb(202, 255, 51);
+  padding-left: 1.25rem;
+}
+#values__section .value h1 {
+  margin-bottom: 0.87rem;
+  color: rgb(76, 76, 77);
+}
+#values__section .value + .value {
+  margin-top: 3.12rem;
+}
+@media (min-width: 820px) {
+  #values__section .value__description {
+    text-align: left;
+  }
+}
+
+#benefits__section .benefits__description {
+  text-align: center;
+  margin: 3.12rem 0;
+}
+#benefits__section ion-icon {
+  color: rgb(202, 255, 51);
+}
+#benefits__section .benefit {
+  background-color: rgb(28, 28, 28);
+  border-top-right-radius: 40px;
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 14px;
+  border-bottom-left-radius: 14px;
+  padding: 1.5rem;
+}
+#benefits__section .benefit + .benefit {
+  margin-top: 1.5rem;
+}
+#benefits__section .icon__container {
+  background: linear-gradient(rgb(53, 58, 35), rgb(25, 25, 25) 50%);
+  background-color: rgb(34, 37, 27);
+  display: inline-block;
+  padding: 0.5rem;
+  border-radius: 70px;
+}
+#benefits__section .icon__background {
+  background-color: rgb(34, 37, 27);
+  background: linear-gradient(rgb(53, 58, 35), rgb(25, 25, 25) 60%);
+  padding: 0.8rem;
+  border-radius: 50px;
+}
+
+#job__section h4 {
+  margin-bottom: 0.62rem;
+}
+#job__section .job__openings__description {
+  text-align: center;
+  margin: 3.75rem 0;
+}
+#job__section .job {
+  background-color: rgb(28, 28, 28);
+  border: 1px solid rgb(76, 76, 77);
+  padding: 1.5rem;
+  border-radius: 16px;
+}
+#job__section .job a {
+  background-color: rgb(202, 255, 51);
+  color: rgb(25, 25, 25);
+  font-weight: bold;
+  padding: 0.75rem 1.25rem;
+  border-radius: 82px;
+  margin-top: 1.87rem;
+}
+#job__section .job + .job {
+  margin-top: 1.25rem;
+}
+#job__section .location {
+  margin-bottom: 1.87rem;
+  display: inline-block;
+}
+#job__section .location div {
+  background-color: rgb(25, 25, 25);
+  padding: 0.37rem 0.62rem;
+  margin: 1rem 0;
+  border: 1px solid rgb(76, 76, 77);
+  border-radius: 68px;
+}
+#job__section .requirements {
+  margin-top: 1.87rem;
+}
+#job__section .requirement {
+  margin-top: 0.87rem;
+  display: flex;
+  align-items: center;
+}
+#job__section .requirement p {
+  margin-left: 0.87rem;
+}
+#job__section ion-icon {
+  color: rgb(179, 179, 179);
 }
 
 footer .navigation__links {

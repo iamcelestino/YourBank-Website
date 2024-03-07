@@ -1,0 +1,127 @@
+@use 'variables' as v;
+@use 'mixins' as MX;
+
+
+#values__section {
+    .value__description {
+        text-align: center;
+        margin-bottom: 3.12rem;
+    }
+
+    .value {
+        border-left: 1px solid v.$secondary;
+        padding-left: 1.25rem;
+
+        h1 {
+            margin-bottom: 0.87rem;
+            color: v.$dark-gray;
+        }
+    }
+
+    .value + .value {
+        margin-top: 3.12rem;
+    }
+
+    @include MX.mediun {
+        .value__description {
+            text-align: left;
+        }
+    }
+}
+
+#benefits__section {
+    .benefits__description {
+        text-align: center;
+        margin: 3.12rem 0;
+    }
+
+    ion-icon {
+        color: v.$secondary;
+    }
+    .benefit {
+        background-color: v.$primary-light;
+        border-top-right-radius: 40px;
+        border-top-left-radius: 40px;
+        border-bottom-right-radius: 14px;
+        border-bottom-left-radius: 14px;
+        padding: 1.5rem;
+    }
+
+    .benefit + .benefit {
+        margin-top: 1.5rem;
+    }
+
+    .icon__container {
+        @include MX.icon-container;
+    }
+
+    .icon__background {
+        @include MX.icon-background;
+    }
+}
+
+
+#job__section {
+
+    h4 {
+        margin-bottom: 0.62rem
+    }
+
+    .job__openings__description {
+        text-align: center;
+        margin: 3.75rem 0;
+    }
+
+    .job {
+        background-color: v.$primary-light;
+        border: 1px solid v.$dark-gray;
+        padding: 1.5rem;
+        border-radius: 16px;
+
+        a {
+            background-color: v.$secondary;
+            color: v.$primary;
+            font-weight: bold;
+            padding: 0.75rem 1.25rem;
+            border-radius: 82px;
+            margin-top: 1.87rem;
+        }
+    }
+
+    .job + .job {
+        margin-top: 1.25rem;
+    }
+
+    .location {
+        margin-bottom: 1.87rem;
+        display: inline-block;
+
+        div {
+            background-color: v.$primary;
+            padding: 0.37rem  0.62rem;
+            margin: 1rem 0;
+            border: 1px solid v.$dark-gray;
+            border-radius: 68px;
+
+        }
+    }
+
+    .requirements {
+        margin-top: 1.87rem;
+    }
+
+    .requirement {
+        margin-top: 0.87rem;
+        display: flex;
+        align-items: center;
+
+        p {
+            margin-left: 0.87rem;
+        }
+    }
+ 
+
+    ion-icon {
+        color: v.$gray;   
+    }
+}
