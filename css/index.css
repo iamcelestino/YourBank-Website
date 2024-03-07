@@ -748,6 +748,11 @@ header .burger div:nth-child(3) {
   padding: 0.8rem;
   border-radius: 50px;
 }
+@media (min-width: 820px) {
+  #benefits__section .benefits__description {
+    text-align: left;
+  }
+}
 
 #job__section h4 {
   margin-bottom: 0.62rem;
@@ -780,9 +785,12 @@ header .burger div:nth-child(3) {
 #job__section .location div {
   background-color: rgb(25, 25, 25);
   padding: 0.37rem 0.62rem;
-  margin: 1rem 0;
+  margin: 0.3rem 0;
   border: 1px solid rgb(76, 76, 77);
   border-radius: 68px;
+}
+#job__section .location .country {
+  display: inline-block;
 }
 #job__section .requirements {
   margin-top: 1.87rem;
@@ -793,10 +801,15 @@ header .burger div:nth-child(3) {
   align-items: center;
 }
 #job__section .requirement p {
-  margin-left: 0.87rem;
+  margin-left: 0.4rem;
 }
 #job__section ion-icon {
   color: rgb(179, 179, 179);
+}
+@media (min-width: 820px) {
+  #job__section .job__openings__description {
+    text-align: left;
+  }
 }
 
 footer .navigation__links {

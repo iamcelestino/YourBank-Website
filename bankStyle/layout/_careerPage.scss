@@ -58,6 +58,12 @@
     .icon__background {
         @include MX.icon-background;
     }
+
+    @include MX.mediun {
+        .benefits__description {
+            text-align: left;
+        }
+    }
 }
 
 
@@ -99,10 +105,13 @@
         div {
             background-color: v.$primary;
             padding: 0.37rem  0.62rem;
-            margin: 1rem 0;
+            margin: 0.3rem 0;
             border: 1px solid v.$dark-gray;
             border-radius: 68px;
+        }
 
+        .country {
+            display: inline-block;
         }
     }
 
@@ -116,12 +125,17 @@
         align-items: center;
 
         p {
-            margin-left: 0.87rem;
+            margin-left: 0.4rem;
         }
     }
- 
 
     ion-icon {
         color: v.$gray;   
+    }
+
+    @include MX.mediun {
+        .job__openings__description {
+            text-align: left;
+        }
     }
 }
