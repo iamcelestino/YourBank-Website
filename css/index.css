@@ -696,6 +696,25 @@ header .burger div:nth-child(3) {
   overflow: hidden;
 }
 
+#hero__section .career__hero {
+  background-color: rgb(28, 28, 28);
+  text-align: center;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1.5rem 0.4rem;
+}
+#hero__section .hero__career__description {
+  background-color: rgb(25, 25, 25);
+  padding: 1.5rem;
+  border-radius: 20px;
+  order: 2;
+  transform: translateY(-30px);
+}
+#hero__section .hero__career__description h1 {
+  margin-bottom: 0.87rem;
+}
+
 #values__section .value__description {
   text-align: center;
   margin-bottom: 3.12rem;
@@ -731,6 +750,11 @@ header .burger div:nth-child(3) {
   border-bottom-right-radius: 14px;
   border-bottom-left-radius: 14px;
   padding: 1.5rem;
+}
+#benefits__section .benefit div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 #benefits__section .benefit + .benefit {
   margin-top: 1.5rem;

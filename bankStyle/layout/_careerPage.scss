@@ -1,6 +1,29 @@
 @use 'variables' as v;
 @use 'mixins' as MX;
 
+#hero__section {
+
+    .career__hero {
+        background-color: v.$primary-light;
+        text-align: center;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 1.5rem 0.4rem;
+    }
+
+    .hero__career__description {
+        background-color: v.$primary;
+        padding: 1.5rem;
+        border-radius: 20px;
+        order: 2;
+        transform: translateY(-30px);
+
+        h1 {
+            margin-bottom: 0.87rem;
+        }
+    }
+}
 
 #values__section {
     .value__description {
@@ -45,6 +68,12 @@
         border-bottom-right-radius: 14px;
         border-bottom-left-radius: 14px;
         padding: 1.5rem;
+
+        & div {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
     }
 
     .benefit + .benefit {
