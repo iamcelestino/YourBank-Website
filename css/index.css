@@ -714,6 +714,26 @@ header .burger div:nth-child(3) {
 #hero__section .hero__career__description h1 {
   margin-bottom: 0.87rem;
 }
+@media (min-width: 820px) {
+  #hero__section .career__hero {
+    flex-direction: row-reverse;
+    align-items: start;
+    padding: 0;
+  }
+  #hero__section .hero__career__description, #hero__section .picture {
+    flex: 1;
+  }
+  #hero__section .hero__career__description {
+    max-width: 75%;
+    text-align: left;
+    transform: translateX(40px);
+    border-radius: 0;
+    border-bottom-right-radius: 50px;
+  }
+  #hero__section .picture {
+    max-width: 80%;
+  }
+}
 
 #values__section .value__description {
   text-align: center;

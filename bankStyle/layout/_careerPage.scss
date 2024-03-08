@@ -23,6 +23,30 @@
             margin-bottom: 0.87rem;
         }
     }
+
+    @include MX.mediun {
+        .career__hero {
+            flex-direction: row-reverse;
+            align-items: start;
+            padding: 0;
+        }
+
+        .hero__career__description, .picture  {
+           flex: 1;
+        }
+
+        .hero__career__description  {
+            max-width: 75%;
+            // padding: 2.5rem;
+            text-align: left;
+            transform: translateX(40px);
+            border-radius: 0;
+            border-bottom-right-radius: 50px;
+        }
+        .picture {
+            max-width: 80%;
+        }
+    }
 }
 
 #values__section {
