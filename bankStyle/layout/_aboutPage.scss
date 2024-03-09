@@ -1,2 +1,60 @@
 @use 'variables' as v;
 @use 'mixins' as MX;
+
+
+#mission__vision__section {
+    border: 1px solid v.$secondary;
+
+    .mission__vision__container  {
+
+        .mission, .vision {
+            align-items: center;
+
+            div {
+                flex-grow: 1;
+            }
+
+            .ilustration {
+                background-color: v.$primary-light;
+                padding: 3.75rem 3.75rem 0 3.75rem;
+                border-radius: 50px 20px;
+            }
+
+            img {
+                display: block;
+            }
+        }
+
+        .mission__description {
+            border-left: 2px solid v.$secondary;
+            padding-left: 2rem;
+        }
+
+        .vision__description {
+            border-right: 2px solid v.$secondary;
+            padding-right: 2.5rem;
+        }
+    }
+
+    @include MX.mediun {
+
+    }
+}
+
+#press__releases__section {
+    border: 2px solid v.$secondary;
+
+    .press__releases__container {
+        gap: 20px;
+    }
+
+    .press__release {
+        background-color: v.$secondary;
+        padding: 1.5rem;
+        border-top-right-radius: 40px;
+        border-top-left-radius: 40px;
+        border-bottom-right-radius: 16px;
+        border-bottom-left-radius: 16px;
+        flex-grow: 1;
+    }
+}
