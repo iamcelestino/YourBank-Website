@@ -46,95 +46,63 @@ body {
 
 .row {
   display: flex;
-  flex-flow: row wrap;
+  flex-wrap: wrap;
 }
 
 @media (min-width: 480px) {
   .col-1-sm {
     box-sizing: border-box;
-    flex-grow: 0;
-    width: 25%;
+    width: 23.3333333333%;
   }
   .col-2-sm {
     box-sizing: border-box;
-    flex-grow: 0;
-    width: 50%;
+    width: 46.6666666667%;
   }
   .col-3-sm {
     box-sizing: border-box;
-    flex-grow: 0;
-    width: 75%;
-  }
-  .col-4-sm {
-    box-sizing: border-box;
-    flex-grow: 0;
-    width: 100%;
+    width: 70%;
   }
 }
 @media (min-width: 820px) {
   .col-1-mediun {
     box-sizing: border-box;
-    flex-grow: 0;
-    width: 25%;
+    width: 23.3333333333%;
   }
   .col-2-mediun {
     box-sizing: border-box;
-    flex-grow: 0;
-    width: 50%;
+    width: 46.6666666667%;
   }
   .col-3-mediun {
     box-sizing: border-box;
-    flex-grow: 0;
-    width: 75%;
-  }
-  .col-4-mediun {
-    box-sizing: border-box;
-    flex-grow: 0;
-    width: 100%;
+    width: 70%;
   }
 }
 @media (min-width: 960px) {
   .col-1-large {
     box-sizing: border-box;
-    flex-grow: 0;
-    width: 25%;
+    width: 23.3333333333%;
   }
   .col-2-large {
     box-sizing: border-box;
-    flex-grow: 0;
-    width: 50%;
+    width: 46.6666666667%;
   }
   .col-3-large {
     box-sizing: border-box;
-    flex-grow: 0;
-    width: 75%;
-  }
-  .col-4-large {
-    box-sizing: border-box;
-    flex-grow: 0;
-    width: 100%;
+    width: 70%;
   }
 }
 @media (min-width: 1200px) {
   .col-1-extra_large {
     box-sizing: border-box;
-    flex-grow: 0;
-    width: 25%;
+    width: 23.3333333333%;
   }
   .col-2-extra_large {
     box-sizing: border-box;
-    flex-grow: 0;
-    width: 50%;
+    width: 46.6666666667%;
   }
   .col-3-extra_large {
     box-sizing: border-box;
-    flex-grow: 0;
-    width: 75%;
-  }
-  .col-4-extra_large {
-    box-sizing: border-box;
-    flex-grow: 0;
-    width: 100%;
+    width: 70%;
   }
 }
 header .nav__btns, header nav ul, header .container {
@@ -739,9 +707,13 @@ header .burger div:nth-child(3) {
   text-align: center;
   margin-bottom: 3.12rem;
 }
+#values__section .values__container {
+  gap: 60px;
+}
 #values__section .value {
   border-left: 1px solid rgb(202, 255, 51);
   padding-left: 1.25rem;
+  flex-grow: 1;
 }
 #values__section .value h1 {
   margin-bottom: 0.87rem;
@@ -751,8 +723,14 @@ header .burger div:nth-child(3) {
   margin-top: 3.12rem;
 }
 @media (min-width: 820px) {
+  #values__section .value__container {
+    border: 2px solid rgb(202, 255, 51);
+  }
   #values__section .value__description {
     text-align: left;
+  }
+  #values__section .value + .value {
+    margin-top: 0;
   }
 }
 
@@ -763,6 +741,9 @@ header .burger div:nth-child(3) {
 #benefits__section ion-icon {
   color: rgb(202, 255, 51);
 }
+#benefits__section .benefits__box__container {
+  gap: 35px;
+}
 #benefits__section .benefit {
   background-color: rgb(28, 28, 28);
   border-top-right-radius: 40px;
@@ -770,6 +751,7 @@ header .burger div:nth-child(3) {
   border-bottom-right-radius: 14px;
   border-bottom-left-radius: 14px;
   padding: 1.5rem;
+  flex-grow: 1;
 }
 #benefits__section .benefit div {
   display: flex;
@@ -796,6 +778,9 @@ header .burger div:nth-child(3) {
   #benefits__section .benefits__description {
     text-align: left;
   }
+  #benefits__section .benefit + .benefit {
+    margin-top: 0;
+  }
 }
 
 #job__section h4 {
@@ -810,6 +795,7 @@ header .burger div:nth-child(3) {
   border: 1px solid rgb(76, 76, 77);
   padding: 1.5rem;
   border-radius: 16px;
+  flex-grow: 1;
 }
 #job__section .job a {
   background-color: rgb(202, 255, 51);
@@ -853,6 +839,14 @@ header .burger div:nth-child(3) {
 @media (min-width: 820px) {
   #job__section .job__openings__description {
     text-align: left;
+  }
+  #job__section .jobs__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  #job__section .job + .job {
+    margin-top: 0;
   }
 }
 

@@ -55,9 +55,14 @@
         margin-bottom: 3.12rem;
     }
 
+    .values__container {
+        gap: 60px;
+    }
+
     .value {
         border-left: 1px solid v.$secondary;
         padding-left: 1.25rem;
+        flex-grow: 1;
 
         h1 {
             margin-bottom: 0.87rem;
@@ -70,8 +75,17 @@
     }
 
     @include MX.mediun {
+
+        .value__container {
+            border: 2px solid v.$secondary;
+        }
+
         .value__description {
             text-align: left;
+        }
+
+        .value + .value {
+            margin-top: 0;
         }
     }
 }
@@ -85,6 +99,11 @@
     ion-icon {
         color: v.$secondary;
     }
+
+    .benefits__box__container {
+        gap: 35px;
+    }
+
     .benefit {
         background-color: v.$primary-light;
         border-top-right-radius: 40px;
@@ -92,6 +111,7 @@
         border-bottom-right-radius: 14px;
         border-bottom-left-radius: 14px;
         padding: 1.5rem;
+        flex-grow: 1;
 
         & div {
             display: flex;
@@ -116,6 +136,10 @@
         .benefits__description {
             text-align: left;
         }
+
+        .benefit + .benefit {
+            margin-top: 0;
+        }
     }
 }
 
@@ -136,6 +160,7 @@
         border: 1px solid v.$dark-gray;
         padding: 1.5rem;
         border-radius: 16px;
+        flex-grow: 1;
 
         a {
             background-color: v.$secondary;
@@ -189,6 +214,15 @@
     @include MX.mediun {
         .job__openings__description {
             text-align: left;
+        }
+
+        .jobs__container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        .job + .job {
+            margin-top: 0;
         }
     }
 }
