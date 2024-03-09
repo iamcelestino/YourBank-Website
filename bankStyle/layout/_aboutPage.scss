@@ -3,21 +3,37 @@
 
 
 #mission__vision__section {
-    border: 1px solid v.$secondary;
+    margin: 3.75rem 0;
 
+    .mission__vision__description {
+        margin-bottom: 3.75rem;
+
+        h1 {
+            margin-bottom: 0.32rem;
+        }
+    }
     .mission__vision__container  {
 
         .mission, .vision {
             align-items: center;
+
+            h1 {
+                margin-bottom: 0.32rem;
+            }
 
             div {
                 flex-grow: 1;
             }
 
             .ilustration {
+                background-image: url(/images/Abstract-Design-back4.svg);
                 background-color: v.$primary-light;
                 padding: 3.75rem 3.75rem 0 3.75rem;
-                border-radius: 50px 20px;
+                border-top-left-radius: 50px;
+                border-top-right-radius: 50px;
+                border-bottom-left-radius:20px;
+                border-bottom-right-radius: 20px;
+                border: 1px solid v.$dark-gray;
             }
 
             img {
@@ -25,6 +41,12 @@
             }
         }
 
+        .vision__description  {
+            order: 2;
+        }
+    }
+
+    @include MX.mediun {
         .mission__description {
             border-left: 2px solid v.$secondary;
             padding-left: 2rem;
@@ -34,27 +56,50 @@
             border-right: 2px solid v.$secondary;
             padding-right: 2.5rem;
         }
-    }
 
-    @include MX.mediun {
-
+        .vision {
+            .ilustration {
+                order: 2;
+            }
+        }
     }
 }
 
 #press__releases__section {
-    border: 2px solid v.$secondary;
+
+    .press__release__description {
+        margin-bottom: 3rem;
+
+        h1 {
+            margin-bottom: 0.32rem;
+        }
+    }
 
     .press__releases__container {
         gap: 20px;
     }
 
     .press__release {
-        background-color: v.$secondary;
+        background-color: v.$primary-light;
         padding: 1.5rem;
+        border: 1px solid v.$dark-gray;
         border-top-right-radius: 40px;
         border-top-left-radius: 40px;
         border-bottom-right-radius: 16px;
         border-bottom-left-radius: 16px;
         flex-grow: 1;
+
+        h3 {
+            margin: 0.75rem 0;
+        }
+
+    }
+
+    .press__detail {
+        background-color: v.$primary;
+        border: 1px solid v.$dark-gray;
+        border-radius: 68px;
+        display: inline-block;
+        padding: 0.37rem 0.75rem;
     }
 }

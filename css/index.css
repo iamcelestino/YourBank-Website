@@ -851,44 +851,81 @@ header .burger div:nth-child(3) {
 }
 
 #mission__vision__section {
-  border: 1px solid rgb(202, 255, 51);
+  margin: 3.75rem 0;
+}
+#mission__vision__section .mission__vision__description {
+  margin-bottom: 3.75rem;
+}
+#mission__vision__section .mission__vision__description h1 {
+  margin-bottom: 0.32rem;
 }
 #mission__vision__section .mission__vision__container .mission, #mission__vision__section .mission__vision__container .vision {
   align-items: center;
+}
+#mission__vision__section .mission__vision__container .mission h1, #mission__vision__section .mission__vision__container .vision h1 {
+  margin-bottom: 0.32rem;
 }
 #mission__vision__section .mission__vision__container .mission div, #mission__vision__section .mission__vision__container .vision div {
   flex-grow: 1;
 }
 #mission__vision__section .mission__vision__container .mission .ilustration, #mission__vision__section .mission__vision__container .vision .ilustration {
+  background-image: url(/images/Abstract-Design-back4.svg);
   background-color: rgb(28, 28, 28);
   padding: 3.75rem 3.75rem 0 3.75rem;
-  border-radius: 50px 20px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border: 1px solid rgb(76, 76, 77);
 }
 #mission__vision__section .mission__vision__container .mission img, #mission__vision__section .mission__vision__container .vision img {
   display: block;
 }
-#mission__vision__section .mission__vision__container .mission__description {
-  border-left: 2px solid rgb(202, 255, 51);
-  padding-left: 2rem;
-}
 #mission__vision__section .mission__vision__container .vision__description {
-  border-right: 2px solid rgb(202, 255, 51);
-  padding-right: 2.5rem;
+  order: 2;
 }
-#press__releases__section {
-  border: 2px solid rgb(202, 255, 51);
+@media (min-width: 820px) {
+  #mission__vision__section .mission__description {
+    border-left: 2px solid rgb(202, 255, 51);
+    padding-left: 2rem;
+  }
+  #mission__vision__section .vision__description {
+    border-right: 2px solid rgb(202, 255, 51);
+    padding-right: 2.5rem;
+  }
+  #mission__vision__section .vision .ilustration {
+    order: 2;
+  }
+}
+
+#press__releases__section .press__release__description {
+  margin-bottom: 3rem;
+}
+#press__releases__section .press__release__description h1 {
+  margin-bottom: 0.32rem;
 }
 #press__releases__section .press__releases__container {
   gap: 20px;
 }
 #press__releases__section .press__release {
-  background-color: rgb(202, 255, 51);
+  background-color: rgb(28, 28, 28);
   padding: 1.5rem;
+  border: 1px solid rgb(76, 76, 77);
   border-top-right-radius: 40px;
   border-top-left-radius: 40px;
   border-bottom-right-radius: 16px;
   border-bottom-left-radius: 16px;
   flex-grow: 1;
+}
+#press__releases__section .press__release h3 {
+  margin: 0.75rem 0;
+}
+#press__releases__section .press__detail {
+  background-color: rgb(25, 25, 25);
+  border: 1px solid rgb(76, 76, 77);
+  border-radius: 68px;
+  display: inline-block;
+  padding: 0.37rem 0.75rem;
 }
 
 footer .navigation__links {
