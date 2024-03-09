@@ -1,2 +1,46 @@
 @use 'variables' as v;
 @use 'mixins' as MX;
+
+
+#protection__section {
+    .protection__description {
+        margin-bottom: 3.75rem;
+
+        h1 {
+            margin-bottom: 0.87rem;
+        }
+    }
+
+    .security__box__background  {
+        background-color: v.$primary-light;
+        padding: 0  6.25rem;
+        border-radius: 20px;
+        margin-bottom: 1rem;
+
+        .security__box__container {
+            transform: translateY(40px);
+            gap: 30px;
+        }
+
+        .security {
+            background-color: v.$primary-light;
+            border: 1px solid v.$dark-gray;
+            border-radius: 20px;
+            flex-grow: 1;
+            padding: 3.12rem;
+
+            ion-icon {
+                color: v.$secondary;
+            }
+
+            .icon__background {
+                @include MX.icon-background;
+            }
+
+            .icon__container {
+                @include MX.icon-container;
+            }
+
+        }
+    }
+}

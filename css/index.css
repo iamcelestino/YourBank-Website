@@ -928,6 +928,46 @@ header .burger div:nth-child(3) {
   padding: 0.37rem 0.75rem;
 }
 
+#protection__section .protection__description {
+  margin-bottom: 3.75rem;
+}
+#protection__section .protection__description h1 {
+  margin-bottom: 0.87rem;
+}
+#protection__section .security__box__background {
+  background-color: rgb(28, 28, 28);
+  padding: 0 6.25rem;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+#protection__section .security__box__background .security__box__container {
+  transform: translateY(40px);
+  gap: 30px;
+}
+#protection__section .security__box__background .security {
+  background-color: rgb(28, 28, 28);
+  border: 1px solid rgb(76, 76, 77);
+  border-radius: 20px;
+  flex-grow: 1;
+  padding: 3.12rem;
+}
+#protection__section .security__box__background .security ion-icon {
+  color: rgb(202, 255, 51);
+}
+#protection__section .security__box__background .security .icon__background {
+  background-color: rgb(34, 37, 27);
+  background: linear-gradient(rgb(53, 58, 35), rgb(25, 25, 25) 60%);
+  padding: 0.8rem;
+  border-radius: 50px;
+}
+#protection__section .security__box__background .security .icon__container {
+  background: linear-gradient(rgb(53, 58, 35), rgb(25, 25, 25) 50%);
+  background-color: rgb(34, 37, 27);
+  display: inline-block;
+  padding: 0.5rem;
+  border-radius: 70px;
+}
+
 footer .navigation__links {
   display: flex;
   align-items: center;
