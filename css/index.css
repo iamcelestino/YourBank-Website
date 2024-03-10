@@ -1087,7 +1087,6 @@ header .burger div:nth-child(3) {
   padding: 0.8rem;
   border-radius: 50px;
 }
-
 footer .navigation__links {
   display: flex;
   align-items: center;
