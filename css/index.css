@@ -968,6 +968,126 @@ header .burger div:nth-child(3) {
   border-radius: 70px;
 }
 
+#login__section {
+  margin: 3.75rem 0;
+}
+#login__section form {
+  background-color: rgb(28, 28, 28);
+  text-align: center;
+  padding: 1.8rem;
+  border-radius: 16px;
+}
+#login__section form .description,
+#login__section form input:first-child {
+  margin-bottom: 2.5rem;
+}
+#login__section form input {
+  background-color: rgb(25, 25, 25);
+  border: 1px solid rgb(76, 76, 77);
+}
+#login__section form input::placeholder {
+  color: rgb(179, 179, 179);
+}
+#login__section form button {
+  background-color: rgb(76, 76, 77);
+  color: rgb(255, 255, 255);
+  border: none;
+}
+#login__section form button:first-child {
+  background-color: rgb(202, 255, 51);
+  color: rgb(28, 28, 28);
+  margin-bottom: 1.5rem;
+  font-family: "Lexend", sans-serif;
+}
+#login__section form button, #login__section form input {
+  display: block;
+  width: 100%;
+  border-radius: 63px;
+  padding: 0.87rem 1.5rem;
+}
+#login__section form a {
+  text-decoration: underline;
+  display: inline-block;
+  margin: 1rem 0;
+  color: rgb(255, 255, 255);
+}
+#login__section form ion-icon {
+  color: rgb(202, 255, 51);
+}
+#login__section form .icon__container {
+  background: linear-gradient(rgb(53, 58, 35), rgb(25, 25, 25) 50%);
+  background-color: rgb(34, 37, 27);
+  display: inline-block;
+  padding: 0.5rem;
+  border-radius: 70px;
+}
+#login__section form .icon__background {
+  background-color: rgb(34, 37, 27);
+  background: linear-gradient(rgb(53, 58, 35), rgb(25, 25, 25) 60%);
+  padding: 0.8rem;
+  border-radius: 50px;
+}
+
+#sign__up__container {
+  margin: 3.75rem 0;
+}
+#sign__up__container form {
+  background-color: rgb(28, 28, 28);
+  text-align: center;
+  padding: 1.8rem;
+  border-radius: 16px;
+}
+#sign__up__container form .description {
+  margin-bottom: 2.5rem;
+}
+#sign__up__container form input {
+  background-color: rgb(25, 25, 25);
+  border: 1px solid rgb(76, 76, 77);
+  margin-bottom: 1rem;
+}
+#sign__up__container form input::placeholder {
+  color: rgb(179, 179, 179);
+}
+#sign__up__container form button {
+  background-color: rgb(76, 76, 77);
+  color: rgb(255, 255, 255);
+  border: none;
+}
+#sign__up__container form button:first-child {
+  background-color: rgb(202, 255, 51);
+  color: rgb(28, 28, 28);
+  margin-bottom: 1.5rem;
+  font-family: "Lexend", sans-serif;
+}
+#sign__up__container form button, #sign__up__container form input {
+  display: block;
+  width: 100%;
+  border-radius: 63px;
+  padding: 0.87rem 1.5rem;
+}
+#sign__up__container form a {
+  text-decoration: underline;
+  display: inline-block;
+  margin: 1rem 0;
+  color: rgb(255, 255, 255);
+}
+#sign__up__container form ion-icon {
+  color: rgb(202, 255, 51);
+}
+#sign__up__container form .icon__container {
+  background: linear-gradient(rgb(53, 58, 35), rgb(25, 25, 25) 50%);
+  background-color: rgb(34, 37, 27);
+  display: inline-block;
+  padding: 0.5rem;
+  border-radius: 70px;
+}
+#sign__up__container form .icon__background {
+  background-color: rgb(34, 37, 27);
+  background: linear-gradient(rgb(53, 58, 35), rgb(25, 25, 25) 60%);
+  padding: 0.8rem;
+  border-radius: 50px;
+}
+
 footer .navigation__links {
   display: flex;
   align-items: center;

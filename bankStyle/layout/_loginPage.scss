@@ -1,0 +1,70 @@
+@use 'variables' as v;
+@use 'grid';
+@use 'mixins' as MX;
+
+#login__section {
+    margin: 3.75rem 0;
+
+    form {
+        background-color: v.$primary-light;
+        text-align: center;
+        padding: 1.8rem;
+        border-radius: 16px;
+
+
+        .description, 
+        input:first-child {
+            margin-bottom: 2.5rem;
+        }
+
+        input {
+            background-color: v.$primary;
+            border: 1px solid v.$dark-gray;
+        }
+
+        input::placeholder {
+            color: v.$gray;
+        }
+
+        button {
+            background-color: v.$dark-gray;
+            color: v.$white;
+            border: none;
+        }
+
+        button:first-child {
+            background-color: v.$secondary;
+            color: v.$primary-light;
+            margin-bottom: 1.5rem;
+            font-family:  'Lexend', sans-serif;;
+        }
+
+        button, input{
+            display: block;
+            width: 100%;
+            border-radius: 63px;
+            padding: 0.87rem 1.5rem;
+        }
+
+        a {
+            text-decoration: underline;
+            display: inline-block;
+            margin: 1rem 0;
+            color: v.$white;
+        }
+
+        ion-icon {
+            color: v.$secondary;
+        }
+
+        .icon__container {
+            @include MX.icon-container;
+        }
+
+        .icon__background {
+            @include MX.icon-background;
+        }
+    }
+
+}
+
