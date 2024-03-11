@@ -977,9 +977,15 @@ header .burger div:nth-child(3) {
   padding: 1.8rem;
   border-radius: 16px;
 }
+#login__section form .description {
+  margin-bottom: 2.5rem;
+}
+#login__section form .description h1 {
+  margin-bottom: 0.32rem;
+}
 #login__section form .description,
 #login__section form input:first-child {
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.32rem;
 }
 #login__section form input {
   background-color: rgb(25, 25, 25);
@@ -988,12 +994,15 @@ header .burger div:nth-child(3) {
 #login__section form input::placeholder {
   color: rgb(179, 179, 179);
 }
+#login__section form .btns {
+  text-align: center;
+}
 #login__section form button {
   background-color: rgb(76, 76, 77);
   color: rgb(255, 255, 255);
   border: none;
 }
-#login__section form button:first-child {
+#login__section form button:nth-child(2) {
   background-color: rgb(202, 255, 51);
   color: rgb(28, 28, 28);
   margin-bottom: 1.5rem;
@@ -1027,6 +1036,30 @@ header .burger div:nth-child(3) {
   padding: 0.8rem;
   border-radius: 50px;
 }
+#login__section form .fss {
+  text-align: center;
+}
+#login__section form .fss p {
+  margin: 1.32rem;
+}
+#login__section form .btns {
+  text-align: center;
+}
+@media (min-width: 820px) {
+  #login__section .input__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  #login__section .btns {
+    margin: 0 8.32rem;
+  }
+}
+@media (min-width: 960px) {
+  #login__section form {
+    padding: 6.25rem 12.5rem;
+  }
+}
 
 #sign__up__container {
   margin: 3.75rem 0;
@@ -1039,6 +1072,9 @@ header .burger div:nth-child(3) {
 }
 #sign__up__container form .description {
   margin-bottom: 2.5rem;
+}
+#sign__up__container form .description h1 {
+  margin-bottom: 0.32rem;
 }
 #sign__up__container form input {
   background-color: rgb(25, 25, 25);
@@ -1053,14 +1089,14 @@ header .burger div:nth-child(3) {
   color: rgb(255, 255, 255);
   border: none;
 }
-#sign__up__container form button:first-child {
+#sign__up__container form button:nth-child(2) {
   background-color: rgb(202, 255, 51);
   color: rgb(28, 28, 28);
   margin-bottom: 1.5rem;
   font-family: "Lexend", sans-serif;
 }
 #sign__up__container form button, #sign__up__container form input {
-  display: block;
+  display: inline-block;
   width: 100%;
   border-radius: 63px;
   padding: 0.87rem 1.5rem;
@@ -1087,6 +1123,31 @@ header .burger div:nth-child(3) {
   padding: 0.8rem;
   border-radius: 50px;
 }
+#sign__up__container form .fss {
+  text-align: center;
+}
+#sign__up__container form .fss p {
+  margin: 1.32rem;
+}
+#sign__up__container form .btns {
+  text-align: center;
+}
+@media (min-width: 820px) {
+  #sign__up__container .input__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  #sign__up__container .btns {
+    margin: 0 8.32rem;
+  }
+}
+@media (min-width: 960px) {
+  #sign__up__container form {
+    padding: 6.25rem 12.5rem;
+  }
+}
+
 footer .navigation__links {
   display: flex;
   align-items: center;

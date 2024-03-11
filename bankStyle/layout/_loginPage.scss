@@ -11,10 +11,17 @@
         padding: 1.8rem;
         border-radius: 16px;
 
+        .description {
+            margin-bottom: 2.5rem;
+
+            h1 {
+                margin-bottom: 0.32rem;
+            }
+        }
 
         .description, 
         input:first-child {
-            margin-bottom: 2.5rem;
+            margin-bottom: 1.32rem;
         }
 
         input {
@@ -26,13 +33,17 @@
             color: v.$gray;
         }
 
+        .btns {
+            text-align: center;
+        }
+
         button {
             background-color: v.$dark-gray;
             color: v.$white;
             border: none;
         }
 
-        button:first-child {
+        button:nth-child(2) {
             background-color: v.$secondary;
             color: v.$primary-light;
             margin-bottom: 1.5rem;
@@ -63,6 +74,38 @@
 
         .icon__background {
             @include MX.icon-background;
+        }
+
+        .fss {
+            text-align: center;
+
+            p {
+                margin: 1.32rem;
+            }
+
+        }
+
+        .btns {
+            text-align: center;
+
+        }
+    }
+
+    @include MX.mediun {
+        .input__container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+            
+        .btns {
+            margin: 0 8.32rem;
+        }
+    }
+
+    @include MX.large {
+        form {
+            padding: 6.25rem 12.5rem;
         }
     }
 
