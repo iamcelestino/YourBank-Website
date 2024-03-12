@@ -501,63 +501,18 @@
             grid-column: 2/5;
         }
 
-        .features {
+    }
+   }
+
+   @include MX.large {
+       .features {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 10px;
         }
-    }
    }
 }
 
-#faq__section {
-    .faq__description {
-        text-align: center;
-        margin: 3.12rem 0;
-    }
-
-    .box {
-        background-color: v.$primary;
-        border:1px solid #414040;
-        border-radius: 10px;
-        padding: 1.8rem;
-
-        h4 {
-            margin-bottom: 1.25rem;
-        }
-
-        p {
-            margin-top: 1.25rem;
-        }
-    }
-
-    a {
-        color: v.$white;
-        padding: 1.12rem 1.5rem;
-        display: inline-block;
-        border: 1px solid v.$gray;
-        border-radius: 100px;
-        text-align: center;
-        margin-top: 1.32rem;
-    }
-
-    .more__questions {
-        display: none;
-    }
-
-    @include MX.mediun {
-        .faq__description {
-            text-align: left;
-        }
-
-        .questions__container{
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 15px;
-        }
-    }
-    
-}
 
 #start__section {
     margin-top: 3.5rem;
@@ -597,74 +552,3 @@
     }
 }
 
-#testimonials__section {
-
-    .testimonials__description {
-        
-        .testimonial__tab {
-            background-color: v.$primary-light;
-            border: 1px solid v.$dark-gray;
-            display: inline-block;
-            border-radius: 82px;
-            padding: 1rem;
-            margin-bottom: 3.75rem;
-
-            .tab_button {
-                padding: 0.62rem 0.6rem;
-                border-radius: 140px;
-                color: v.$white;
-            }
-
-            .tab_button:first-child {
-                background-color: v.$secondary;
-                color: v.$primary;
-            }
-           
-        }
-    }
-
-    .testimonial__box {
-        width: 2200px;
-        transform: translate3d(0, 0, 0);
-
-        p {
-            color: v.$white;
-        }
-    }
-
-    .testimonial {
-        display: left;
-        width: 430px;
-        white-space: normal;
-        text-align: center;
-        padding: 1rem;
-        border: 1px solid v.$dark-gray;
-        
-        .author {
-            color: v.$secondary;
-            margin-top: 1rem;
-        }
-
-        .title {
-            font-size: 3rem;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            align-items: center;
-            column-gap: 0.5rem;
-        }
-
-        .title::before, .title::after {
-            content: "";
-            height: 2px;
-            background-color: #262626;
-            display: block;
-        }
-    }
-
-    .business__testimonial {
-        width: 430px;
-        overflow: hidden;
-    }
-
-    
-}

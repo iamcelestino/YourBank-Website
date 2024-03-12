@@ -1,0 +1,51 @@
+@use 'variables' as v;
+@use 'mixins' as MX;
+
+#faq__section {
+    .faq__description {
+        text-align: center;
+        margin: 3.12rem 0;
+    }
+
+    .box {
+        background-color: v.$primary;
+        border:1px solid #414040;
+        border-radius: 10px;
+        padding: 1.8rem;
+
+        h4 {
+            margin-bottom: 1.25rem;
+        }
+
+        p {
+            margin-top: 1.25rem;
+        }
+    }
+
+    a {
+        color: v.$white;
+        padding: 1.12rem 1.5rem;
+        display: inline-block;
+        border: 1px solid v.$gray;
+        border-radius: 100px;
+        text-align: center;
+        margin-top: 1.32rem;
+    }
+
+    .more__questions {
+        display: none;
+    }
+
+    @include MX.mediun {
+        .faq__description {
+            text-align: left;
+        }
+
+        .questions__container{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+    }
+    
+}

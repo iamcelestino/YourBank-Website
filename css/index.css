@@ -162,6 +162,103 @@ header .burger div:nth-child(3) {
   }
 }
 
+#faq__section .faq__description {
+  text-align: center;
+  margin: 3.12rem 0;
+}
+#faq__section .box {
+  background-color: rgb(25, 25, 25);
+  border: 1px solid #414040;
+  border-radius: 10px;
+  padding: 1.8rem;
+}
+#faq__section .box h4 {
+  margin-bottom: 1.25rem;
+}
+#faq__section .box p {
+  margin-top: 1.25rem;
+}
+#faq__section a {
+  color: rgb(255, 255, 255);
+  padding: 1.12rem 1.5rem;
+  display: inline-block;
+  border: 1px solid rgb(179, 179, 179);
+  border-radius: 100px;
+  text-align: center;
+  margin-top: 1.32rem;
+}
+#faq__section .more__questions {
+  display: none;
+}
+@media (min-width: 820px) {
+  #faq__section .faq__description {
+    text-align: left;
+  }
+  #faq__section .questions__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+}
+
+#testimonials__section .testimonials__description {
+  display: flex;
+  align-items: center;
+}
+#testimonials__section .testimonials__description .testimonial__tab {
+  background-color: rgb(28, 28, 28);
+  border: 1px solid rgb(76, 76, 77);
+  display: inline-block;
+  border-radius: 82px;
+  padding: 1rem;
+  margin-bottom: 3.75rem;
+}
+#testimonials__section .testimonials__description .testimonial__tab .tab_button {
+  padding: 0.62rem 0.6rem;
+  border-radius: 140px;
+  color: rgb(255, 255, 255);
+}
+#testimonials__section .testimonials__description .testimonial__tab .tab_button:first-child {
+  background-color: rgb(202, 255, 51);
+  color: rgb(25, 25, 25);
+}
+#testimonials__section .testimonial__box {
+  width: 2200px;
+  transform: translate3d(0, 0, 0);
+}
+#testimonials__section .testimonial__box p {
+  color: rgb(255, 255, 255);
+}
+#testimonials__section .testimonial {
+  display: left;
+  width: 430px;
+  white-space: normal;
+  text-align: center;
+  padding: 1rem;
+  border: 1px solid rgb(76, 76, 77);
+}
+#testimonials__section .testimonial .author {
+  color: rgb(202, 255, 51);
+  margin-top: 1rem;
+}
+#testimonials__section .testimonial .title {
+  font-size: 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  column-gap: 0.5rem;
+}
+#testimonials__section .testimonial .title::before, #testimonials__section .testimonial .title::after {
+  content: "";
+  height: 2px;
+  background-color: #262626;
+  display: block;
+}
+#testimonials__section .business__testimonial {
+  width: 430px;
+  overflow: hidden;
+}
+
 #features__section .banking__feature div, #features__section .tabs ul, #hero__section .currencies__description .supported__currencies .currency__container, #hero__section .currencies__description .supported__currencies, #hero__section .currencies__description, #hero__section .hero__transaction__container .exchange__table .coins, #hero__section .hero__transaction__container .transactions .transaction__detail > div, #hero__section .hero__transaction__container .transactions .transaction__detail, #hero__section .hero__transaction__container .monthly__income__box > div {
   display: flex;
   align-items: center;
@@ -532,49 +629,12 @@ header .burger div:nth-child(3) {
   #features__section .tabs #banking {
     grid-column: 2/5;
   }
-  #features__section .tabs .features {
+}
+@media (min-width: 960px) {
+  #features__section .features {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
-  }
-}
-
-#faq__section .faq__description {
-  text-align: center;
-  margin: 3.12rem 0;
-}
-#faq__section .box {
-  background-color: rgb(25, 25, 25);
-  border: 1px solid #414040;
-  border-radius: 10px;
-  padding: 1.8rem;
-}
-#faq__section .box h4 {
-  margin-bottom: 1.25rem;
-}
-#faq__section .box p {
-  margin-top: 1.25rem;
-}
-#faq__section a {
-  color: rgb(255, 255, 255);
-  padding: 1.12rem 1.5rem;
-  display: inline-block;
-  border: 1px solid rgb(179, 179, 179);
-  border-radius: 100px;
-  text-align: center;
-  margin-top: 1.32rem;
-}
-#faq__section .more__questions {
-  display: none;
-}
-@media (min-width: 820px) {
-  #faq__section .faq__description {
-    text-align: left;
-  }
-  #faq__section .questions__container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
   }
 }
 
@@ -610,60 +670,6 @@ header .burger div:nth-child(3) {
 #start__section .start__description p {
   margin-bottom: 1.5rem;
 }
-#testimonials__section .testimonials__description .testimonial__tab {
-  background-color: rgb(28, 28, 28);
-  border: 1px solid rgb(76, 76, 77);
-  display: inline-block;
-  border-radius: 82px;
-  padding: 1rem;
-  margin-bottom: 3.75rem;
-}
-#testimonials__section .testimonials__description .testimonial__tab .tab_button {
-  padding: 0.62rem 0.6rem;
-  border-radius: 140px;
-  color: rgb(255, 255, 255);
-}
-#testimonials__section .testimonials__description .testimonial__tab .tab_button:first-child {
-  background-color: rgb(202, 255, 51);
-  color: rgb(25, 25, 25);
-}
-#testimonials__section .testimonial__box {
-  width: 2200px;
-  transform: translate3d(0, 0, 0);
-}
-#testimonials__section .testimonial__box p {
-  color: rgb(255, 255, 255);
-}
-#testimonials__section .testimonial {
-  display: left;
-  width: 430px;
-  white-space: normal;
-  text-align: center;
-  padding: 1rem;
-  border: 1px solid rgb(76, 76, 77);
-}
-#testimonials__section .testimonial .author {
-  color: rgb(202, 255, 51);
-  margin-top: 1rem;
-}
-#testimonials__section .testimonial .title {
-  font-size: 3rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  align-items: center;
-  column-gap: 0.5rem;
-}
-#testimonials__section .testimonial .title::before, #testimonials__section .testimonial .title::after {
-  content: "";
-  height: 2px;
-  background-color: #262626;
-  display: block;
-}
-#testimonials__section .business__testimonial {
-  width: 430px;
-  overflow: hidden;
-}
-
 #hero__section .career__hero {
   background-color: rgb(28, 28, 28);
   text-align: center;
