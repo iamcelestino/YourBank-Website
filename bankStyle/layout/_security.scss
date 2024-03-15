@@ -3,8 +3,10 @@
 
 
 #protection__section {
+
     .protection__description {
         margin-bottom: 3.75rem;
+        text-align: center;
 
         h1 {
             margin-bottom: 0.87rem;
@@ -12,13 +14,10 @@
     }
 
     .security__box__background  {
-        background-color: v.$primary-light;
-        padding: 0  6.25rem;
-        border-radius: 20px;
-        margin-bottom: 1rem;
 
         .security__box__container {
-            transform: translateY(40px);
+            padding: 3rem 0;
+            // transform: translateY(40px);
             gap: 30px;
         }
 
@@ -27,7 +26,7 @@
             border: 1px solid v.$dark-gray;
             border-radius: 20px;
             flex-grow: 1;
-            padding: 3.12rem;
+            padding: 1.5rem;
 
             ion-icon {
                 color: v.$secondary;
@@ -41,6 +40,29 @@
                 @include MX.icon-container;
             }
 
+        }
+    }
+
+    @include MX.mediun {
+
+        .protection__description {
+            text-align: left;
+        }
+
+        .security__box__background  {
+            background: url(/images/Background\ Image.svg);
+            background-color: v.$primary-light;
+            border-radius: 20px;
+            margin-bottom: 1rem;
+            padding: 0  6.25rem;
+        }
+
+        .security {
+            padding: 3.12rem;
+        }
+
+        #faq__section {
+            margin-top: 3.75rem;
         }
     }
 }
