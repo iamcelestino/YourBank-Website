@@ -37,6 +37,7 @@
         }
 
         & div {
+            background-color: v.$dark-gray;
             display: inline-block;
             text-align: center;
             padding: 0.5rem 1rem 0.5rem 0.5rem;
@@ -173,6 +174,7 @@
     
             .currency__container {
                 @extend %flex-loyout;
+                justify-content: center;
                 background-color: v.$primary;
                 padding: 0.54rem;
                 border-radius: 47.69px;
@@ -208,11 +210,18 @@
     text-align: center;
 
     .products__description {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 3.2rem;
+
+        h1 {
+            margin-bottom: 1rem;
+        }
 
         p {
-            margin-top: 0.62rem;
-            margin-bottom: 1.2rem;
-        }
+            margin-bottom: 1rem
+        };
 
         .product__tab {
             background-color: v.$primary-light;
@@ -269,7 +278,7 @@
     @include MX.mediun {
 
         .products__description {
-            display: flex;
+            flex-direction: row;
             justify-content: space-between;
             text-align: left;
 
@@ -330,10 +339,13 @@
     }
 
     .box {
+        padding: 0;
         padding: 1.25rem 0.8rem;
         background-color: v.$primary;
         border: 1px solid  v.$dark-gray;
         border-radius: 12px;
+        display: inline-block;
+        text-align: center;
 
         p {
             color: v.$white;

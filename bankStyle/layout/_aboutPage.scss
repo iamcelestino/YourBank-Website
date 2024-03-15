@@ -7,12 +7,15 @@
 
     .mission__vision__description {
         margin-bottom: 3.75rem;
+        text-align: center;
 
         h1 {
             margin-bottom: 0.32rem;
         }
     }
+
     .mission__vision__container  {
+        text-align: center;
 
         .mission, .vision {
             align-items: center;
@@ -28,6 +31,7 @@
             .ilustration {
                 background-image: url(/images/Abstract-Design-back4.svg);
                 background-color: v.$primary-light;
+                margin: 1.5rem 0;
                 padding: 3.75rem 3.75rem 0 3.75rem;
                 border-top-left-radius: 50px;
                 border-top-right-radius: 50px;
@@ -47,6 +51,13 @@
     }
 
     @include MX.mediun {
+
+        .mission__vision__description,
+        .mission, 
+        .vision {
+            text-align: left;
+        }
+
         .mission__description {
             border-left: 2px solid v.$secondary;
             padding-left: 2rem;
@@ -64,6 +75,9 @@
         }
     }
 }
+
+
+
 
 #press__releases__section {
 

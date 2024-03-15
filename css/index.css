@@ -218,6 +218,7 @@ header .burger div:nth-child(3) {
   border: 1px solid rgb(76, 76, 77);
   display: inline-block;
   border-radius: 82px;
+  margin-top: 1.5rem;
   padding: 1rem;
 }
 #testimonials__section .testimonials__description .testimonial__tab .tab_button {
@@ -304,6 +305,7 @@ header .burger div:nth-child(3) {
   background-color: rgb(202, 255, 51);
 }
 #hero__section .hero__description div {
+  background-color: rgb(76, 76, 77);
   display: inline-block;
   text-align: center;
   padding: 0.5rem 1rem 0.5rem 0.5rem;
@@ -394,6 +396,7 @@ header .burger div:nth-child(3) {
   margin-top: 1rem;
 }
 #hero__section .currencies__description .supported__currencies .currency__container {
+  justify-content: center;
   background-color: rgb(25, 25, 25);
   padding: 0.54rem;
   border-radius: 47.69px;
@@ -417,9 +420,17 @@ header .burger div:nth-child(3) {
 #products__section {
   text-align: center;
 }
+#products__section .products__description {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 3.2rem;
+}
+#products__section .products__description h1 {
+  margin-bottom: 1rem;
+}
 #products__section .products__description p {
-  margin-top: 0.62rem;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1rem;
 }
 #products__section .products__description .product__tab {
   background-color: rgb(28, 28, 28);
@@ -467,7 +478,7 @@ header .burger div:nth-child(3) {
 }
 @media (min-width: 820px) {
   #products__section .products__description {
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     text-align: left;
   }
@@ -514,10 +525,13 @@ header .burger div:nth-child(3) {
   gap: 10px;
 }
 #use__cases .box {
+  padding: 0;
   padding: 1.25rem 0.8rem;
   background-color: rgb(25, 25, 25);
   border: 1px solid rgb(76, 76, 77);
   border-radius: 12px;
+  display: inline-block;
+  text-align: center;
 }
 #use__cases .box p {
   color: rgb(255, 255, 255);
@@ -874,9 +888,13 @@ header .burger div:nth-child(3) {
 }
 #mission__vision__section .mission__vision__description {
   margin-bottom: 3.75rem;
+  text-align: center;
 }
 #mission__vision__section .mission__vision__description h1 {
   margin-bottom: 0.32rem;
+}
+#mission__vision__section .mission__vision__container {
+  text-align: center;
 }
 #mission__vision__section .mission__vision__container .mission, #mission__vision__section .mission__vision__container .vision {
   align-items: center;
@@ -890,6 +908,7 @@ header .burger div:nth-child(3) {
 #mission__vision__section .mission__vision__container .mission .ilustration, #mission__vision__section .mission__vision__container .vision .ilustration {
   background-image: url(/images/Abstract-Design-back4.svg);
   background-color: rgb(28, 28, 28);
+  margin: 1.5rem 0;
   padding: 3.75rem 3.75rem 0 3.75rem;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
@@ -904,6 +923,11 @@ header .burger div:nth-child(3) {
   order: 2;
 }
 @media (min-width: 820px) {
+  #mission__vision__section .mission__vision__description,
+  #mission__vision__section .mission,
+  #mission__vision__section .vision {
+    text-align: left;
+  }
   #mission__vision__section .mission__description {
     border-left: 2px solid rgb(202, 255, 51);
     padding-left: 2rem;
@@ -987,6 +1011,7 @@ header .burger div:nth-child(3) {
   }
   #protection__section .security__box__background {
     background: url(/images/Background\ Image.svg);
+    background-repeat: repeat-y;
     background-color: rgb(28, 28, 28);
     border-radius: 20px;
     margin-bottom: 1rem;

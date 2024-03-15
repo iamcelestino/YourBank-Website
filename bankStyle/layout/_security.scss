@@ -51,6 +51,7 @@
 
         .security__box__background  {
             background: url(/images/Background\ Image.svg);
+            background-repeat: repeat-y;
             background-color: v.$primary-light;
             border-radius: 20px;
             margin-bottom: 1rem;
