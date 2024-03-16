@@ -28,7 +28,11 @@
         .career__hero {
             flex-direction: row-reverse;
             align-items: start;
-            padding: 0;
+            padding: 2.5rem 0;
+
+            p {
+                font-size: clamp(0.9rem, 1.25vw, 1.5rem);
+            }
         }
 
         .hero__career__description, .picture  {
@@ -36,15 +40,33 @@
         }
 
         .hero__career__description  {
-            max-width: 75%;
-            // padding: 2.5rem;
             text-align: left;
-            transform: translateX(40px);
             border-radius: 0;
             border-bottom-right-radius: 50px;
+            transform: translateX(30px);
+            padding: 1.5rem;
         }
+
         .picture {
-            max-width: 80%;
+            transform: translateX(-30px);
+        }
+    }
+
+    @include MX.large {
+        .career__hero {
+            padding: 3.12rem 0;
+        }
+
+        .hero__career__description  {
+            text-align: left;
+            border-radius: 0;
+            border-bottom-right-radius: 50px;
+            padding: 3.75rem;
+            transform: translateX(50px);
+        }
+
+        .picture {
+            transform: translateX(-50px);
         }
     }
 }
