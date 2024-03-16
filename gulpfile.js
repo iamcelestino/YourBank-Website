@@ -11,4 +11,4 @@ function watchTask() {
   watch(['bankStyle/**/*scss'], buildStyles);
 }
 
-exports.default = series(buildStyles, watchTask)
+exports.default = series(buildStyles, watchTask);

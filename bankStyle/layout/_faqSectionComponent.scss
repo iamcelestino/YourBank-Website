@@ -12,6 +12,7 @@
         border:1px solid #414040;
         border-radius: 10px;
         padding: 1.8rem;
+        margin-bottom: 1rem;
 
         h4 {
             margin-bottom: 1.25rem;
@@ -22,10 +23,9 @@
         }
     }
 
-    a {
+    .load {
         color: v.$white;
         padding: 1.12rem 1.5rem;
-        display: inline-block;
         border: 1px solid v.$gray;
         border-radius: 100px;
         text-align: center;
@@ -45,6 +45,10 @@
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 15px;
+        }
+
+        .box {
+            margin-bottom: 0;
         }
     }
     

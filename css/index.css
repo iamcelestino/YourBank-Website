@@ -171,6 +171,7 @@ header .burger div:nth-child(3) {
   border: 1px solid #414040;
   border-radius: 10px;
   padding: 1.8rem;
+  margin-bottom: 1rem;
 }
 #faq__section .box h4 {
   margin-bottom: 1.25rem;
@@ -178,10 +179,9 @@ header .burger div:nth-child(3) {
 #faq__section .box p {
   margin-top: 1.25rem;
 }
-#faq__section a {
+#faq__section .load {
   color: rgb(255, 255, 255);
   padding: 1.12rem 1.5rem;
-  display: inline-block;
   border: 1px solid rgb(179, 179, 179);
   border-radius: 100px;
   text-align: center;
@@ -198,6 +198,9 @@ header .burger div:nth-child(3) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
+  }
+  #faq__section .box {
+    margin-bottom: 0;
   }
 }
 
@@ -306,6 +309,7 @@ header .burger div:nth-child(3) {
 }
 #hero__section .hero__description div {
   background-color: rgb(76, 76, 77);
+  font-size: 0.8rem;
   display: inline-block;
   text-align: center;
   padding: 0.5rem 1rem 0.5rem 0.5rem;
@@ -535,6 +539,7 @@ header .burger div:nth-child(3) {
 }
 #use__cases .box p {
   color: rgb(255, 255, 255);
+  font-size: 0.7rem;
   margin-top: 0.62rem;
 }
 #use__cases .icon__container {
@@ -631,6 +636,7 @@ header .burger div:nth-child(3) {
 #features__section .banking__feature {
   border-radius: 10px;
   padding: 1.87rem;
+  margin-bottom: 1rem;
 }
 #features__section .banking__feature div {
   justify-content: space-between;
@@ -662,6 +668,9 @@ header .burger div:nth-child(3) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
+  }
+  #features__section .banking__feature {
+    margin-bottom: 0;
   }
 }
 
