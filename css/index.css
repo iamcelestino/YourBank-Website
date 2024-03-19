@@ -32,6 +32,7 @@ body {
 }
 .container img {
   max-width: 100%;
+  display: block;
 }
 .container span {
   color: rgb(202, 255, 51);
@@ -49,7 +50,7 @@ body {
   flex-wrap: wrap;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 480px) {
   .col-1-sm {
     box-sizing: border-box;
     width: 23.3333333333%;
@@ -77,7 +78,7 @@ body {
     width: 70%;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 960px) {
   .col-1-large {
     box-sizing: border-box;
     width: 23.3333333333%;
@@ -663,7 +664,7 @@ header .burger div:nth-child(3) {
     grid-column: 2/5;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 960px) {
   #features__section .features {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -714,6 +715,9 @@ header .burger div:nth-child(3) {
   flex-direction: column;
   padding: 2rem 1.5rem 0.4rem;
 }
+#hero__section .career__hero h1 {
+  margin-bottom: 0.8rem;
+}
 #hero__section .hero__career__description {
   background-color: rgb(25, 25, 25);
   padding: 1.5rem;
@@ -721,17 +725,12 @@ header .burger div:nth-child(3) {
   order: 2;
   transform: translateY(-30px);
 }
-#hero__section .hero__career__description h1 {
-  margin-bottom: 0.87rem;
-}
 @media (min-width: 768px) {
   #hero__section .career__hero {
     flex-direction: row-reverse;
     align-items: start;
     padding: 2.5rem 0;
-  }
-  #hero__section .career__hero p {
-    font-size: clamp(0.9rem, 1.25vw, 1.5rem);
+    font-size: clamp(0.8rem, 0.5vw, 3rem);
   }
   #hero__section .hero__career__description, #hero__section .picture {
     flex: 1;
@@ -740,14 +739,14 @@ header .burger div:nth-child(3) {
     text-align: left;
     border-radius: 0;
     border-bottom-right-radius: 50px;
-    transform: translateX(30px);
+    transform: translateX(10px);
     padding: 1.5rem;
   }
   #hero__section .picture {
-    transform: translateX(-30px);
+    transform: translateX(-10px);
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 960px) {
   #hero__section .career__hero {
     padding: 3.12rem 0;
   }
@@ -1139,7 +1138,7 @@ header .burger div:nth-child(3) {
     margin: 0 8.32rem;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 960px) {
   #login__section form {
     padding: 6.25rem 12.5rem;
   }
@@ -1226,7 +1225,7 @@ header .burger div:nth-child(3) {
     margin: 0 8.32rem;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 960px) {
   #sign__up__container form {
     padding: 6.25rem 12.5rem;
   }
