@@ -74,4 +74,12 @@ header {
 
     }
 
+    @include MX.large {
+        .navigation,  .nav__btns {
+            display: flex;
+        }
+    }
+
+
+
 }

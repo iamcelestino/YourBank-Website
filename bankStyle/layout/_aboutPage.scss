@@ -59,12 +59,12 @@
         }
 
         .mission__description {
-            border-left: 2px solid v.$secondary;
+         
             padding-left: 2rem;
         }
 
         .vision__description {
-            border-right: 2px solid v.$secondary;
+            // border-right: 2px solid v.$secondary;
             padding-right: 2.5rem;
         }
 
@@ -72,6 +72,15 @@
             .ilustration {
                 order: 2;
             }
+        }
+    }
+    @include MX.large {
+        .mission__description {
+               border-left: 2px solid v.$secondary;
+        }
+
+        .vision__description {
+            border-right: 2px solid v.$secondary;
         }
     }
 }

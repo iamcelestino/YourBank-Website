@@ -60,6 +60,12 @@
 
         .security {
             padding: 3.12rem;
+
+            & div {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
         }
 
         #faq__section {

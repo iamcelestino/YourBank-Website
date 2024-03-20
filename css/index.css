@@ -162,6 +162,11 @@ header .burger div:nth-child(3) {
     display: none;
   }
 }
+@media (min-width: 960px) {
+  header .navigation, header .nav__btns {
+    display: flex;
+  }
+}
 
 #faq__section .faq__description {
   text-align: center;
@@ -582,11 +587,6 @@ header .burger div:nth-child(3) {
   #use__cases .percentages {
     text-align: left;
   }
-  #use__cases .cases__box {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 100px;
-  }
   #use__cases .percentages > div {
     display: flex;
     align-items: center;
@@ -596,7 +596,14 @@ header .burger div:nth-child(3) {
     margin-top: 0;
   }
   #use__cases .percentages a {
-    text-align: left;
+    text-align: center;
+  }
+}
+@media (min-width: 960px) {
+  #use__cases .cases__box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px;
   }
 }
 
@@ -729,7 +736,9 @@ header .burger div:nth-child(3) {
   #hero__section .career__hero {
     flex-direction: row-reverse;
     align-items: start;
-    padding: 2.5rem 0;
+    padding: 1rem 0;
+  }
+  #hero__section .career__hero p {
     font-size: clamp(0.8rem, 0.5vw, 3rem);
   }
   #hero__section .hero__career__description, #hero__section .picture {
@@ -955,15 +964,21 @@ header .burger div:nth-child(3) {
     text-align: left;
   }
   #mission__vision__section .mission__description {
-    border-left: 2px solid rgb(202, 255, 51);
     padding-left: 2rem;
   }
   #mission__vision__section .vision__description {
-    border-right: 2px solid rgb(202, 255, 51);
     padding-right: 2.5rem;
   }
   #mission__vision__section .vision .ilustration {
     order: 2;
+  }
+}
+@media (min-width: 960px) {
+  #mission__vision__section .mission__description {
+    border-left: 2px solid rgb(202, 255, 51);
+  }
+  #mission__vision__section .vision__description {
+    border-right: 2px solid rgb(202, 255, 51);
   }
 }
 
@@ -1045,6 +1060,11 @@ header .burger div:nth-child(3) {
   }
   #protection__section .security {
     padding: 3.12rem;
+  }
+  #protection__section .security div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
   }
   #protection__section #faq__section {
     margin-top: 3.75rem;

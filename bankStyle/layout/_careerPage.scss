@@ -29,8 +29,12 @@
         .career__hero {
             flex-direction: row-reverse;
             align-items: start;
-            padding: 2.5rem 0;
-            font-size: clamp(0.8rem, 0.5vw, 3rem);
+            padding: 1rem 0;
+
+            p {
+                font-size: clamp(0.8rem, 0.5vw, 3rem);
+            }
+           
         }
 
         .hero__career__description, .picture  {
