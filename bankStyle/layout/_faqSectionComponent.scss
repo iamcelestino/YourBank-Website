@@ -24,12 +24,17 @@
     }
 
     .load {
-        color: v.$white;
-        padding: 1.12rem 1.5rem;
-        border: 1px solid v.$gray;
-        border-radius: 100px;
         text-align: center;
-        margin-top: 1.32rem;
+
+        button {
+            background-color: v.$primary;
+            color: v.$white;
+            display: inline-block;
+            padding: 1.12rem 1.5rem;
+            border: 1px solid v.$gray;
+            border-radius: 100px;
+            margin-top: 1.32rem;
+        }
     }
 
     .more__questions {
