@@ -8,10 +8,14 @@
 }
 
 header {
-    background-color: v.$primary-light;
-    border: 1px solid v.$dark-gray;
-    padding: 0.875rem 1.5rem;
-    border-radius: 100px;
+    padding-top: 2rem;
+    
+    #header {
+        background-color: v.$primary-light;
+        border: 1px solid v.$dark-gray;
+        padding: 0.875rem 1.5rem;
+        border-radius: 100px;
+    }
 
     .container {
         @extend %flex-loyout;

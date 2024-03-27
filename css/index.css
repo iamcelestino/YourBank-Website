@@ -9,7 +9,10 @@ body {
   background: url(../images/Abstract\ Design-back.svg) -25px -20px no-repeat;
   background-color: rgb(25, 25, 25);
   font-family: "Lexend", sans-serif;
-  padding: 2.5rem 1.5rem 0 1.5rem;
+}
+
+main, header, footer {
+  padding: 0 2rem;
 }
 
 .container {
@@ -113,6 +116,9 @@ header .nav__btns, header nav ul, header .container {
 }
 
 header {
+  padding-top: 2rem;
+}
+header #header {
   background-color: rgb(28, 28, 28);
   border: 1px solid rgb(76, 76, 77);
   padding: 0.875rem 1.5rem;
@@ -686,7 +692,7 @@ header .burger div:nth-child(3) {
   }
 }
 
-#start__section {
+#start__section .container > div {
   margin-top: 3.5rem;
   background: url(../images/Abstract\ Design-back2.svg) no-repeat;
   background-color: rgb(28, 28, 28);
@@ -695,7 +701,7 @@ header .burger div:nth-child(3) {
   text-align: center;
 }
 @media (min-width: 768px) {
-  #start__section {
+  #start__section .container > div {
     text-align: left;
   }
 }

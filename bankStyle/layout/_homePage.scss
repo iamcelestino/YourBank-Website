@@ -538,15 +538,23 @@
 
 
 #start__section {
-    margin-top: 3.5rem;
-    background: url(../images/Abstract\ Design-back2.svg) no-repeat;
-    background-color: v.$primary-light;
-    border-radius: 10px;
-    border: 1px solid v.$dark-gray;
-    text-align: center;
-    @include MX.mediun {
-        text-align: left;
+
+    .container {
+
+        & > div {
+            margin-top: 3.5rem;
+            background: url(../images/Abstract\ Design-back2.svg) no-repeat;
+            background-color: v.$primary-light;
+            border-radius: 10px;
+            border: 1px solid v.$dark-gray;
+            text-align: center;
+            @include MX.mediun {
+                text-align: left;
+            }
+        }
+ 
     }
+   
 
     .start__description {
         padding: 1.87rem;
