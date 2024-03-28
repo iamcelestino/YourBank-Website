@@ -249,9 +249,47 @@ header .burger div:nth-child(3) {
   background-color: rgb(202, 255, 51);
   color: rgb(25, 25, 25);
 }
+#testimonials__section .testimonials__container {
+  display: grid;
+  place-items: center;
+  border: 2px solid rgb(76, 76, 77);
+}
 #testimonials__section .testimonial__box {
-  width: 2200px;
-  transform: translate3d(0, 0, 0);
+  height: 320px;
+  width: 85vw;
+  max-width: 1400px;
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+}
+#testimonials__section .testimonial__box .btn {
+  position: absolute;
+  top: calc(50% - 30px);
+  height: 15px;
+  width: 15px;
+  border-left: 8px solid #696969;
+  border-top: 8px solid #696969;
+  cursor: pointer;
+}
+#testimonials__section .testimonial__box .btn:hover {
+  transform: scale(1.3);
+}
+#testimonials__section .testimonial__box .btn.inactive {
+  border-color: #282828;
+}
+#testimonials__section .testimonial__box .btn:first-of-type {
+  transform: rotate(-45deg);
+  left: 10px;
+}
+#testimonials__section .testimonial__box .btn:last-of-type {
+  transform: rotate(135deg);
+  right: 10px;
+}
+#testimonials__section .testimonial__box .testimonial__container {
+  display: flex;
+  width: 1000%;
+  height: 100%;
+  transition: all 0.5s;
 }
 #testimonials__section .testimonial__box p {
   color: rgb(255, 255, 255);
@@ -263,6 +301,10 @@ header .burger div:nth-child(3) {
   text-align: center;
   padding: 1rem;
   border: 1px solid rgb(76, 76, 77);
+  height: 90%;
+  margin: auto 10px;
+  display: grid;
+  place-items: center;
 }
 #testimonials__section .testimonial .author {
   color: rgb(202, 255, 51);
@@ -1261,7 +1303,7 @@ header .burger div:nth-child(3) {
   }
 }
 
-footer .navigation__links {
+footer .navigation__links, footer .logo {
   display: flex;
   align-items: center;
 }
@@ -1274,6 +1316,9 @@ footer {
 }
 footer a {
   color: rgb(179, 179, 179);
+}
+footer .logo {
+  justify-content: center;
 }
 footer .navigation__links {
   justify-content: center;
@@ -1295,7 +1340,7 @@ footer .contacts ion-icon {
 }
 footer .media__container {
   background-color: rgb(25, 25, 25);
-  padding: 3.12rem 1.5rem 1.87rem 0.81rem;
+  padding: 3.12rem 0.81rem 1.87rem 0.81rem;
   margin: 1.87rem 0;
   border: 1px solid #242424;
   border-radius: 12px;
@@ -1335,6 +1380,6 @@ footer .media__container p {
   }
   footer .media__container .social__media,
   footer .media__container .copyright {
-    margin-top: 1.25rem;
+    margin-bottom: 0;
   }
 }

@@ -16,6 +16,12 @@ footer {
 
     a {
         color: v.$gray;
+
+    }
+
+    .logo {
+        @extend %flex-layout;
+        justify-content: center;
     }
 
     .navigation__links {
@@ -44,7 +50,7 @@ footer {
 
     .media__container {
             background-color: v.$primary;
-            padding: 3.12rem 1.5rem 1.87rem 0.81rem;
+            padding: 3.12rem 0.81rem 1.87rem 0.81rem;
             margin: 1.87rem 0;
             border: 1px solid #242424;
             border-radius: 12px;
@@ -95,7 +101,7 @@ footer {
 
         .social__media,
         .copyright {
-         margin-top: 1.25rem;
+         margin-bottom: 0;
         }
 
        }
