@@ -75,15 +75,45 @@ header {
     }
 
     #mobileMenu {
-        width: 100vh;
+        width: 100vw;
         height: 100vh;
         background-color: v.$primary-light;
         position: fixed;
         top: 0;
         left: 0;
+        right: 0;
+        bottom: 0;
         transform: translate3d(-100vw, 0, 0);
         transition: transform .6s cubic-bezier(0, .52, 0, 1);
-        z-index: 10000;
+        z-index: 1000;
+
+        li {
+            padding: 0.83rem;
+            color: v.$primary;
+        }
+
+        li + li {
+            margin-top: 1.5rem;
+            padding-top: 2rem 0;
+        }
+
+        li:hover {
+            background-color: v.$secondary;
+
+          a {
+            color: v.$primary;
+          }
+        }
+
+        .mobile__nav__btns {
+            margin-top: 1rem;
+        }
+
+        .mobile__nav__item, .mobile__nav__btns {
+            text-align: center;
+            margin-left: 0;
+            margin-right: 0;
+        }
     }
 
     #mobileMenu.show {

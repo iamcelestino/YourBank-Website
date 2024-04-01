@@ -91,6 +91,7 @@
         }
     }
 
+ 
     @include MX.mediun {
         .input__container {
             display: grid;
@@ -110,4 +111,12 @@
     }
 
 }
+
+.caixa {
+    border: 2px solid v.$gray;
+    color: white;
+    padding: 2rem;
+    
+}
+
 

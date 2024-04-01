@@ -18,6 +18,7 @@ main, header, footer {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  position: relative;
   line-height: 1.4;
 }
 .container h1, .container h2, .container h3, .container h4, .container h5, .container h6 {
@@ -163,15 +164,39 @@ header .burger div:nth-child(3) {
   width: 15px;
 }
 header #mobileMenu {
-  width: 100vh;
+  width: 100vw;
   height: 100vh;
   background-color: rgb(28, 28, 28);
   position: fixed;
   top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
   transform: translate3d(-100vw, 0, 0);
   transition: transform 0.6s cubic-bezier(0, 0.52, 0, 1);
-  z-index: 10000;
+  z-index: 1000;
+}
+header #mobileMenu li {
+  padding: 0.83rem;
+  color: rgb(25, 25, 25);
+}
+header #mobileMenu li + li {
+  margin-top: 1.5rem;
+  padding-top: 2rem 0;
+}
+header #mobileMenu li:hover {
+  background-color: rgb(202, 255, 51);
+}
+header #mobileMenu li:hover a {
+  color: rgb(25, 25, 25);
+}
+header #mobileMenu .mobile__nav__btns {
+  margin-top: 1rem;
+}
+header #mobileMenu .mobile__nav__item, header #mobileMenu .mobile__nav__btns {
+  text-align: center;
+  margin-left: 0;
+  margin-right: 0;
 }
 header #mobileMenu.show {
   transform: translate3d(0vw, 0, 0);
@@ -1226,6 +1251,12 @@ header #mobileMenu.show {
   #login__section form {
     padding: 6.25rem 12.5rem;
   }
+}
+
+.caixa {
+  border: 2px solid rgb(179, 179, 179);
+  color: white;
+  padding: 2rem;
 }
 
 #sign__up__container {
