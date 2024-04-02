@@ -38,6 +38,10 @@
     }
 
     .more__questions {
+        margin-top: 1.8rem;
+    }
+
+    .active {
         display: none;
     }
 
@@ -46,14 +50,13 @@
             text-align: left;
         }
 
-        .questions__container{
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 15px;
+        .questions__container {
+            gap: 30px;
         }
 
         .box {
             margin-bottom: 0;
+            flex-grow: 1;
         }
     }
     

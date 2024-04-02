@@ -50,7 +50,14 @@
         }
     }
 
+    .press__release__description {
+        text-align: center;
+    }
+
     @include MX.mediun {
+        .mission__vision__description {
+            max-width: 80%;
+        }
 
         .mission__vision__description,
         .mission, 
@@ -90,6 +97,7 @@
 
     .press__release__description {
         margin-bottom: 3rem;
+        text-align: center;
 
         h1 {
             margin-bottom: 0.32rem;
@@ -122,5 +130,11 @@
         border-radius: 68px;
         display: inline-block;
         padding: 0.37rem 0.75rem;
+    }
+
+    @include MX.mediun {
+        .press__release__description {
+            text-align: left;
+        }
     }
 }

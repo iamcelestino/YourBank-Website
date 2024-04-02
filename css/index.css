@@ -154,7 +154,7 @@ header .burger {
   align-items: end;
 }
 header .burger div {
-  background-color: black;
+  background-color: rgb(25, 25, 25);
   padding: 0.1rem;
   margin: 0.1rem;
   width: 30px;
@@ -183,6 +183,7 @@ header #mobileMenu li {
 header #mobileMenu li + li {
   margin-top: 1.5rem;
   padding-top: 2rem 0;
+  margin-left: 0;
 }
 header #mobileMenu li:hover {
   background-color: rgb(202, 255, 51);
@@ -203,6 +204,9 @@ header #mobileMenu.show {
 }
 @media (min-width: 768px) {
   header .burger {
+    display: none;
+  }
+  header #mobileMenu {
     display: none;
   }
 }
@@ -242,6 +246,9 @@ header #mobileMenu.show {
   margin-top: 1.32rem;
 }
 #faq__section .more__questions {
+  margin-top: 1.8rem;
+}
+#faq__section .active {
   display: none;
 }
 @media (min-width: 768px) {
@@ -249,12 +256,11 @@ header #mobileMenu.show {
     text-align: left;
   }
   #faq__section .questions__container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
+    gap: 30px;
   }
   #faq__section .box {
     margin-bottom: 0;
+    flex-grow: 1;
   }
 }
 
@@ -293,7 +299,7 @@ header #mobileMenu.show {
 }
 #testimonials__section .testimonial__box {
   height: 320px;
-  width: 85vw;
+  width: 95vw;
   max-width: 1400px;
   position: relative;
   overflow: hidden;
@@ -1046,7 +1052,13 @@ header #mobileMenu.show {
 #mission__vision__section .mission__vision__container .vision__description {
   order: 2;
 }
+#mission__vision__section .press__release__description {
+  text-align: center;
+}
 @media (min-width: 768px) {
+  #mission__vision__section .mission__vision__description {
+    max-width: 80%;
+  }
   #mission__vision__section .mission__vision__description,
   #mission__vision__section .mission,
   #mission__vision__section .vision {
@@ -1073,6 +1085,7 @@ header #mobileMenu.show {
 
 #press__releases__section .press__release__description {
   margin-bottom: 3rem;
+  text-align: center;
 }
 #press__releases__section .press__release__description h1 {
   margin-bottom: 0.32rem;
@@ -1099,6 +1112,11 @@ header #mobileMenu.show {
   border-radius: 68px;
   display: inline-block;
   padding: 0.37rem 0.75rem;
+}
+@media (min-width: 768px) {
+  #press__releases__section .press__release__description {
+    text-align: left;
+  }
 }
 
 #protection__section .protection__description {
@@ -1251,12 +1269,6 @@ header #mobileMenu.show {
   #login__section form {
     padding: 6.25rem 12.5rem;
   }
-}
-
-.caixa {
-  border: 2px solid rgb(179, 179, 179);
-  color: white;
-  padding: 2rem;
 }
 
 #sign__up__container {

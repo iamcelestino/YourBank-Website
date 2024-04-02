@@ -17,3 +17,12 @@ burgerMenu.forEach(item => item.addEventListener('click', showMenu, true));
 
 
 
+//FREQUENTLY ASQKED QUESTIONS
+document.querySelector('.questions').addEventListener("click", event => {
+    const moreQuestions = event.target.parentElement.previousElementSibling; //travesing the DOM to get previous sibling
+    moreQuestions.classList.remove('active');
+});
+
+
+
+

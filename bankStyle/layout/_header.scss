@@ -61,7 +61,7 @@ header {
         align-items: end;
 
         div {
-            background-color: black;
+            background-color: v.$primary;
             padding: 0.1rem;
             margin: 0.1rem;
             width: 30px;
@@ -95,6 +95,7 @@ header {
         li + li {
             margin-top: 1.5rem;
             padding-top: 2rem 0;
+            margin-left: 0;
         }
 
         li:hover {
@@ -122,6 +123,10 @@ header {
 
     @include MX.mediun {
         .burger {
+            display: none;
+        }
+
+        #mobileMenu {
             display: none;
         }
     }
