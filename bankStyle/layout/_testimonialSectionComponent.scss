@@ -37,6 +37,10 @@
     }
 
     .testimonials__container {
+        display: none;
+    }
+
+    .testimonials__container.active {
         display: grid;
         place-items: center;
     }

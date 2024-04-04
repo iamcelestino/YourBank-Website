@@ -242,8 +242,17 @@
                 background-color: v.$secondary;
                 color: v.$primary;
             }
-           
         }
+
+     
+    }
+
+    .products__box {
+        display: none;
+    }
+
+    .products__box.active {
+        display: flex;
     }
 
     ion-icon {
@@ -440,7 +449,7 @@
             margin-bottom: 0.62rem;
         }
     }
-    .tabs {
+    .feature__tabs {
 
          ul {
             @extend %flex-loyout;
@@ -472,14 +481,22 @@
             display: none;
         }
 
+        .features {
+            display: none;
+        }
+
+        .features.active {
+            display: block;
+        }
+
     }
 
-    ul, .banking__feature {
+    ul, .feature {
         background-color: v.$primary-light;
         border: 1px solid v.$dark-gray;
     }
     
-   .banking__feature {
+   .feature {
     border-radius: 10px;
     padding: 1.87rem;
     margin-bottom: 1rem;
@@ -500,9 +517,9 @@
         text-align: left;
     }
 
-    .tabs {
+    .feature__tabs {
         display: grid;
-        grid-template-columns: repeat(v.$secondary, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 10px;
 
         ul {
@@ -516,10 +533,15 @@
             }
         }
 
-        #banking {
+        #online-banking,
+        #financial-tool,
+        #customer-support {
             grid-column: 2/5;
         }
-
+        
+        .features.active {
+            display: grid;
+        }
     }
    }
 
@@ -530,7 +552,7 @@
             gap: 10px;
         }
 
-        .banking__feature {
+        .feature {
             margin-bottom: 0;
         }
    }

@@ -294,6 +294,9 @@ header #mobileMenu.show {
   color: rgb(25, 25, 25);
 }
 #testimonials__section .testimonials__container {
+  display: none;
+}
+#testimonials__section .testimonials__container.active {
   display: grid;
   place-items: center;
 }
@@ -377,7 +380,7 @@ header #mobileMenu.show {
   }
 }
 
-#features__section .banking__feature div, #features__section .tabs ul, #hero__section .currencies__description .supported__currencies .currency__container, #hero__section .currencies__description .supported__currencies, #hero__section .currencies__description, #hero__section .hero__transaction__container .exchange__table .coins, #hero__section .hero__transaction__container .transactions .transaction__detail > div, #hero__section .hero__transaction__container .transactions .transaction__detail, #hero__section .hero__transaction__container .monthly__income__box > div {
+#features__section .feature div, #features__section .feature__tabs ul, #hero__section .currencies__description .supported__currencies .currency__container, #hero__section .currencies__description .supported__currencies, #hero__section .currencies__description, #hero__section .hero__transaction__container .exchange__table .coins, #hero__section .hero__transaction__container .transactions .transaction__detail > div, #hero__section .hero__transaction__container .transactions .transaction__detail, #hero__section .hero__transaction__container .monthly__income__box > div {
   display: flex;
   align-items: center;
 }
@@ -554,6 +557,12 @@ header #mobileMenu.show {
   background-color: rgb(202, 255, 51);
   color: rgb(25, 25, 25);
 }
+#products__section .products__box {
+  display: none;
+}
+#products__section .products__box.active {
+  display: flex;
+}
 #products__section .product {
   margin-bottom: 1.8rem;
 }
@@ -709,7 +718,7 @@ header #mobileMenu.show {
 #features__section .features__description h2 {
   margin-bottom: 0.62rem;
 }
-#features__section .tabs ul {
+#features__section .feature__tabs ul {
   border-radius: 10px;
   padding: 1.25rem 1rem;
   margin-bottom: 1.25rem;
@@ -718,7 +727,7 @@ header #mobileMenu.show {
   -ms-overflow-style: none;
   text-align: center;
 }
-#features__section .tabs ul li {
+#features__section .feature__tabs ul li {
   background-color: rgb(28, 28, 28);
   color: rgb(255, 255, 255);
   padding: 0.87rem 1.25rem;
@@ -726,22 +735,28 @@ header #mobileMenu.show {
   border: 1px solid rgb(76, 76, 77);
   font-size: 0.6rem;
 }
-#features__section .tabs ul li + li {
+#features__section .feature__tabs ul li + li {
   margin-left: 1.25rem;
 }
-#features__section .tabs ul::-webkit-scrollbar {
+#features__section .feature__tabs ul::-webkit-scrollbar {
   display: none;
 }
-#features__section ul, #features__section .banking__feature {
+#features__section .feature__tabs .features {
+  display: none;
+}
+#features__section .feature__tabs .features.active {
+  display: block;
+}
+#features__section ul, #features__section .feature {
   background-color: rgb(28, 28, 28);
   border: 1px solid rgb(76, 76, 77);
 }
-#features__section .banking__feature {
+#features__section .feature {
   border-radius: 10px;
   padding: 1.87rem;
   margin-bottom: 1rem;
 }
-#features__section .banking__feature div {
+#features__section .feature div {
   justify-content: space-between;
   margin-bottom: 1.25rem;
 }
@@ -749,21 +764,26 @@ header #mobileMenu.show {
   #features__section .features__description {
     text-align: left;
   }
-  #features__section .tabs {
+  #features__section .feature__tabs {
     display: grid;
-    grid-template-columns: repeat(rgb(202, 255, 51), 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
   }
-  #features__section .tabs ul {
+  #features__section .feature__tabs ul {
     display: inline-block;
     align-self: self-start;
   }
-  #features__section .tabs ul li + li {
+  #features__section .feature__tabs ul li + li {
     margin-left: none;
     margin-top: 1.25rem;
   }
-  #features__section .tabs #banking {
+  #features__section .feature__tabs #online-banking,
+  #features__section .feature__tabs #financial-tool,
+  #features__section .feature__tabs #customer-support {
     grid-column: 2/5;
+  }
+  #features__section .feature__tabs .features.active {
+    display: grid;
   }
 }
 @media (min-width: 960px) {
@@ -772,7 +792,7 @@ header #mobileMenu.show {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
   }
-  #features__section .banking__feature {
+  #features__section .feature {
     margin-bottom: 0;
   }
 }

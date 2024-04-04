@@ -168,13 +168,12 @@
                         </div>
                      
                         <div class="product__tab">
-                            <a class="tab_button" href="">For individuals</a>
-                            <a class="tab_button" href="">For business</a>
+                            <a class="tab_button active" data-id="for__individuals">For individuals</a>
+                            <a class="tab_button" data-id="for__business">For business</a>
                         </div>
-                       
                     </div>
                 </div>
-                <div class="products__box row">
+                <div id="for__individuals" class="products__box row active">
                     <div class="product" >
                         <div class="icon__container">
                             <div class="icon__background">
@@ -184,7 +183,7 @@
                         <h3>Checking Accounts</h3>
                         <p>Enjoy easy and convenient access to your funds with our range of checking account options. Benefit from features such as online and mobile banking, debit cards, and free ATM access.</p>
                     </div>
-                    <div class="product">
+                    <div class="product ">
                         <div class="icon__container">
                             <div class="icon__background">
                                 <ion-icon name="archive"></ion-icon>
@@ -200,6 +199,36 @@
                             </div>
                         </div>
                         <h3>Loans and Morgages</h3>
+                        <p>Realize your dreams with our flexible loan and mortgage options. From personal loans to home mortgages, our experienced loan officers are here to guide you through the application</p>
+                    </div>
+                </div>
+
+                <div id="for__business" class="products__box row">
+                    <div class="product" >
+                        <div class="icon__container">
+                            <div class="icon__background">
+                                <ion-icon name="wallet"></ion-icon>
+                            </div>
+                        </div>
+                        <!-- <h3>Checking Accounts</h3> -->
+                        <p>Enjoy easy and convenient access to your funds with our range of checking account options. Benefit from features such as online and mobile banking, debit cards, and free ATM access.</p>
+                    </div>
+                    <div class="product">
+                        <div class="icon__container">
+                            <div class="icon__background">
+                                <ion-icon name="archive"></ion-icon>
+                            </div>
+                        </div>
+                        <!-- <h3>Saving Accounts</h3> -->
+                        <p>Build your savings with our competitive interest rates and flexible savings account options. Whether you're saving for a specific goal or want to grow your wealth over time, we have the right account for you.</p>
+                    </div>
+                    <div class="product">
+                        <div class="icon__container">
+                            <div class="icon__background" >
+                                <ion-icon name="wallet"></ion-icon>
+                            </div>
+                        </div>
+                        <!-- <h3>Loans and Morgages</h3> -->
                         <p>Realize your dreams with our flexible loan and mortgage options. From personal loans to home mortgages, our experienced loan officers are here to guide you through the application</p>
                     </div>
                 </div>
@@ -340,35 +369,35 @@
                     <h2>Our <span>features</span></h2>
                     <p>Experience a host of powerful features at YourBank, including seamless online banking, secure transactions, and personalized financial insights, all designed to enhance your banking experience</p>
                 </div>
-                <div class="tabs">
+                <div class="feature__tabs">
                     <ul class="">
-                        <li class="trigger">Online Banking</li>
-                        <li class="trigger">Financial Tools</li>
-                        <li class="trigger">customers support</li>
+                        <li class="feature__tab__button active" data-id="online-banking">Online Banking</li>
+                        <li class="feature__tab__button" data-id="finacial-tool">Financial Tools</li>
+                        <li class="feature__tab__button" data-id="customer-support">customers support</li>
                     </ul>
-                    <div id="banking" class="features">
-                        <div class="banking__feature">
+                    <div id="online-banking" class="features active">
+                        <div class="feature">
                             <div>
                                 <h5>24/7account access</h5>
                                 <ion-icon name="return-up-forward-outline"></ion-icon>
                             </div>
                             <p>Enjoy the convenience of accessing your accounts anytime, anywhere through our secure online banking platform. Check balances, transfer funds, and pay bills with ease.</p>
                         </div>
-                        <div class="banking__feature">
+                        <div class="feature">
                             <div>
                                 <h5>Mobile Banking app</h5>
                                 <ion-icon name="return-up-forward-outline"></ion-icon>
                             </div>
                             <p>Stay connected to your finances on the go with our user-friendly mobile banking app. Easily manage your accounts, deposit checks, and make payments from your smartphone or tablet.</p>
                         </div>
-                        <div class="banking__feature ">
+                        <div class="feature ">
                             <div>
                                 <h5>Secure transaction</h5>
                                 <ion-icon name="return-up-forward-outline"></ion-icon>
                             </div>
                             <p>Rest assured knowing that your transactions are protected by industry-leading security measures. We employ encryption and multi-factor authentication to safeguard your financial information.</p>
                         </div>
-                        <div class="banking__feature">
+                        <div class="feature">
                             <div>
                                 <h5>Bill pay and transfers</h5>
                                 <ion-icon name="return-up-forward-outline"></ion-icon>
@@ -376,6 +405,70 @@
                             <p>Save time and avoid late fees with our convenient bill pay service. Set up recurring payments or make one-time transfers between your accounts with just a few clicks.</p>
                         </div>
                     </div>
+
+
+                    <div id="finacial-tool" class="features">
+                        <div class="feature">
+                            <div>
+                                <h5>Lorem ipsum dolor sit amet.</h5>
+                                <ion-icon name="return-up-forward-outline"></ion-icon>
+                            </div>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, nulla vitae ipsa excepturi assumenda officia libero expedita fuga est maxime similique optio, hic neque consequuntur minus quibusdam aliquid distinctio porro.</p>
+                        </div>
+                        <div class="feature">
+                            <div>
+                                <h5>Lorem ipsum dolor sit.</h5>
+                                <ion-icon name="return-up-forward-outline"></ion-icon>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam soluta ex magni quasi dignissimos nulla assumenda corrupti delectus accusamus alias quia ducimus consequuntur voluptatum nostrum repellendus odio, corporis mollitia totam?</p>
+                        </div>
+                        <div class="feature ">
+                            <div>
+                                <h5>Lorem ipsum dolor sit.</h5>
+                                <ion-icon name="return-up-forward-outline"></ion-icon>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ea debitis ex magni alias rerum, tenetur temporibus laborum obcaecati officiis odit minus quidem hic, aspernatur sit reprehenderit ipsum a quis.</p>
+                        </div>
+                        <div class="feature">
+                            <div>
+                                <h5>Lorem ipsum dolor sit amet.</h5>
+                                <ion-icon name="return-up-forward-outline"></ion-icon>
+                            </div>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit, debitis! Repellat corrupti, quaerat iusto nesciunt voluptas adipisci perspiciatis quasi. Nostrum dolore, esse nemo deleniti earum saepe accusantium facilis maxime adipisci!</p>
+                        </div>
+                    </div>
+
+                    <div id="customer-support" class="features">
+                        <div class="feature">
+                            <div>
+                                <h5>Lorem ipsum dolor sit amet.</h5>
+                                <ion-icon name="return-up-forward-outline"></ion-icon>
+                            </div>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, nulla vitae ipsa excepturi assumenda officia libero expedita fuga est maxime similique optio, hic neque consequuntur minus quibusdam aliquid distinctio porro.</p>
+                        </div>
+                        <div class="feature">
+                            <div>
+                                <h5>Lorem ipsum dolor sit.</h5>
+                                <ion-icon name="return-up-forward-outline"></ion-icon>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam soluta ex magni quasi dignissimos nulla assumenda corrupti delectus accusamus alias quia ducimus consequuntur voluptatum nostrum repellendus odio, corporis mollitia totam?</p>
+                        </div>
+                        <div class="feature ">
+                            <div>
+                                <h5>Lorem ipsum dolor sit.</h5>
+                                <ion-icon name="return-up-forward-outline"></ion-icon>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ea debitis ex magni alias rerum, tenetur temporibus laborum obcaecati officiis odit minus quidem hic, aspernatur sit reprehenderit ipsum a quis.</p>
+                        </div>
+                        <div class="feature">
+                            <div>
+                                <h5>Lorem ipsum dolor sit amet.</h5>
+                                <ion-icon name="return-up-forward-outline"></ion-icon>
+                            </div>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit, debitis! Repellat corrupti, quaerat iusto nesciunt voluptas adipisci perspiciatis quasi. Nostrum dolore, esse nemo deleniti earum saepe accusantium facilis maxime adipisci!</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -448,12 +541,12 @@
                                 <p>Discover a range of comprehensive and customizable banking products at YourBank, designed to suit your unique financial needs and aspirations</p>
                             </div>
                             <div class="testimonial__tab">
-                                <a class="tab_button" href="">For individuals</a>
-                                <a class="tab_button" href="">For business</a>
+                                <a class="tab_button active" data-id=" individual__testimonial">For individuals</a>
+                                <a class="tab_button" data-id="business__testimonial">For business</a>
                             </div>
                         </div>
                     </div>
-                    <div id="business__testimonial" class="testimonials__container">
+                    <div id="individual__testimonial" class="testimonials__container active">
                         <div class="testimonial__box">
                             <span class="btn"></span>
                             <div class="testimonial__container">
@@ -480,8 +573,37 @@
                             </div>
                             <span class="btn"></span>
                         </div>
-                     </div>
                     </div>
+
+                    <div id="business__testimonial" class="testimonials__container">
+                        <div class="testimonial__box">
+                            <span class="btn"></span>
+                            <div class="testimonial__container">
+                                <div class="testimonial" >
+                                   <h1 class="title">"</h1>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium ratione dignissimos optio accusantium eligendi, fugiat ut, nam expedita, sunt nemo dolor harum cum voluptate sint molestiae at vel mollitia quisquam.</p>
+                                    <p class="author">Carrinho</p>
+                                </div>
+                                <div class="testimonial">
+                                    <h1 class="title">"</h1>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ipsam quod magni quas sed doloremque dignissimos quidem quos amet assumenda debitis, vero molestias sapiente nam architecto deleniti numquam sit est.</p>
+                                    <p class="author">Amazon</p>
+                                </div>
+                                <div class="testimonial">
+                                    <h1 class="title">"</h1>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dolore ullam recusandae blanditiis molestiae iure laborum rem nobis mollitia et sapiente quia reprehenderit, dolor incidunt odio eos hic neque eveniet.</p>
+                                    <p class="author">Microsoft</p>
+                                </div>
+                                <div class="testimonial">
+                                    <h1 class="title">"</h1>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste praesentium perspiciatis temporibus accusantium cumque fuga nemo repellendus earum modi qui ipsa eaque dolorem, libero, laudantium tempora, error repellat esse. Voluptatibus!</p>
+                                    <p class="author">Google</p>
+                                </div>
+                            </div>
+                            <span class="btn"></span>
+                        </div>
+                    </div>
+            </div>
         </section>
 
         <section id="start__section">
