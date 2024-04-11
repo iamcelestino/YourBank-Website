@@ -28,9 +28,9 @@
                 color: v.$white;
             }
 
-            .tab_button:first-child {
+            .tab_button.active {
                 background-color: v.$secondary;
-                color: v.$primary;
+                color: v.$primary; 
             }
            
         }

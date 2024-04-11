@@ -1,3 +1,4 @@
+
 //MOBILE MENU
 const burgerMenu = document.querySelectorAll('.burger');
 const mobileMenu = document.querySelectorAll('#mobileMenu');
@@ -27,7 +28,7 @@ questionsParent.addEventListener("click", event => {
 
 
 //ADDS INTERACTIVITY TO TABS
-function tabs(event, tabButtons, tabContent) {
+ function tabs(event, tabButtons, tabContent) {
     const id = event.target.dataset.id;
     if (id) {
         tabButtons.forEach(btn => {
@@ -46,9 +47,10 @@ function tabs(event, tabButtons, tabContent) {
     }
 }
 
+
 //query items in the product tab
 const product__container = document.querySelector('#products__section .container');
-const tab_buttons = document.querySelectorAll('tab_button');
+const tab_buttons = document.querySelectorAll('.product__tab .tab_button');
 const products__box = document.querySelectorAll('.products__box');
 
 //add event in product container
@@ -61,14 +63,8 @@ const features = document.querySelectorAll('.features');
 
 featureTabs.addEventListener("click", event => tabs(event, featureTabButtons, features ));
 
-
 const container = document.querySelector('#testimonials__section .container');
 const testimonialTabButton = document.querySelectorAll('.testimonial__tab .tab_button');
 const testimonialsContainer = document.querySelectorAll('.testimonials__container');
+
 container.addEventListener("click", event => tabs(event, testimonialTabButton,testimonialsContainer));
-
-
-
-
-
-

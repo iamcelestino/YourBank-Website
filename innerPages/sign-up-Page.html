@@ -94,7 +94,7 @@
                 </form>
             </div>
         </section>
-        
+
         <section id="testimonials__section">
             <div class="container">
                     <div id="">
@@ -104,12 +104,12 @@
                                 <p>Discover a range of comprehensive and customizable banking products at YourBank, designed to suit your unique financial needs and aspirations</p>
                             </div>
                             <div class="testimonial__tab">
-                                <a class="tab_button" href="">For individuals</a>
-                                <a class="tab_button" href="">For business</a>
+                                <a class="tab_button active" data-id="individual__testimonial">For individuals</a>
+                                <a class="tab_button" data-id="business__testimonial">For business</a>
                             </div>
                         </div>
                     </div>
-                    <div id="business__testimonial" class="testimonials__container">
+                    <div id="individual__testimonial" class="testimonials__container active">
                         <div class="testimonial__box">
                             <span class="btn"></span>
                             <div class="testimonial__container">
@@ -136,8 +136,37 @@
                             </div>
                             <span class="btn"></span>
                         </div>
-                     </div>
                     </div>
+
+                    <div id="business__testimonial" class="testimonials__container">
+                        <div class="testimonial__box">
+                            <span class="btn"></span>
+                            <div class="testimonial__container">
+                                <div class="testimonial" >
+                                   <h1 class="title">"</h1>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium ratione dignissimos optio accusantium eligendi, fugiat ut, nam expedita, sunt nemo dolor harum cum voluptate sint molestiae at vel mollitia quisquam.</p>
+                                    <p class="author">Carrinho</p>
+                                </div>
+                                <div class="testimonial">
+                                    <h1 class="title">"</h1>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ipsam quod magni quas sed doloremque dignissimos quidem quos amet assumenda debitis, vero molestias sapiente nam architecto deleniti numquam sit est.</p>
+                                    <p class="author">Amazon</p>
+                                </div>
+                                <div class="testimonial">
+                                    <h1 class="title">"</h1>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dolore ullam recusandae blanditiis molestiae iure laborum rem nobis mollitia et sapiente quia reprehenderit, dolor incidunt odio eos hic neque eveniet.</p>
+                                    <p class="author">Microsoft</p>
+                                </div>
+                                <div class="testimonial">
+                                    <h1 class="title">"</h1>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste praesentium perspiciatis temporibus accusantium cumque fuga nemo repellendus earum modi qui ipsa eaque dolorem, libero, laudantium tempora, error repellat esse. Voluptatibus!</p>
+                                    <p class="author">Google</p>
+                                </div>
+                            </div>
+                            <span class="btn"></span>
+                        </div>
+                    </div>
+            </div>
         </section>
 
     </main>
@@ -187,8 +216,8 @@
         </div>
     </footer>
 
+    <script src="../app/app.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="../app/app.js"></script>
 </body>
 </html>

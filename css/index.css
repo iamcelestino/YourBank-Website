@@ -289,7 +289,7 @@ header #mobileMenu.show {
   border-radius: 140px;
   color: rgb(255, 255, 255);
 }
-#testimonials__section .testimonials__description .testimonial__tab .tab_button:first-child {
+#testimonials__section .testimonials__description .testimonial__tab .tab_button.active {
   background-color: rgb(202, 255, 51);
   color: rgb(25, 25, 25);
 }
@@ -553,7 +553,7 @@ header #mobileMenu.show {
   border-radius: 140px;
   color: rgb(255, 255, 255);
 }
-#products__section .products__description .product__tab .tab_button:first-child {
+#products__section .products__description .product__tab .tab_button.active {
   background-color: rgb(202, 255, 51);
   color: rgb(25, 25, 25);
 }
@@ -747,6 +747,10 @@ header #mobileMenu.show {
 #features__section .feature__tabs .features.active {
   display: block;
 }
+#features__section .feature__tabs .feature__tab__button.active {
+  background-color: rgb(202, 255, 51);
+  color: rgb(25, 25, 25);
+}
 #features__section ul, #features__section .feature {
   background-color: rgb(28, 28, 28);
   border: 1px solid rgb(76, 76, 77);
@@ -778,7 +782,7 @@ header #mobileMenu.show {
     margin-top: 1.25rem;
   }
   #features__section .feature__tabs #online-banking,
-  #features__section .feature__tabs #financial-tool,
+  #features__section .feature__tabs #finacial-tool,
   #features__section .feature__tabs #customer-support {
     grid-column: 2/5;
   }

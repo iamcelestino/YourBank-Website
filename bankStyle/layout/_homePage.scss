@@ -238,7 +238,8 @@
                 color: v.$white;
             }
 
-            .tab_button:first-child {
+
+            .tab_button.active {
                 background-color: v.$secondary;
                 color: v.$primary;
             }
@@ -489,6 +490,11 @@
             display: block;
         }
 
+            .feature__tab__button.active {
+        background-color: v.$secondary;
+        color: v.$primary;
+    }
+
     }
 
     ul, .feature {
@@ -534,7 +540,7 @@
         }
 
         #online-banking,
-        #financial-tool,
+        #finacial-tool,
         #customer-support {
             grid-column: 2/5;
         }
