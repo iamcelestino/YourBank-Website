@@ -245,11 +245,18 @@ header #mobileMenu.show {
   border-radius: 100px;
   margin-top: 1.32rem;
 }
+#faq__section .load button:hover {
+  opacity: 0.3;
+  transform: scale(1.2);
+  transition: transform 0.2s cubic-bezier(0.8, 0.03, 0.6, 0.22);
+}
 #faq__section .more__questions {
   margin-top: 1.8rem;
+  display: none;
 }
 #faq__section .active {
-  display: none;
+  display: block;
+  transform: translateY(2px);
 }
 @media (min-width: 768px) {
   #faq__section .faq__description {
