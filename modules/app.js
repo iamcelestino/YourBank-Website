@@ -1,20 +1,15 @@
 
 //MOBILE MENU
-
 function showMenu(event) {
     //adding 'show' in mobileMenu classList
-    mobileMenu.forEach(item => item.classList.add('show'));
+    mobileMenu.classList.add('show');
 }
 
 function hideMenu(event) {
     event.stopPropagation();
     //taking out 'show' in mobileMenu classList
-    mobileMenu.forEach(item => item.classList.remove('show'));
+    mobileMenu.classList.remove('show');
 }
-mobileMenu.forEach(item => item.addEventListener('click', hideMenu, false));
-burgerMenu.forEach(item => item.addEventListener('click', showMenu, true));
-
-
 
 //ADD INTARECTIVTY IN FREQUENTLY ASQKED QUESTIONS
 function showMoreLess(event){
